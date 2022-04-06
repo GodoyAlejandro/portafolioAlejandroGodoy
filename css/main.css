@@ -1,0 +1,337 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'roboto slab' , serif;
+}
+
+/*Home*/
+/*header con nav*/
+header{
+    background-color: #639CD9;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.nombre{
+    display: inline-block;
+    color: white;
+    text-transform: uppercase;
+    position: relative;
+    top: 10px;
+    padding-left: 5px;
+}
+
+.menu ul li{
+    display: inline-block;
+    position: relative;
+    bottom: 20px;
+    left: 810px;
+}
+
+
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+}
+.menu ul li a:hover{
+    background-color: #5454C5;
+}
+/*fin del header con nav*/
+
+/*main*/
+.mainHome{
+    background-color: #5454C5;
+}
+
+.mainHome p{
+    font-size: 30px;
+    font-style: italic;
+    color: white;
+    padding: 15px 60px 15px 190px
+
+}
+
+.mainHome h1{
+    color: white;
+    text-transform: uppercase;
+    font-size: 90px;
+    padding-left: 27vh;
+}
+
+.botonMainHome{
+    font-size: 25px;
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: #342056;
+    margin: 10px 0px 25px 610px ;
+    border-radius: 30px;
+}
+/*fin del main*/
+
+/*section*/
+.sectionHome{
+    background-color: #342056;
+    display: inline-block;
+    padding-right: 150px;
+}
+
+.sectionHome p{
+    display: inline-block;
+    text-align: center;
+    font-size: 60px;
+    color: white;
+    padding-left: 90px;
+}
+
+.sectionImagenes{
+    display: inline-block;
+    margin-left: 30vh;
+}
+.sectionImagenes div{
+    display: inline-block;
+    padding: 10px 0px 10px 0px;
+}
+.sectionImagenes div img{
+    width: 300px;
+    padding: 5px;
+}
+.sectionBoton a{
+    font-size: 25px;
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: #5454C5;
+    margin: 30px 0px 30px 630px;
+    border-radius: 30px;   
+}
+/*fin del section*/
+
+/*comienzo del footer*/
+footer{
+    background-color: #220E24;
+}
+.linksFooter{
+    padding: 15px 0px 30px 550px;
+}
+.linksFooter div{
+    display: inline-block;
+    padding: 10px;
+    border-bottom: 1px solid grey;
+}
+.linksFooter div a{
+    display: inline-block;
+    padding: 5px;
+}
+.linksFooter div a img{
+    width: 60px;
+}
+.copyright p{
+    display: inline-block;
+    color: white;
+    padding: 0px 0px 15px 525px;
+}
+/*Sobre Mi*/
+/*main Sobre Mi*/
+.mainSobreMi{
+    background-color: #5454C5;
+}
+
+.contenido div{
+    display: inline-block;
+}
+.contenido div p{
+    display: inline-block;
+    color: white;
+    font-size: 42px;
+    position: relative;
+    bottom: 190px;
+    left: 30px;
+    
+}
+.contenido div img{
+    
+    display: inline-block;
+    width: 600px;
+    padding: 0px 0px 0px 100px;
+    
+}
+/*fin main Sobre Mi*/
+
+/*Section Sobre Mi*/
+.sectionSobreMi{
+    background-color: #342056;
+}
+.sectionSobreMi h3{
+    display: inline-block;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    padding: 30px;
+}
+.sectionSobreMi p{
+    color: white;
+    display: inline-block;
+    font-size: 30px;
+    position: relative;
+    left: 600px;
+}
+/*fin section Sobre Mi*/
+/*Fin Sobre Mi*/
+
+/*inicio Conocimientos*/
+/*main Conocimientos*/
+.mainConocimientos{
+    background-color: #5454C5;
+    display: inline-block;
+}
+.tituloMainConocimientos{
+    display: inline-block;
+    margin: 15px;
+    position: relative;
+    left: 280px;
+}
+.tituloMainConocimientos h1{
+    color: white;
+    font-size: 50px;
+}
+.conocimientos{
+    display: inline-block;
+    position: relative;
+    left: 160px;
+}
+.conocimientos img{
+    display: inline-block;
+    padding: 15px;
+    width: 250px;
+}
+.conocimientosDos{
+    display: inline-block;
+}
+.conocimientosDos img{
+    display: inline-block;
+    padding: 15px;
+    width: 250px;
+    position: relative;
+    left: 290px;
+    margin-bottom: 90px;
+}
+/*fin Main Conocimientos*/
+/*Section Conocimientos*/
+.sectionConocimientos{
+    background-color: #342056;
+}
+.listaConocimientos{
+    display: inline-block;
+    padding: 20px;
+    margin: 30px;
+    background-color: #5454C5;
+    border-radius: 30px;
+    position: relative;
+    left: 400px;
+}
+.listaConocimientos ul{
+    font-size: 25px;
+    color: white;
+    list-style:none;
+}
+.listaConocimientos ul li{
+    text-align: center;
+}
+/*fin del section Conocimientos*/
+/*fin de conocimientos*/
+
+/*Portafolio*/
+/*main*/
+.mainPortafolio{
+    background-color: #342056;
+}
+.paginas{
+    background-color: #5454C5 ;
+    display: inline-block;
+    margin: 30px;
+    padding: 15px;
+    border-radius: 30px;
+    position: relative;
+    left: 150px;
+    text-align: center;
+}
+.paginas a{
+    text-decoration: none;
+    color: white;
+}
+.paginas a img{
+    width: 250px;
+}
+/*fin del main*/
+
+/*section contacto*/
+.sectionContacto{
+    background-color: #342056;
+    
+}
+.sectionContacto h2{
+    font-size: 40px;
+    display: inline-block;
+    padding: 10px;
+    margin-left: 180px;
+    text-align: left;
+    color: white;
+
+}
+form fieldset{
+    border: 0px;
+    height: 290px;
+}
+.cajas{
+    padding: 10px;
+}
+.cajas input{
+    width: 300px;
+    height: 40px;
+    display: inline-block;
+    position: relative;
+    left: 200px;
+    border: 0px;
+    border-radius: 30px;
+    padding: 10px;
+
+}
+
+.cajaConsulta input{
+    width: 300px;
+    height: 165px;
+    position: relative;
+    left: 550px;
+    bottom: 232.5px;
+    border: 0px;
+    border-radius: 30px;
+    padding: 10px;
+}
+.cajaConsulta input::placeholder{
+    position: relative;
+    bottom: 55px;
+}
+
+.botonSubmit{
+    display: inline-block;
+    position: relative;
+    left: 620px;
+    bottom: 215px;
+}
+.botonSubmit input{
+    font-size: 20px;
+    background-color: #5454C5;
+    color: white;
+    border: 0px;
+    border-radius: 30px;
+    padding: 10px;
+}
+/*fin del section*/
+/*fin de contacto*/
