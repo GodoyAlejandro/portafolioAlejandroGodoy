@@ -5,6 +5,12 @@
     font-family: 'roboto slab' , serif;
 }
 
+.contenedor{
+    height: 10vh;
+    border-radius: 50%;
+    position: absolute;
+}
+
 /*Home*/
 /*header con nav*/
 header{
@@ -13,7 +19,6 @@ header{
     top: 0;
     z-index: 1;
 }
-
 .nombre{
     display: inline-block;
     color: white;
@@ -22,23 +27,23 @@ header{
     top: 10px;
     padding-left: 5px;
 }
-
 .menu ul li{
     display: inline-block;
     position: relative;
     bottom: 20px;
     left: 810px;
+    transition: .3s;
 }
-
-
+.menu ul li:hover{
+    background-color: #5454C5;
+    border-radius: 1.3rem;
+    transform: scale(1.12)
+}
 .menu ul li a{
     text-decoration: none;
     color: white;
     font-size: 20px;
     padding: 5px;
-}
-.menu ul li a:hover{
-    background-color: #5454C5;
 }
 /*fin del header con nav*/
 
@@ -46,7 +51,6 @@ header{
 .mainHome{
     background-color: #5454C5;
 }
-
 .mainHome p{
     font-size: 30px;
     font-style: italic;
@@ -54,14 +58,12 @@ header{
     padding: 15px 60px 15px 190px
 
 }
-
 .mainHome h2{
     color: white;
     text-transform: uppercase;
     font-size: 90px;
     padding-left: 27vh;
 }
-
 .botonMainHome{
     font-size: 25px;
     display: inline-block;
@@ -71,6 +73,10 @@ header{
     background-color: #342056;
     margin: 10px 0px 25px 610px ;
     border-radius: 30px;
+    transition: .3s;
+}
+.botonMainHome:hover{
+    transform: scale(1.2);
 }
 /*fin del main*/
 
@@ -80,7 +86,6 @@ header{
     display: inline-block;
     padding-right: 150px;
 }
-
 .sectionHome p{
     display: inline-block;
     text-align: center;
@@ -88,7 +93,6 @@ header{
     color: white;
     padding-left: 90px;
 }
-
 .sectionImagenes{
     display: inline-block;
     margin-left: 30vh;
@@ -109,7 +113,11 @@ header{
     color: white;
     background-color: #5454C5;
     margin: 30px 0px 30px 630px;
-    border-radius: 30px;   
+    border-radius: 30px;
+    transition: .3s;   
+}
+.sectionBoton a:hover{
+    transform: scale(1.2);
 }
 /*fin del section*/
 
@@ -142,7 +150,6 @@ footer{
 .mainSobreMi{
     background-color: #5454C5;
 }
-
 .contenido div{
     display: inline-block;
 }
@@ -223,6 +230,7 @@ footer{
     margin-bottom: 90px;
 }
 /*fin Main Conocimientos*/
+
 /*Section Conocimientos*/
 .sectionConocimientos{
     background-color: #342056;
@@ -248,6 +256,7 @@ footer{
 /*fin de conocimientos*/
 
 /*Portafolio*/
+
 /*main*/
 .mainPortafolio{
     background-color: #342056;
@@ -303,7 +312,6 @@ form fieldset{
     padding: 10px;
 
 }
-
 .cajaConsulta input{
     width: 300px;
     height: 165px;
@@ -318,7 +326,6 @@ form fieldset{
     position: relative;
     bottom: 55px;
 }
-
 .botonSubmit{
     display: inline-block;
     position: relative;
