@@ -55,7 +55,7 @@ header{
 
 }
 
-.mainHome h1{
+.mainHome h2{
     color: white;
     text-transform: uppercase;
     font-size: 90px;
@@ -168,7 +168,7 @@ footer{
 .sectionSobreMi{
     background-color: #342056;
 }
-.sectionSobreMi h3{
+.sectionSobreMi h2{
     display: inline-block;
     text-align: center;
     font-size: 40px;
@@ -197,7 +197,7 @@ footer{
     position: relative;
     left: 280px;
 }
-.tituloMainConocimientos h1{
+.tituloMainConocimientos h2{
     color: white;
     font-size: 50px;
 }
