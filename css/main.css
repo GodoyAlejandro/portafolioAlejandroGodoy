@@ -5,12 +5,6 @@
     font-family: 'roboto slab' , serif;
 }
 
-.contenedor{
-    height: 10vh;
-    border-radius: 50%;
-    position: absolute;
-}
-
 /*Home*/
 /*header con nav*/
 header{
@@ -218,6 +212,11 @@ footer{
     padding: 15px;
     width: 250px;
 }
+.conocimientos img:hover{
+    animation-name: shake;
+    animation-iteration-count: 1;
+    animation-duration: .6s;
+}
 .conocimientosDos{
     display: inline-block;
 }
@@ -228,6 +227,26 @@ footer{
     position: relative;
     left: 290px;
     margin-bottom: 90px;
+}
+.conocimientosDos img:hover{
+    animation-name: shake;
+    animation-iteration-count: 1;
+    animation-duration: .6s;
+}
+
+@keyframes shake{
+    10%, 90%{
+        transform: translate3d(-1px, 0, 0);
+    }
+    20%, 80%{
+        transform: translate3d(2px, 0, 0) ;
+    }
+    30%, 50%, 70%{
+        transform: translate3d(-4px, 0, 0);
+    }
+    40%, 60%{
+        transform: translate3d(4px, 0, 0);
+    }
 }
 /*fin Main Conocimientos*/
 
@@ -256,12 +275,11 @@ footer{
 /*fin de conocimientos*/
 
 /*Portafolio*/
-
 /*main*/
 .mainPortafolio{
     background-color: #342056;
 }
-.paginas{
+.paginaUno{
     background-color: #5454C5 ;
     display: inline-block;
     margin: 30px;
@@ -270,13 +288,147 @@ footer{
     position: relative;
     left: 150px;
     text-align: center;
+    /*animacion*/
+    animation-name: palpitar;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
 }
-.paginas a{
+.paginaUno p{
     text-decoration: none;
     color: white;
 }
-.paginas a img{
+.paginaUno img{
     width: 250px;
+}
+.paginaDos{
+    background-color: #5454C5 ;
+    display: inline-block;
+    margin: 30px;
+    padding: 15px;
+    border-radius: 30px;
+    position: relative;
+    left: 150px;
+    text-align: center;
+    /*animacion*/
+    animation-name: palpitar;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: .5s;
+    animation-timing-function:ease-in-out;
+}
+.paginaDos p{
+    text-decoration: none;
+    color: white;
+}
+.paginaDos img{
+    width: 250px;
+}
+.paginaTres{
+    background-color: #5454C5 ;
+    display: inline-block;
+    margin: 30px;
+    padding: 15px;
+    border-radius: 30px;
+    position: relative;
+    left: 150px;
+    text-align: center;
+    /*animacion*/
+    animation-name: palpitar;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 1s;
+    animation-timing-function: ease-in-out;
+}
+.paginaTres p{
+    text-decoration: none;
+    color: white;
+}
+.paginaTres img{
+    width: 250px;
+}
+.paginaCuatro{
+    background-color: #5454C5 ;
+    display: inline-block;
+    margin: 30px;
+    padding: 15px;
+    border-radius: 30px;
+    position: relative;
+    left: 150px;
+    text-align: center;
+    /*animacion*/
+    animation-name: palpitar;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 1.5s;
+    animation-timing-function: ease-in-out;
+}
+.paginaCuatro p{
+    text-decoration: none;
+    color: white;
+}
+.paginaCuatro img{
+    width: 250px;
+}
+.paginaCinco{
+    background-color: #5454C5 ;
+    display: inline-block;
+    margin: 30px;
+    padding: 15px;
+    border-radius: 30px;
+    position: relative;
+    left: 150px;
+    text-align: center;
+    /*animacion*/
+    animation-name: palpitar;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 2s;
+    animation-timing-function: ease-in-out;
+}
+.paginaCinco p{
+    text-decoration: none;
+    color: white;
+}
+.paginaCinco img{
+    width: 250px;
+}
+.paginaSeis{
+    background-color: #5454C5 ;
+    display: inline-block;
+    margin: 30px;
+    padding: 15px;
+    border-radius: 30px;
+    position: relative;
+    left: 150px;
+    text-align: center;
+    /*animacion*/
+    animation-name: palpitar;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 2.5s;
+    animation-timing-function: ease-in-out;
+}
+.paginaSeis p{
+    text-decoration: none;
+    color: white;
+}
+.paginaSeis img{
+    width: 250px;
+}
+@keyframes palpitar{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.03);
+    }
 }
 /*fin del main*/
 
@@ -310,7 +462,9 @@ form fieldset{
     border: 0px;
     border-radius: 30px;
     padding: 10px;
-
+}
+ input:focus{
+    outline: 3px solid #5454C5 ;
 }
 .cajaConsulta input{
     width: 300px;
@@ -339,6 +493,10 @@ form fieldset{
     border: 0px;
     border-radius: 30px;
     padding: 10px;
+    transition: .5s;
+}
+.botonSubmit input:hover{
+    transform: scale(1.1);
 }
 /*fin del section*/
 /*fin de contacto*/
