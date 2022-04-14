@@ -1,0 +1,78 @@
+*{
+    font-family: 'roboto slab' , serif;
+}
+/*propiedades del header*/
+a{
+    text-decoration: none;
+    color: white;
+}
+.boton-a{
+    color: white;
+}
+.color{
+    background-color: #639CD9;    
+}
+.nombre:hover{
+    color: white;
+}
+/*fin de las propiedades del header*/
+/*propiedades del main*/
+.color-main{
+    background-color: #5454C5;
+    height: 45vh;
+}
+.texto-h2{
+    color: white;
+    font-size: 6rem;
+}
+.parrafo{
+    color: white;
+    font-size: 2rem;
+}
+/*fin de las propiedades del main*/
+/*propiedades de la seccion*/
+.seccion{
+    background-color: #342056;
+}
+.texto-H2{
+    color: white;
+    font-size: 4rem;
+}
+.cajas input{
+    width: 300px;
+    height: 40px;
+    border-radius: 30px;
+    border: 1px solid grey;
+    margin-bottom: 1rem;
+}
+input:focus{
+    outline: 3px solid #5454C5 ;
+}
+.boton-Formulario{
+    font-size: 20px;
+    background-color: #5454C5;
+    color: white;
+    border: 0px;
+    border-radius: 30px;
+    padding: 10px;
+    transition: .5s;
+    margin-bottom: 1rem;
+}
+.boton-Formulario:hover{
+    transform: scale(1.1);
+}
+/*fin de las propiedades de seccion*/
+/*propiedades del footer*/
+.pie-de-pagina{
+    background-color: #220E24;
+}
+.links{
+    margin-top: 1rem;
+    margin-bottom: 1REM;
+}
+img{
+    width: 3rem;
+}
+.parrafo-pie{
+    color: white;
+}
