@@ -4,30 +4,6 @@
   box-sizing: border-box;
   font-family: 'roboto slab' , serif; }
 
-@keyframes shake {
-  0% {
-    transform: rotate(0deg); }
-  10% {
-    transform: rotate(-3deg); }
-  20% {
-    transform: rotate(5deg); }
-  30% {
-    transform: rotate(-8deg); }
-  40% {
-    transform: rotate(8deg); }
-  50% {
-    transform: rotate(-5deg); }
-  60% {
-    transform: rotate(3deg); }
-  70% {
-    transform: rotate(0deg); } }
-
-@keyframes palpitar {
-  0% {
-    transform: scale(1); }
-  100% {
-    transform: scale(1.02); } }
-
 .contenedorHome {
   background-color: #5454C5;
   display: grid;
@@ -91,7 +67,6 @@
         animation-iteration-count: infinite;
         animation-timing-function: ease-in-out; }
   .contenedorHome section {
-    height: 95vh;
     grid-area: sectionHome;
     background-color: #484554;
     display: flex;
@@ -546,3 +521,287 @@
       .contenedorContacto footer .copyRight p {
         font-weight: bold;
         text-align: center; }
+
+@media only screen and (min-width: 1024px) {
+  /*Home*/
+  .contenedorHome {
+    width: 100%;
+    background-color: #5454C5;
+    grid-template-areas: "headerHome headerHome headerHome headerHome" "mainHome mainHome mainHome mainHome" "sectionHome sectionHome sectionHome sectionHome" "footerHome footerHome footerHome footerHome"; }
+    .contenedorHome header {
+      background-color: #5454C5;
+      display: flex;
+      justify-content: space-between;
+      padding: .3rem;
+      height: 9vh; }
+      .contenedorHome header div {
+        display: block; }
+        .contenedorHome header div a {
+          text-decoration: none;
+          color: white; }
+      .contenedorHome header nav {
+        margin-top: 0rem;
+        align-items: center; }
+        .contenedorHome header nav ul li {
+          transition: .2s ease-in-out; }
+          .contenedorHome header nav ul li:hover {
+            transform: scale(1.1);
+            background-color: #BD2330;
+            padding: .2rem;
+            border-radius: 1rem;
+            margin: .1rem; }
+          .contenedorHome header nav ul li a {
+            font-size: 1.2rem;
+            margin: .1rem; }
+    .contenedorHome main {
+      cursor: default; }
+      .contenedorHome main img {
+        display: block;
+        padding: 1rem; }
+      .contenedorHome main div p {
+        font-size: 4rem; }
+      .contenedorHome main div h2 {
+        font-size: 6rem; }
+      .contenedorHome main div div a {
+        font-size: 2rem; }
+    .contenedorHome section {
+      cursor: default;
+      display: grid;
+      grid-template-columns: 1fr 1fr; }
+      .contenedorHome section h2 {
+        font-size: 5rem; }
+      .contenedorHome section div {
+        padding-top: 4rem; }
+        .contenedorHome section div img {
+          width: 14rem;
+          height: 14rem;
+          padding: .6rem; }
+      .contenedorHome section .btn {
+        height: 13vh; }
+        .contenedorHome section .btn a {
+          font-size: 2rem;
+          margin: 0rem;
+          position: relative;
+          bottom: 4rem; }
+  /*sobreMi.html*/
+  .contenedorSobreMi {
+    width: 100%;
+    background-color: #5454C5;
+    grid-template-areas: "headerSobreMi headerSobreMi headerSobreMi headerSobreMi" "mainSobreMi mainSobreMi mainSobreMi mainSobreMi" "sectionSobreMi sectionSobreMi sectionSobreMi sectionSobreMi" "footerSobreMi footerSobreMi footerSobreMi footerSobreMi"; }
+    .contenedorSobreMi header {
+      background-color: #5454C5;
+      display: flex;
+      justify-content: space-between;
+      padding: .3rem;
+      height: 9vh; }
+      .contenedorSobreMi header div {
+        display: block; }
+        .contenedorSobreMi header div a {
+          text-decoration: none;
+          color: white; }
+      .contenedorSobreMi header nav {
+        margin-top: 0rem;
+        align-items: center; }
+        .contenedorSobreMi header nav ul li {
+          transition: .2s ease-in-out; }
+          .contenedorSobreMi header nav ul li:hover {
+            transform: scale(1.1);
+            background-color: #BD2330;
+            padding: .2rem;
+            border-radius: 1rem;
+            margin: .1rem; }
+          .contenedorSobreMi header nav ul li a {
+            font-size: 1.2rem;
+            margin: .1rem; }
+    .contenedorSobreMi main {
+      flex-wrap: nowrap; }
+      .contenedorSobreMi main div {
+        padding: .3rem; }
+        .contenedorSobreMi main div h1 {
+          font-size: 6rem; }
+        .contenedorSobreMi main div h2 {
+          font-size: 2.4rem; }
+      .contenedorSobreMi main img {
+        display: block;
+        height: 32rem;
+        width: 32rem; }
+    .contenedorSobreMi section h2 {
+      font-size: 2.2rem; }
+    .contenedorSobreMi section p {
+      font-size: 2.2rem; }
+  /*Conocimientos.html*/
+  .contenedorConocimientos {
+    width: 100%;
+    background-color: #5454C5;
+    grid-template-areas: "headerConocimientos headerConocimientos headerConocimientos headerConocimientos" "mainConocimientos mainConocimientos mainConocimientos mainConocimientos" "sectionConocimientos sectionConocimientos sectionConocimientos sectionConocimientos" "footerConocimientos footerConocimientos footerConocimientos footerConocimientos"; }
+    .contenedorConocimientos header {
+      background-color: #5454C5;
+      display: flex;
+      justify-content: space-between;
+      padding: .3rem;
+      height: 9vh; }
+      .contenedorConocimientos header div {
+        display: block; }
+        .contenedorConocimientos header div a {
+          text-decoration: none;
+          color: white; }
+      .contenedorConocimientos header nav {
+        margin-top: 0rem;
+        align-items: center; }
+        .contenedorConocimientos header nav ul li {
+          transition: .2s ease-in-out; }
+          .contenedorConocimientos header nav ul li:hover {
+            transform: scale(1.1);
+            background-color: #BD2330;
+            padding: .2rem;
+            border-radius: 1rem;
+            margin: .1rem; }
+          .contenedorConocimientos header nav ul li a {
+            font-size: 1.2rem;
+            margin: .1rem; }
+    .contenedorConocimientos main h1 {
+      font-size: 3rem; }
+    .contenedorConocimientos main div img {
+      width: 17rem;
+      height: 17rem; }
+    .contenedorConocimientos section .lista1 ul h3 {
+      font-size: 2rem; }
+    .contenedorConocimientos section .lista1 ul li {
+      font-size: 1.5rem; }
+    .contenedorConocimientos section .lista2 ul h3 {
+      font-size: 2rem; }
+    .contenedorConocimientos section .lista2 ul li {
+      font-size: 1.5rem; }
+  /*portafolio.html*/
+  .contenedorPortafolio {
+    width: 100%;
+    background-color: #5454C5;
+    grid-template-areas: "headerPortafolio headerPortafolio headerPortafolio headerPortafolio" "mainPortafolio mainPortafolio mainPortafolio mainPortafolio" "sectionPortafolio sectionPortafolio sectionPortafolio sectionPortafolio" "footerPortafolio footerPortafolio footerPortafolio footerPortafolio"; }
+    .contenedorPortafolio header {
+      background-color: #5454C5;
+      display: flex;
+      justify-content: space-between;
+      padding: .3rem;
+      height: 9vh; }
+      .contenedorPortafolio header div {
+        display: block; }
+        .contenedorPortafolio header div a {
+          text-decoration: none;
+          color: white; }
+      .contenedorPortafolio header nav {
+        margin-top: 0rem;
+        align-items: center; }
+        .contenedorPortafolio header nav ul li {
+          transition: .2s ease-in-out; }
+          .contenedorPortafolio header nav ul li:hover {
+            transform: scale(1.1);
+            background-color: #BD2330;
+            padding: .2rem;
+            border-radius: 1rem;
+            margin: .1rem; }
+          .contenedorPortafolio header nav ul li a {
+            font-size: 1.2rem;
+            margin: .1rem; }
+    .contenedorPortafolio main {
+      padding: 1rem; }
+      .contenedorPortafolio main div img {
+        width: 19rem;
+        height: 19rem;
+        padding: .6rem; }
+      .contenedorPortafolio main div p {
+        font-size: 2rem; }
+  /*contacto.html*/
+  .contenedorContacto {
+    width: 100%;
+    background-color: #5454C5;
+    grid-template-areas: "headerContacto headerContacto headerContacto headerContacto" "mainContacto mainContacto mainContacto mainContacto" "sectionContacto sectionContacto sectionContacto sectionContacto" "footerContacto footerContacto footerContacto footerContacto"; }
+    .contenedorContacto header {
+      background-color: #5454C5;
+      display: flex;
+      justify-content: space-between;
+      padding: .3rem;
+      height: 9vh; }
+      .contenedorContacto header div {
+        display: block; }
+        .contenedorContacto header div a {
+          text-decoration: none;
+          color: white; }
+      .contenedorContacto header nav {
+        margin-top: 0rem;
+        align-items: center; }
+        .contenedorContacto header nav ul li {
+          transition: .2s ease-in-out; }
+          .contenedorContacto header nav ul li:hover {
+            transform: scale(1.1);
+            background-color: #BD2330;
+            padding: .2rem;
+            border-radius: 1rem;
+            margin: .1rem; }
+          .contenedorContacto header nav ul li a {
+            font-size: 1.2rem;
+            margin: .1rem; }
+    .contenedorContacto main h1 {
+      font-size: 6rem; }
+    .contenedorContacto main h2 {
+      font-size: 3rem; }
+    .contenedorContacto main p {
+      font-size: 2.5rem; }
+    .contenedorContacto section h1 {
+      font-size: 4rem; }
+    .contenedorContacto section form fieldset {
+      display: grid;
+      grid-template-columns: 1fr 1fr; }
+      .contenedorContacto section form fieldset div input {
+        width: 26rem; }
+      .contenedorContacto section form fieldset div:nth-child(1) {
+        order: 1;
+        justify-self: end; }
+      .contenedorContacto section form fieldset div:nth-child(2) {
+        order: 3;
+        position: relative;
+        bottom: 3.6rem;
+        justify-self: end; }
+      .contenedorContacto section form fieldset div:nth-child(3) {
+        order: 5;
+        position: relative;
+        bottom: 7rem;
+        justify-self: end; }
+      .contenedorContacto section form fieldset div:nth-child(4) {
+        order: 2;
+        justify-self: start; }
+      .contenedorContacto section form fieldset div:nth-child(5) {
+        order: 3;
+        justify-self: start; }
+      .contenedorContacto section form fieldset div:nth-child(6) {
+        order: 6;
+        justify-self: start;
+        position: relative;
+        left: 7rem; }
+        .contenedorContacto section form fieldset div:nth-child(6) input {
+          transition: .3s ease-in-out; }
+          .contenedorContacto section form fieldset div:nth-child(6) input:hover {
+            transform: scale(1.1); } }
+
+@keyframes shake {
+  0% {
+    transform: rotate(0deg); }
+  10% {
+    transform: rotate(-3deg); }
+  20% {
+    transform: rotate(5deg); }
+  30% {
+    transform: rotate(-8deg); }
+  40% {
+    transform: rotate(8deg); }
+  50% {
+    transform: rotate(-5deg); }
+  60% {
+    transform: rotate(3deg); }
+  70% {
+    transform: rotate(0deg); } }
+
+@keyframes palpitar {
+  0% {
+    transform: scale(1); }
+  100% {
+    transform: scale(1.02); } }
