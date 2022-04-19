@@ -148,7 +148,401 @@
           height: 3rem;
           margin: 0.5rem; }
     .contenedorHome footer .copyRight {
-      margin: 1rem; }
+      margin: .3rem; }
       .contenedorHome footer .copyRight p {
+        font-weight: bold;
+        text-align: center; }
+
+.contenedorSobreMi {
+  background-color: #5454C5;
+  display: grid;
+  height: 100%;
+  grid-template-areas: "headerSobreMi" "mainSobreMi" "sectionSobreMi" "footerSobreMi"; }
+  .contenedorSobreMi header {
+    grid-area: headerSobreMi;
+    position: sticky;
+    top: 0%;
+    z-index: 10; }
+    .contenedorSobreMi header div {
+      display: none; }
+    .contenedorSobreMi header nav {
+      display: flex;
+      justify-content: center;
+      margin-top: .3rem; }
+      .contenedorSobreMi header nav ul {
+        background-color: #5A5ACB;
+        padding: .6rem;
+        border-radius: 1.4rem; }
+        .contenedorSobreMi header nav ul li {
+          display: inline-block;
+          list-style: none; }
+          .contenedorSobreMi header nav ul li a {
+            text-decoration: none;
+            color: white; }
+  .contenedorSobreMi main {
+    grid-area: mainSobreMi;
+    background-color: #FC605E;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    border-radius: 2rem; }
+    .contenedorSobreMi main div {
+      padding: 1rem; }
+      .contenedorSobreMi main div h1 {
+        color: white;
+        text-transform: uppercase;
+        font-size: 4.6rem;
+        text-align: center; }
+      .contenedorSobreMi main div h2 {
+        color: white;
+        font-size: 2rem;
+        text-align: center; }
+    .contenedorSobreMi main img {
+      display: none; }
+  .contenedorSobreMi section {
+    grid-area: sectionSobreMi;
+    background-color: #484554;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin: 0rem 1rem 1rem 1rem;
+    border-radius: 2rem;
+    justify-content: center; }
+    .contenedorSobreMi section h2 {
+      color: white;
+      text-align: center;
+      flex-wrap: wrap;
+      font-size: 1.6rem;
+      margin: .6rem; }
+    .contenedorSobreMi section p {
+      color: white;
+      text-align: center;
+      font-size: 1.6rem; }
+  .contenedorSobreMi footer {
+    grid-area: footerSobreMi;
+    background-color: #ADA9BB; }
+    .contenedorSobreMi footer div {
+      display: flex;
+      justify-content: center; }
+      .contenedorSobreMi footer div a {
+        text-decoration: none;
+        border-bottom: 1px solid #9D9090; }
+        .contenedorSobreMi footer div a img {
+          width: 3rem;
+          height: 3rem;
+          margin: 0.5rem; }
+    .contenedorSobreMi footer .copyRight {
+      margin: .3rem; }
+      .contenedorSobreMi footer .copyRight p {
+        font-weight: bold;
+        text-align: center; }
+
+.contenedorConocimientos {
+  background-color: #5454C5;
+  display: grid;
+  height: 100%;
+  grid-template-areas: "headerConocimientos" "mainConocimientos" "sectionConocimientos" "footerConocimientos"; }
+  .contenedorConocimientos header {
+    grid-area: headerConocimientos;
+    position: sticky;
+    top: 0%;
+    z-index: 10; }
+    .contenedorConocimientos header div {
+      display: none; }
+    .contenedorConocimientos header nav {
+      display: flex;
+      justify-content: center;
+      margin-top: .3rem; }
+      .contenedorConocimientos header nav ul {
+        background-color: #5A5ACB;
+        padding: .6rem;
+        border-radius: 1.4rem; }
+        .contenedorConocimientos header nav ul li {
+          display: inline-block;
+          list-style: none; }
+          .contenedorConocimientos header nav ul li a {
+            text-decoration: none;
+            color: white; }
+  .contenedorConocimientos main {
+    grid-area: mainConocimientos;
+    background-color: #FC605E;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0rem 1rem 0rem 1rem;
+    border-radius: 2rem; }
+    .contenedorConocimientos main h1 {
+      color: white;
+      text-align: center;
+      padding: .6rem; }
+    .contenedorConocimientos main div {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap; }
+      .contenedorConocimientos main div img {
+        width: 11rem;
+        height: 11rem;
+        padding: .6rem;
+        /*animacion*/
+        animation-name: palpitar;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: ease-in-out;
+        /*modificando elementos especificos*/ }
+        .contenedorConocimientos main div img:nth-child(2) {
+          animation-delay: .5s; }
+        .contenedorConocimientos main div img:nth-child(3) {
+          animation-delay: 1s; }
+        .contenedorConocimientos main div img:nth-child(4) {
+          animation-delay: 1.5s; }
+        .contenedorConocimientos main div img:nth-child(5) {
+          animation-delay: 2s; }
+        .contenedorConocimientos main div img:nth-child(6) {
+          animation-delay: 2.5s; }
+  .contenedorConocimientos section {
+    grid-area: sectionConocimientos;
+    background-color: #484554;
+    display: flex;
+    margin: 1rem;
+    border-radius: 2rem;
+    justify-content: center; }
+    .contenedorConocimientos section .lista1 {
+      background-color: #FC605E;
+      margin: 1rem;
+      padding: .5rem;
+      border-radius: 1rem; }
+      .contenedorConocimientos section .lista1 ul {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        .contenedorConocimientos section .lista1 ul h3 {
+          font-size: 1.2rem;
+          font-weight: 500;
+          border-bottom: 1px solid white; }
+        .contenedorConocimientos section .lista1 ul li {
+          list-style: none; }
+    .contenedorConocimientos section .lista2 {
+      margin: 1rem;
+      padding: .5rem;
+      background-color: #FC605E;
+      border-radius: 1rem; }
+      .contenedorConocimientos section .lista2 ul {
+        color: white;
+        display: flex;
+        align-items: center;
+        flex-direction: column; }
+        .contenedorConocimientos section .lista2 ul h3 {
+          font-size: 1.2rem;
+          font-weight: 500;
+          border-bottom: 1px solid white; }
+        .contenedorConocimientos section .lista2 ul li {
+          list-style: none; }
+  .contenedorConocimientos footer {
+    grid-area: footerConocimientos;
+    background-color: #ADA9BB; }
+    .contenedorConocimientos footer div {
+      display: flex;
+      justify-content: center; }
+      .contenedorConocimientos footer div a {
+        text-decoration: none;
+        border-bottom: 1px solid #9D9090; }
+        .contenedorConocimientos footer div a img {
+          width: 3rem;
+          height: 3rem;
+          margin: 0.5rem; }
+    .contenedorConocimientos footer .copyRight {
+      margin: .3rem; }
+      .contenedorConocimientos footer .copyRight p {
+        font-weight: bold;
+        text-align: center; }
+
+.contenedorPortafolio {
+  background-color: #5454C5;
+  display: grid;
+  height: 100%;
+  grid-template-areas: "headerPortafolio" "mainPortafolio" "footerPortafolio"; }
+  .contenedorPortafolio header {
+    grid-area: headerPortafolio;
+    position: sticky;
+    top: 0%;
+    z-index: 10; }
+    .contenedorPortafolio header div {
+      display: none; }
+    .contenedorPortafolio header nav {
+      display: flex;
+      justify-content: center;
+      margin-top: .3rem; }
+      .contenedorPortafolio header nav ul {
+        background-color: #5A5ACB;
+        padding: .6rem;
+        border-radius: 1.4rem; }
+        .contenedorPortafolio header nav ul li {
+          display: inline-block;
+          list-style: none; }
+          .contenedorPortafolio header nav ul li a {
+            text-decoration: none;
+            color: white; }
+  .contenedorPortafolio main {
+    grid-area: mainPortafolio;
+    background-color: #FC605E;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0rem 1rem 1rem 1rem;
+    border-radius: 1.3rem; }
+    .contenedorPortafolio main div {
+      background-color: #484554;
+      padding: .5rem;
+      margin: .6rem;
+      border-radius: 2rem;
+      /*animacion*/
+      animation-name: palpitar;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      animation-timing-function: ease-in-out;
+      /*modificando elementos especificos*/ }
+      .contenedorPortafolio main div:nth-child(2) {
+        animation-delay: .5s; }
+      .contenedorPortafolio main div:nth-child(3) {
+        animation-delay: 1s; }
+      .contenedorPortafolio main div:nth-child(4) {
+        animation-delay: 1.5s; }
+      .contenedorPortafolio main div:nth-child(5) {
+        animation-delay: 2s; }
+      .contenedorPortafolio main div:nth-child(6) {
+        animation-delay: 2.5s; }
+      .contenedorPortafolio main div img {
+        width: 11rem;
+        height: 11rem;
+        padding: .3rem; }
+      .contenedorPortafolio main div p {
+        color: white;
+        text-align: center;
+        font-size: 1.4rem; }
+  .contenedorPortafolio footer {
+    grid-area: footerPortafolio;
+    background-color: #ADA9BB; }
+    .contenedorPortafolio footer div {
+      display: flex;
+      justify-content: center; }
+      .contenedorPortafolio footer div a {
+        text-decoration: none;
+        border-bottom: 1px solid #9D9090; }
+        .contenedorPortafolio footer div a img {
+          width: 3rem;
+          height: 3rem;
+          margin: 0.5rem; }
+    .contenedorPortafolio footer .copyRight {
+      margin: .3rem; }
+      .contenedorPortafolio footer .copyRight p {
+        font-weight: bold;
+        text-align: center; }
+
+.contenedorContacto {
+  background-color: #5454C5;
+  display: grid;
+  height: 100%;
+  grid-template-areas: "headerContacto" "mainContacto" "sectionContacto" "footerContacto"; }
+  .contenedorContacto header {
+    grid-area: headerContacto;
+    position: sticky;
+    top: 0%;
+    z-index: 10; }
+    .contenedorContacto header div {
+      display: none; }
+    .contenedorContacto header nav {
+      display: flex;
+      justify-content: center;
+      margin-top: .3rem; }
+      .contenedorContacto header nav ul {
+        background-color: #5A5ACB;
+        padding: .6rem;
+        border-radius: 1.4rem; }
+        .contenedorContacto header nav ul li {
+          display: inline-block;
+          list-style: none; }
+          .contenedorContacto header nav ul li a {
+            text-decoration: none;
+            color: white; }
+  .contenedorContacto main {
+    grid-area: mainContacto;
+    background-color: #FC605E;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0rem 1rem 0rem 1rem;
+    border-radius: 2rem;
+    color: white;
+    padding: .4rem; }
+    .contenedorContacto main h1 {
+      font-size: 4rem;
+      text-align: center;
+      text-transform: uppercase; }
+    .contenedorContacto main h2 {
+      text-align: center;
+      font-size: 2rem; }
+    .contenedorContacto main p {
+      text-align: center;
+      font-size: 1.5rem; }
+  .contenedorContacto section {
+    grid-area: sectionContacto;
+    background-color: #484554;
+    display: flex;
+    flex-direction: column;
+    padding: .4rem;
+    margin: 1rem;
+    border-radius: 2rem; }
+    .contenedorContacto section h1 {
+      font-size: 2rem;
+      text-align: center;
+      color: white;
+      padding: .5rem; }
+    .contenedorContacto section form fieldset {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: 0px; }
+      .contenedorContacto section form fieldset div {
+        padding: .6rem;
+        display: flex;
+        justify-content: center; }
+        .contenedorContacto section form fieldset div input {
+          width: 20rem;
+          height: 3rem;
+          border-radius: 1.3rem;
+          border: none;
+          padding-left: .3rem; }
+          .contenedorContacto section form fieldset div input:focus {
+            outline: 1;
+            outline-color: #BD2330; }
+        .contenedorContacto section form fieldset div:nth-child(5) input {
+          padding: 1.4rem 0rem 9rem .5rem; }
+        .contenedorContacto section form fieldset div:nth-child(6) input {
+          width: 11rem;
+          background-color: #4ABEA1;
+          color: white;
+          font-size: 1.3rem; }
+  .contenedorContacto footer {
+    grid-area: footerContacto;
+    background-color: #ADA9BB; }
+    .contenedorContacto footer div {
+      display: flex;
+      justify-content: center; }
+      .contenedorContacto footer div a {
+        text-decoration: none;
+        border-bottom: 1px solid #9D9090; }
+        .contenedorContacto footer div a img {
+          width: 3rem;
+          height: 3rem;
+          margin: 0.5rem; }
+    .contenedorContacto footer .copyRight {
+      margin: .3rem; }
+      .contenedorContacto footer .copyRight p {
         font-weight: bold;
         text-align: center; }

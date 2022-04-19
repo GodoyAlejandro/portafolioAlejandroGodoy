@@ -1,0 +1,108 @@
+//estilos mobile-first
+.contenedorPortafolio{
+    background-color: $colorPrincipal1;
+    display: grid;
+    height: 100%;
+    grid-template-areas: "headerPortafolio"
+                         "mainPortafolio"
+                         "footerPortafolio";
+    header{
+        grid-area: headerPortafolio;
+        position: sticky;
+        top: 0%;
+        z-index: 10;
+        div{
+            display: none;
+        }
+        nav{
+            display: flex;
+            justify-content: center;
+            margin-top: .3rem ;
+            ul{
+                background-color: #5A5ACB;
+                padding: .6rem;
+                border-radius: 1.4rem;
+                li{
+                    display: inline-block;
+                    list-style: none;
+                    a{
+                        text-decoration: none;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+    main{
+        grid-area: mainPortafolio ;
+        background-color: $colorSecundario1;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 0rem 1rem 1rem 1rem ;
+        border-radius: 1.3rem;
+        div{
+            background-color: $colorSecundario2;
+            padding: .5rem;
+            margin: .6rem;
+            border-radius: 2rem;
+            /*animacion*/
+            animation-name: palpitar;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: ease-in-out;
+            /*modificando elementos especificos*/
+            &:nth-child(2){
+                animation-delay: .5s ;
+            }
+            &:nth-child(3){
+                animation-delay: 1s ;
+            }
+            &:nth-child(4){
+                animation-delay: 1.5s ;
+            }
+            &:nth-child(5){
+                animation-delay: 2s ;
+            }
+            &:nth-child(6){
+                animation-delay: 2.5s ;
+            }
+            img{
+                width: 11rem;
+                height: 11rem;
+                padding: .3rem;
+            }
+            p{
+                color: white;
+                text-align: center;
+                font-size: 1.4rem;
+            }
+            }            
+        }
+    footer{
+        grid-area: footerPortafolio;
+        background-color: $colorPricipal2;
+        div{
+            display: flex;
+            justify-content: center;
+            a{
+                text-decoration: none;
+                border-bottom: 1px solid #9D9090;
+                img{
+                    width: 3rem;
+                    height: 3rem;
+                    margin: 0.5rem;
+                }
+            }
+        }
+        .copyRight{
+            margin: .3rem;
+            p{
+                font-weight: bold;
+                text-align: center;
+            }
+        }
+    }
+}
