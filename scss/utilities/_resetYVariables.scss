@@ -14,3 +14,17 @@ $colorSecundario2: #484554;
 $colorBtn1: #BD2330;
 $colorBtn2: #4ABEA1;
 
+//mixin para los contenedores
+@mixin conteiner ($gridTAreas){
+    background-color: $colorPrincipal1;
+    display: grid;
+    height: 100%;
+    grid-template-areas: $gridTAreas;
+};
+
+//map para los tamaños de fuente
+$fontSizeMobile: (
+    h1: 4rem,
+    h2:2rem,    
+);
+

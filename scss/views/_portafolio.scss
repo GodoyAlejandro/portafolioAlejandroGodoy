@@ -1,11 +1,8 @@
 //estilos mobile-first
 .contenedorPortafolio{
-    background-color: $colorPrincipal1;
-    display: grid;
-    height: 100%;
-    grid-template-areas: "headerPortafolio"
-                         "mainPortafolio"
-                         "footerPortafolio";
+    @include conteiner ("headerPortafolio"
+    "mainPortafolio"
+    "footerPortafolio");
     header{
         grid-area: headerPortafolio;
         position: sticky;

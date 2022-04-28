@@ -8,7 +8,7 @@
   background-color: #5454C5;
   display: grid;
   height: 100%;
-  grid-template-areas: "headerHome" "mainHome" "sectionHome" "footerHome"; }
+  grid-template-areas: "headerHome" "mainHome" "sectionHome" "footerHome"; }
   .contenedorHome header {
     grid-area: headerHome;
     position: sticky;
@@ -44,10 +44,10 @@
       color: white;
       text-align: center;
       font-size: 2.3rem; }
-    .contenedorHome main div h2 {
+    .contenedorHome main div h1 {
       color: white;
       text-transform: uppercase;
-      font-size: 4.6rem;
+      font-size: 4rem;
       text-align: center;
       padding: .5rem; }
     .contenedorHome main div div {
@@ -132,7 +132,7 @@
   background-color: #5454C5;
   display: grid;
   height: 100%;
-  grid-template-areas: "headerSobreMi" "mainSobreMi" "sectionSobreMi" "footerSobreMi"; }
+  grid-template-areas: "headerSobreMi" "mainSobreMi" "sectionSobreMi" "footerSobreMi"; }
   .contenedorSobreMi header {
     grid-area: headerSobreMi;
     position: sticky;
@@ -168,7 +168,7 @@
       .contenedorSobreMi main div h1 {
         color: white;
         text-transform: uppercase;
-        font-size: 4.6rem;
+        font-size: 4rem;
         text-align: center; }
       .contenedorSobreMi main div h2 {
         color: white;
@@ -189,7 +189,7 @@
       color: white;
       text-align: center;
       flex-wrap: wrap;
-      font-size: 1.6rem;
+      font-size: 2rem;
       margin: .6rem; }
     .contenedorSobreMi section p {
       color: white;
@@ -218,7 +218,7 @@
   background-color: #5454C5;
   display: grid;
   height: 100%;
-  grid-template-areas: "headerConocimientos" "mainConocimientos" "sectionConocimientos" "footerConocimientos"; }
+  grid-template-areas: "headerConocimientos" "mainConocimientos" "sectionConocimientos" "footerConocimientos"; }
   .contenedorConocimientos header {
     grid-area: headerConocimientos;
     position: sticky;
@@ -249,6 +249,7 @@
     margin: 0rem 1rem 0rem 1rem;
     border-radius: 2rem; }
     .contenedorConocimientos main h1 {
+      font-size: 4rem;
       color: white;
       text-align: center;
       padding: .6rem; }
@@ -257,8 +258,8 @@
       justify-content: center;
       flex-wrap: wrap; }
       .contenedorConocimientos main div img {
-        width: 11rem;
-        height: 11rem;
+        width: 12rem;
+        height: 12rem;
         padding: .6rem;
         /*animacion*/
         animation-name: palpitar;
@@ -339,7 +340,7 @@
   background-color: #5454C5;
   display: grid;
   height: 100%;
-  grid-template-areas: "headerPortafolio" "mainPortafolio" "footerPortafolio"; }
+  grid-template-areas: "headerPortafolio" "mainPortafolio" "footerPortafolio"; }
   .contenedorPortafolio header {
     grid-area: headerPortafolio;
     position: sticky;
@@ -423,7 +424,7 @@
   background-color: #5454C5;
   display: grid;
   height: 100%;
-  grid-template-areas: "headerContacto" "mainContacto" "sectionContacto" "footerContacto"; }
+  grid-template-areas: "headerContacto" "mainContacto" "sectionContacto" "footerContacto"; }
   .contenedorContacto header {
     grid-area: headerContacto;
     position: sticky;
@@ -473,7 +474,7 @@
     padding: .4rem;
     margin: 1rem;
     border-radius: 2rem; }
-    .contenedorContacto section h1 {
+    .contenedorContacto section h2 {
       font-size: 2rem;
       text-align: center;
       color: white;
@@ -525,9 +526,10 @@
 @media only screen and (min-width: 1024px) {
   /*Home*/
   .contenedorHome {
-    width: 100%;
     background-color: #5454C5;
-    grid-template-areas: "headerHome headerHome headerHome headerHome" "mainHome mainHome mainHome mainHome" "sectionHome sectionHome sectionHome sectionHome" "footerHome footerHome footerHome footerHome"; }
+    display: grid;
+    height: 100%;
+    grid-template-areas: "headerHome headerHome headerHome headerHome" "mainHome mainHome mainHome mainHome" "sectionHome sectionHome sectionHome sectionHome" "footerHome footerHome footerHome footerHome"; }
     .contenedorHome header {
       background-color: #5454C5;
       display: flex;
@@ -560,7 +562,7 @@
         padding: 1rem; }
       .contenedorHome main div p {
         font-size: 4rem; }
-      .contenedorHome main div h2 {
+      .contenedorHome main div h1 {
         font-size: 6rem; }
       .contenedorHome main div div a {
         font-size: 2rem; }
@@ -585,9 +587,10 @@
           bottom: 4rem; }
   /*sobreMi.html*/
   .contenedorSobreMi {
-    width: 100%;
     background-color: #5454C5;
-    grid-template-areas: "headerSobreMi headerSobreMi headerSobreMi headerSobreMi" "mainSobreMi mainSobreMi mainSobreMi mainSobreMi" "sectionSobreMi sectionSobreMi sectionSobreMi sectionSobreMi" "footerSobreMi footerSobreMi footerSobreMi footerSobreMi"; }
+    display: grid;
+    height: 100%;
+    grid-template-areas: "headerSobreMi headerSobreMi headerSobreMi headerSobreMi" "mainSobreMi mainSobreMi mainSobreMi mainSobreMi" "sectionSobreMi sectionSobreMi sectionSobreMi sectionSobreMi" "footerSobreMi footerSobreMi footerSobreMi footerSobreMi"; }
     .contenedorSobreMi header {
       background-color: #5454C5;
       display: flex;
@@ -631,9 +634,10 @@
       font-size: 2.2rem; }
   /*Conocimientos.html*/
   .contenedorConocimientos {
-    width: 100%;
     background-color: #5454C5;
-    grid-template-areas: "headerConocimientos headerConocimientos headerConocimientos headerConocimientos" "mainConocimientos mainConocimientos mainConocimientos mainConocimientos" "sectionConocimientos sectionConocimientos sectionConocimientos sectionConocimientos" "footerConocimientos footerConocimientos footerConocimientos footerConocimientos"; }
+    display: grid;
+    height: 100%;
+    grid-template-areas: "headerConocimientos headerConocimientos headerConocimientos headerConocimientos" "mainConocimientos mainConocimientos mainConocimientos mainConocimientos" "sectionConocimientos sectionConocimientos sectionConocimientos sectionConocimientos" "footerConocimientos footerConocimientos footerConocimientos footerConocimientos"; }
     .contenedorConocimientos header {
       background-color: #5454C5;
       display: flex;
@@ -674,9 +678,10 @@
       font-size: 1.5rem; }
   /*portafolio.html*/
   .contenedorPortafolio {
-    width: 100%;
     background-color: #5454C5;
-    grid-template-areas: "headerPortafolio headerPortafolio headerPortafolio headerPortafolio" "mainPortafolio mainPortafolio mainPortafolio mainPortafolio" "sectionPortafolio sectionPortafolio sectionPortafolio sectionPortafolio" "footerPortafolio footerPortafolio footerPortafolio footerPortafolio"; }
+    display: grid;
+    height: 100%;
+    grid-template-areas: "headerPortafolio headerPortafolio headerPortafolio headerPortafolio" "mainPortafolio mainPortafolio mainPortafolio mainPortafolio" "sectionPortafolio sectionPortafolio sectionPortafolio sectionPortafolio" "footerPortafolio footerPortafolio footerPortafolio footerPortafolio"; }
     .contenedorPortafolio header {
       background-color: #5454C5;
       display: flex;
@@ -712,9 +717,10 @@
         font-size: 2rem; }
   /*contacto.html*/
   .contenedorContacto {
-    width: 100%;
     background-color: #5454C5;
-    grid-template-areas: "headerContacto headerContacto headerContacto headerContacto" "mainContacto mainContacto mainContacto mainContacto" "sectionContacto sectionContacto sectionContacto sectionContacto" "footerContacto footerContacto footerContacto footerContacto"; }
+    display: grid;
+    height: 100%;
+    grid-template-areas: "headerContacto headerContacto headerContacto headerContacto" "mainContacto mainContacto mainContacto mainContacto" "sectionContacto sectionContacto sectionContacto sectionContacto" "footerContacto footerContacto footerContacto footerContacto"; }
     .contenedorContacto header {
       background-color: #5454C5;
       display: flex;

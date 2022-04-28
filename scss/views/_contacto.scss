@@ -1,12 +1,9 @@
 //layout mobile first
 .contenedorContacto{
-    background-color: $colorPrincipal1;
-    display: grid;
-    height: 100%;
-    grid-template-areas: "headerContacto"
-                         "mainContacto"
-                         "sectionContacto"
-                         "footerContacto";
+    @include conteiner ("headerContacto"
+    "mainContacto"
+    "sectionContacto"
+    "footerContacto");
     header{
         grid-area: headerContacto;
         position: sticky;
@@ -45,13 +42,13 @@
         color: white;
         padding: .4rem;
         h1{
-            font-size: 4rem;
+            font-size: map-get($map: $fontSizeMobile, $key: h1 );
             text-align: center;
             text-transform: uppercase;
         }
         h2{
             text-align: center;
-            font-size: 2rem;
+            font-size: map-get($map: $fontSizeMobile, $key: h2 );
         }
         p{
             text-align: center;
@@ -66,8 +63,8 @@
         padding: .4rem;
         margin: 1rem;
         border-radius: 2rem;
-        h1{
-            font-size: 2rem;
+        h2{
+            font-size: map-get($map: $fontSizeMobile, $key: h2 );
             text-align: center;
             color: white;
             padding: .5rem;

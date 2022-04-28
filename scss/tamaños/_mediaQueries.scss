@@ -1,13 +1,10 @@
 @media only screen and (min-width:1024px){
     /*Home*/
     .contenedorHome{
-        width: 100%;
-        background-color: $colorPrincipal1;
-        grid-template-areas: 
-            "headerHome headerHome headerHome headerHome"
-            "mainHome mainHome mainHome mainHome"
-            "sectionHome sectionHome sectionHome sectionHome"
-            "footerHome footerHome footerHome footerHome";
+        @include conteiner ("headerHome headerHome headerHome headerHome"
+        "mainHome mainHome mainHome mainHome"
+        "sectionHome sectionHome sectionHome sectionHome"
+        "footerHome footerHome footerHome footerHome");
         header{
             background-color:$colorPrincipal1;
             display: flex;
@@ -53,7 +50,7 @@
                 p{
                     font-size: 4rem;
                 }
-                h2{
+                h1{
                     font-size: 6rem;
                 }
                 div{
@@ -91,13 +88,10 @@
     }
     /*sobreMi.html*/
     .contenedorSobreMi{
-        width: 100%;
-        background-color: $colorPrincipal1;
-        grid-template-areas: 
-            "headerSobreMi headerSobreMi headerSobreMi headerSobreMi"
-            "mainSobreMi mainSobreMi mainSobreMi mainSobreMi"
-            "sectionSobreMi sectionSobreMi sectionSobreMi sectionSobreMi"
-            "footerSobreMi footerSobreMi footerSobreMi footerSobreMi";
+        @include conteiner ("headerSobreMi headerSobreMi headerSobreMi headerSobreMi"
+        "mainSobreMi mainSobreMi mainSobreMi mainSobreMi"
+        "sectionSobreMi sectionSobreMi sectionSobreMi sectionSobreMi"
+        "footerSobreMi footerSobreMi footerSobreMi footerSobreMi");
         header{
             background-color:$colorPrincipal1;
             display: flex;
@@ -161,13 +155,10 @@
     }
     /*Conocimientos.html*/
     .contenedorConocimientos{
-        width: 100%;
-        background-color: $colorPrincipal1;
-        grid-template-areas: 
-            "headerConocimientos headerConocimientos headerConocimientos headerConocimientos"
-            "mainConocimientos mainConocimientos mainConocimientos mainConocimientos"
-            "sectionConocimientos sectionConocimientos sectionConocimientos sectionConocimientos"
-            "footerConocimientos footerConocimientos footerConocimientos footerConocimientos";
+        @include conteiner ("headerConocimientos headerConocimientos headerConocimientos headerConocimientos"
+        "mainConocimientos mainConocimientos mainConocimientos mainConocimientos"
+        "sectionConocimientos sectionConocimientos sectionConocimientos sectionConocimientos"
+        "footerConocimientos footerConocimientos footerConocimientos footerConocimientos");
         header{
             background-color:$colorPrincipal1;
             display: flex;
@@ -239,13 +230,10 @@
     }
     /*portafolio.html*/
     .contenedorPortafolio{
-        width: 100%;
-        background-color: $colorPrincipal1;
-        grid-template-areas: 
-            "headerPortafolio headerPortafolio headerPortafolio headerPortafolio"
-            "mainPortafolio mainPortafolio mainPortafolio mainPortafolio"
-            "sectionPortafolio sectionPortafolio sectionPortafolio sectionPortafolio"
-            "footerPortafolio footerPortafolio footerPortafolio footerPortafolio";
+        @include conteiner ("headerPortafolio headerPortafolio headerPortafolio headerPortafolio"
+        "mainPortafolio mainPortafolio mainPortafolio mainPortafolio"
+        "sectionPortafolio sectionPortafolio sectionPortafolio sectionPortafolio"
+        "footerPortafolio footerPortafolio footerPortafolio footerPortafolio");
         header{
             background-color:$colorPrincipal1;
             display: flex;
@@ -297,13 +285,10 @@
     }
     /*contacto.html*/
     .contenedorContacto{
-        width: 100%;
-        background-color: $colorPrincipal1;
-        grid-template-areas: 
-            "headerContacto headerContacto headerContacto headerContacto"
-            "mainContacto mainContacto mainContacto mainContacto"
-            "sectionContacto sectionContacto sectionContacto sectionContacto"
-            "footerContacto footerContacto footerContacto footerContacto";
+        @include conteiner ("headerContacto headerContacto headerContacto headerContacto"
+        "mainContacto mainContacto mainContacto mainContacto"
+        "sectionContacto sectionContacto sectionContacto sectionContacto"
+        "footerContacto footerContacto footerContacto footerContacto");
         header{
             background-color:$colorPrincipal1;
             display: flex;

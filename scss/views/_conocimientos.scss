@@ -1,12 +1,9 @@
 //estilos mobile-first
 .contenedorConocimientos{
-    background-color: $colorPrincipal1;
-    display: grid;
-    height: 100%;
-    grid-template-areas: "headerConocimientos"
-                         "mainConocimientos"
-                         "sectionConocimientos"
-                         "footerConocimientos";
+    @include conteiner ("headerConocimientos"
+    "mainConocimientos"
+    "sectionConocimientos"
+    "footerConocimientos");
     header{
         grid-area: headerConocimientos;
         position: sticky;
@@ -43,6 +40,7 @@
         margin: 0rem 1rem 0rem 1rem ;
         border-radius: 2rem;
         h1{
+            font-size: map-get($map: $fontSizeMobile, $key: h1 );
             color: white;
             text-align: center;
             padding: .6rem;
@@ -52,8 +50,8 @@
             justify-content: center;
             flex-wrap: wrap;            
             img{
-                width: 11rem;
-                height: 11rem;
+                width: 12rem;
+                height: 12rem;
                 padding: .6rem;
                 /*animacion*/
                 animation-name: palpitar;
