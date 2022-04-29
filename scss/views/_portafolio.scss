@@ -12,22 +12,7 @@
             display: none;
         }
         nav{
-            display: flex;
-            justify-content: center;
-            margin-top: .3rem ;
-            ul{
-                background-color: #5A5ACB;
-                padding: .6rem;
-                border-radius: 1.4rem;
-                li{
-                    display: inline-block;
-                    list-style: none;
-                    a{
-                        text-decoration: none;
-                        color: white;
-                    }
-                }
-            }
+            @extend %navM;
         }
     }
     main{
@@ -81,25 +66,6 @@
     footer{
         grid-area: footerPortafolio;
         background-color: $colorPricipal2;
-        div{
-            display: flex;
-            justify-content: center;
-            a{
-                text-decoration: none;
-                border-bottom: 1px solid #9D9090;
-                img{
-                    width: 3rem;
-                    height: 3rem;
-                    margin: 0.5rem;
-                }
-            }
-        }
-        .copyRight{
-            margin: .3rem;
-            p{
-                font-weight: bold;
-                text-align: center;
-            }
-        }
+        @extend %footerM;
     }
 }

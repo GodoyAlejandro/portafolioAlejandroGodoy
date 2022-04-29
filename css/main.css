@@ -4,6 +4,38 @@
   box-sizing: border-box;
   font-family: 'roboto slab' , serif; }
 
+.contenedorHome header nav, .contenedorSobreMi header nav, .contenedorConocimientos header nav, .contenedorPortafolio header nav, .contenedorContacto header nav {
+  display: flex;
+  justify-content: center;
+  margin-top: .3rem; }
+  .contenedorHome header nav ul, .contenedorSobreMi header nav ul, .contenedorConocimientos header nav ul, .contenedorPortafolio header nav ul, .contenedorContacto header nav ul {
+    background-color: #5A5ACB;
+    padding: .6rem;
+    border-radius: 1.4rem; }
+    .contenedorHome header nav ul li, .contenedorSobreMi header nav ul li, .contenedorConocimientos header nav ul li, .contenedorPortafolio header nav ul li, .contenedorContacto header nav ul li {
+      display: inline-block;
+      list-style: none; }
+      .contenedorHome header nav ul li a, .contenedorSobreMi header nav ul li a, .contenedorConocimientos header nav ul li a, .contenedorPortafolio header nav ul li a, .contenedorContacto header nav ul li a {
+        text-decoration: none;
+        color: white; }
+
+.contenedorHome footer div, .contenedorSobreMi footer div, .contenedorConocimientos footer div, .contenedorPortafolio footer div, .contenedorContacto footer div {
+  display: flex;
+  justify-content: center; }
+  .contenedorHome footer div a, .contenedorSobreMi footer div a, .contenedorConocimientos footer div a, .contenedorPortafolio footer div a, .contenedorContacto footer div a {
+    text-decoration: none;
+    border-bottom: 1px solid #9D9090; }
+    .contenedorHome footer div a img, .contenedorSobreMi footer div a img, .contenedorConocimientos footer div a img, .contenedorPortafolio footer div a img, .contenedorContacto footer div a img {
+      width: 3rem;
+      height: 3rem;
+      margin: 0.5rem; }
+
+.contenedorHome footer .copyRight, .contenedorSobreMi footer .copyRight, .contenedorConocimientos footer .copyRight, .contenedorPortafolio footer .copyRight, .contenedorContacto footer .copyRight {
+  margin: .3rem; }
+  .contenedorHome footer .copyRight p, .contenedorSobreMi footer .copyRight p, .contenedorConocimientos footer .copyRight p, .contenedorPortafolio footer .copyRight p, .contenedorContacto footer .copyRight p {
+    font-weight: bold;
+    text-align: center; }
+
 .contenedorHome {
   background-color: #5454C5;
   display: grid;
@@ -16,20 +48,6 @@
     z-index: 10; }
     .contenedorHome header div {
       display: none; }
-    .contenedorHome header nav {
-      display: flex;
-      justify-content: center;
-      margin-top: .3rem; }
-      .contenedorHome header nav ul {
-        background-color: #5A5ACB;
-        padding: .6rem;
-        border-radius: 1.4rem; }
-        .contenedorHome header nav ul li {
-          display: inline-block;
-          list-style: none; }
-          .contenedorHome header nav ul li a {
-            text-decoration: none;
-            color: white; }
   .contenedorHome main {
     grid-area: mainHome;
     background-color: #FC605E;
@@ -112,21 +130,6 @@
   .contenedorHome footer {
     grid-area: footerHome;
     background-color: #ADA9BB; }
-    .contenedorHome footer div {
-      display: flex;
-      justify-content: center; }
-      .contenedorHome footer div a {
-        text-decoration: none;
-        border-bottom: 1px solid #9D9090; }
-        .contenedorHome footer div a img {
-          width: 3rem;
-          height: 3rem;
-          margin: 0.5rem; }
-    .contenedorHome footer .copyRight {
-      margin: .3rem; }
-      .contenedorHome footer .copyRight p {
-        font-weight: bold;
-        text-align: center; }
 
 .contenedorSobreMi {
   background-color: #5454C5;
@@ -140,20 +143,6 @@
     z-index: 10; }
     .contenedorSobreMi header div {
       display: none; }
-    .contenedorSobreMi header nav {
-      display: flex;
-      justify-content: center;
-      margin-top: .3rem; }
-      .contenedorSobreMi header nav ul {
-        background-color: #5A5ACB;
-        padding: .6rem;
-        border-radius: 1.4rem; }
-        .contenedorSobreMi header nav ul li {
-          display: inline-block;
-          list-style: none; }
-          .contenedorSobreMi header nav ul li a {
-            text-decoration: none;
-            color: white; }
   .contenedorSobreMi main {
     grid-area: mainSobreMi;
     background-color: #FC605E;
@@ -198,21 +187,6 @@
   .contenedorSobreMi footer {
     grid-area: footerSobreMi;
     background-color: #ADA9BB; }
-    .contenedorSobreMi footer div {
-      display: flex;
-      justify-content: center; }
-      .contenedorSobreMi footer div a {
-        text-decoration: none;
-        border-bottom: 1px solid #9D9090; }
-        .contenedorSobreMi footer div a img {
-          width: 3rem;
-          height: 3rem;
-          margin: 0.5rem; }
-    .contenedorSobreMi footer .copyRight {
-      margin: .3rem; }
-      .contenedorSobreMi footer .copyRight p {
-        font-weight: bold;
-        text-align: center; }
 
 .contenedorConocimientos {
   background-color: #5454C5;
@@ -226,20 +200,6 @@
     z-index: 10; }
     .contenedorConocimientos header div {
       display: none; }
-    .contenedorConocimientos header nav {
-      display: flex;
-      justify-content: center;
-      margin-top: .3rem; }
-      .contenedorConocimientos header nav ul {
-        background-color: #5A5ACB;
-        padding: .6rem;
-        border-radius: 1.4rem; }
-        .contenedorConocimientos header nav ul li {
-          display: inline-block;
-          list-style: none; }
-          .contenedorConocimientos header nav ul li a {
-            text-decoration: none;
-            color: white; }
   .contenedorConocimientos main {
     grid-area: mainConocimientos;
     background-color: #FC605E;
@@ -320,21 +280,6 @@
   .contenedorConocimientos footer {
     grid-area: footerConocimientos;
     background-color: #ADA9BB; }
-    .contenedorConocimientos footer div {
-      display: flex;
-      justify-content: center; }
-      .contenedorConocimientos footer div a {
-        text-decoration: none;
-        border-bottom: 1px solid #9D9090; }
-        .contenedorConocimientos footer div a img {
-          width: 3rem;
-          height: 3rem;
-          margin: 0.5rem; }
-    .contenedorConocimientos footer .copyRight {
-      margin: .3rem; }
-      .contenedorConocimientos footer .copyRight p {
-        font-weight: bold;
-        text-align: center; }
 
 .contenedorPortafolio {
   background-color: #5454C5;
@@ -348,20 +293,6 @@
     z-index: 10; }
     .contenedorPortafolio header div {
       display: none; }
-    .contenedorPortafolio header nav {
-      display: flex;
-      justify-content: center;
-      margin-top: .3rem; }
-      .contenedorPortafolio header nav ul {
-        background-color: #5A5ACB;
-        padding: .6rem;
-        border-radius: 1.4rem; }
-        .contenedorPortafolio header nav ul li {
-          display: inline-block;
-          list-style: none; }
-          .contenedorPortafolio header nav ul li a {
-            text-decoration: none;
-            color: white; }
   .contenedorPortafolio main {
     grid-area: mainPortafolio;
     background-color: #FC605E;
@@ -404,21 +335,6 @@
   .contenedorPortafolio footer {
     grid-area: footerPortafolio;
     background-color: #ADA9BB; }
-    .contenedorPortafolio footer div {
-      display: flex;
-      justify-content: center; }
-      .contenedorPortafolio footer div a {
-        text-decoration: none;
-        border-bottom: 1px solid #9D9090; }
-        .contenedorPortafolio footer div a img {
-          width: 3rem;
-          height: 3rem;
-          margin: 0.5rem; }
-    .contenedorPortafolio footer .copyRight {
-      margin: .3rem; }
-      .contenedorPortafolio footer .copyRight p {
-        font-weight: bold;
-        text-align: center; }
 
 .contenedorContacto {
   background-color: #5454C5;
@@ -432,20 +348,6 @@
     z-index: 10; }
     .contenedorContacto header div {
       display: none; }
-    .contenedorContacto header nav {
-      display: flex;
-      justify-content: center;
-      margin-top: .3rem; }
-      .contenedorContacto header nav ul {
-        background-color: #5A5ACB;
-        padding: .6rem;
-        border-radius: 1.4rem; }
-        .contenedorContacto header nav ul li {
-          display: inline-block;
-          list-style: none; }
-          .contenedorContacto header nav ul li a {
-            text-decoration: none;
-            color: white; }
   .contenedorContacto main {
     grid-area: mainContacto;
     background-color: #FC605E;
@@ -507,21 +409,6 @@
   .contenedorContacto footer {
     grid-area: footerContacto;
     background-color: #ADA9BB; }
-    .contenedorContacto footer div {
-      display: flex;
-      justify-content: center; }
-      .contenedorContacto footer div a {
-        text-decoration: none;
-        border-bottom: 1px solid #9D9090; }
-        .contenedorContacto footer div a img {
-          width: 3rem;
-          height: 3rem;
-          margin: 0.5rem; }
-    .contenedorContacto footer .copyRight {
-      margin: .3rem; }
-      .contenedorContacto footer .copyRight p {
-        font-weight: bold;
-        text-align: center; }
 
 @media only screen and (min-width: 1024px) {
   /*Home*/
