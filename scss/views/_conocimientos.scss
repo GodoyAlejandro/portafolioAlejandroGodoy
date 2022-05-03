@@ -7,8 +7,9 @@
     header{
         grid-area: headerConocimientos;
         position: sticky;
+        height: 3rem;
         top: 0%;
-        z-index: 10;
+        z-index: 15;
         div{
             display: none;
         }
@@ -28,15 +29,15 @@
             font-size: map-get($map: $fontSizeMobile, $key: h1 );
             color: white;
             text-align: center;
-            padding: .6rem;
+            padding: .3rem;
         }
         div{
             display: flex;
             justify-content: center;
             flex-wrap: wrap;            
             img{
-                width: 12rem;
-                height: 12rem;
+                width: 10rem;
+                height: 10rem;
                 padding: .6rem;
                 /*animacion*/
                 animation-name: palpitar;

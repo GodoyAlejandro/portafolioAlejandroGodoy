@@ -12,32 +12,15 @@
             padding: .3rem;
             height: 9vh;
             div{
-                display: block;
+                display: inherit;
+                align-items: center;
                 a{
                     text-decoration: none;
                     color: white;
                 }
             }
             nav{
-                margin-top: 0rem;
-                align-items: center;
-                ul{
-                    li{
-                        transition: .2s ease-in-out;
-                        &:hover{
-                            transform: scale(1.1);
-                            background-color: $colorBtn1;
-                            padding: .2rem;
-                            border-radius: 1rem;
-                            margin: .1rem;
-                            
-                        }
-                        a{
-                            font-size: 1.2rem;
-                            margin: .1rem;
-                        }
-                    }
-                }
+                @include navD;    
             }
         }
         main{
@@ -99,32 +82,15 @@
             padding: .3rem;
             height: 9vh;
             div{
-                display: block;
+                display: inherit;
+                align-items: center;
                 a{
                     text-decoration: none;
                     color: white;
                 }
             }
             nav{
-                margin-top: 0rem;
-                align-items: center;
-                ul{
-                    li{
-                        transition: .2s ease-in-out;
-                        &:hover{
-                            transform: scale(1.1);
-                            background-color: $colorBtn1;
-                            padding: .2rem;
-                            border-radius: 1rem;
-                            margin: .1rem;
-                            
-                        }
-                        a{
-                            font-size: 1.2rem;
-                            margin: .1rem;
-                        }
-                    }
-                }
+                @include navD;
             }
         }
         main{
@@ -166,32 +132,15 @@
             padding: .3rem;
             height: 9vh;
             div{
-                display: block;
+                display: inherit;
+                align-items: center;
                 a{
                     text-decoration: none;
                     color: white;
                 }
             }
             nav{
-                margin-top: 0rem;
-                align-items: center;
-                ul{
-                    li{
-                        transition: .2s ease-in-out;
-                        &:hover{
-                            transform: scale(1.1);
-                            background-color: $colorBtn1;
-                            padding: .2rem;
-                            border-radius: 1rem;
-                            margin: .1rem;
-                            
-                        }
-                        a{
-                            font-size: 1.2rem;
-                            margin: .1rem;
-                        }
-                    }
-                }
+               @include navD;
             }
         }
         main{
@@ -241,32 +190,15 @@
             padding: .3rem;
             height: 9vh;
             div{
-                display: block;
+                display: inherit;
+                align-items: center;
                 a{
                     text-decoration: none;
                     color: white;
                 }
             }
             nav{
-                margin-top: 0rem;
-                align-items: center;
-                ul{
-                    li{
-                        transition: .2s ease-in-out;
-                        &:hover{
-                            transform: scale(1.1);
-                            background-color: $colorBtn1;
-                            padding: .2rem;
-                            border-radius: 1rem;
-                            margin: .1rem;
-                            
-                        }
-                        a{
-                            font-size: 1.2rem;
-                            margin: .1rem;
-                        }
-                    }
-                }
+                @include navD;
             }
         }
         main{
@@ -296,32 +228,15 @@
             padding: .3rem;
             height: 9vh;
             div{
-                display: block;
+                display: inherit;
+                align-items: center;
                 a{
                     text-decoration: none;
                     color: white;
                 }
             }
             nav{
-                margin-top: 0rem;
-                align-items: center;
-                ul{
-                    li{
-                        transition: .2s ease-in-out;
-                        &:hover{
-                            transform: scale(1.1);
-                            background-color: $colorBtn1;
-                            padding: .2rem;
-                            border-radius: 1rem;
-                            margin: .1rem;
-                            
-                        }
-                        a{
-                            font-size: 1.2rem;
-                            margin: .1rem;
-                        }
-                    }
-                }
+                @include navD;
             }
         }
         main{

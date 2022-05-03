@@ -4,20 +4,117 @@
   box-sizing: border-box;
   font-family: 'roboto slab' , serif; }
 
-.contenedorHome header nav, .contenedorSobreMi header nav, .contenedorConocimientos header nav, .contenedorPortafolio header nav, .contenedorContacto header nav {
+@keyframes shake {
+  0% {
+    transform: rotate(0deg); }
+  10% {
+    transform: rotate(-3deg); }
+  20% {
+    transform: rotate(5deg); }
+  30% {
+    transform: rotate(-8deg); }
+  40% {
+    transform: rotate(8deg); }
+  50% {
+    transform: rotate(-5deg); }
+  60% {
+    transform: rotate(3deg); }
+  70% {
+    transform: rotate(0deg); } }
+
+@keyframes palpitar {
+  0% {
+    transform: scale(1); }
+  100% {
+    transform: scale(1.02); } }
+
+@keyframes animacion-nav-img {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.2); }
+  100% {
+    transform: scale(1); } }
+
+/*
+ animation-name: menu-mobile-img;
+                                            animation-duration:.5s;
+                                            animation-iteration-count: 1;
+                                            animation-timing-function: ease-in-out;
+*/
+.contenedorHome header nav label, .contenedorSobreMi header nav label, .contenedorConocimientos header nav label, .contenedorPortafolio header nav label, .contenedorContacto header nav label {
   display: flex;
-  justify-content: center;
-  margin-top: .3rem; }
-  .contenedorHome header nav ul, .contenedorSobreMi header nav ul, .contenedorConocimientos header nav ul, .contenedorPortafolio header nav ul, .contenedorContacto header nav ul {
+  justify-content: center; }
+  .contenedorHome header nav label img, .contenedorSobreMi header nav label img, .contenedorConocimientos header nav label img, .contenedorPortafolio header nav label img, .contenedorContacto header nav label img {
+    width: 3rem;
+    height: 3rem;
     background-color: #5A5ACB;
-    padding: .6rem;
-    border-radius: 1.4rem; }
-    .contenedorHome header nav ul li, .contenedorSobreMi header nav ul li, .contenedorConocimientos header nav ul li, .contenedorPortafolio header nav ul li, .contenedorContacto header nav ul li {
-      display: inline-block;
-      list-style: none; }
-      .contenedorHome header nav ul li a, .contenedorSobreMi header nav ul li a, .contenedorConocimientos header nav ul li a, .contenedorPortafolio header nav ul li a, .contenedorContacto header nav ul li a {
-        text-decoration: none;
-        color: white; }
+    border-radius: 50%; }
+    .contenedorHome header nav label img:active, .contenedorSobreMi header nav label img:active, .contenedorConocimientos header nav label img:active, .contenedorPortafolio header nav label img:active, .contenedorContacto header nav label img:active {
+      transform: scale(0.9); }
+
+.contenedorHome header nav input, .contenedorSobreMi header nav input, .contenedorConocimientos header nav input, .contenedorPortafolio header nav input, .contenedorContacto header nav input {
+  display: none; }
+  .contenedorHome header nav input:checked + ul, .contenedorSobreMi header nav input:checked + ul, .contenedorConocimientos header nav input:checked + ul, .contenedorPortafolio header nav input:checked + ul, .contenedorContacto header nav input:checked + ul {
+    clip-path: circle(60% at 50% 0); }
+    .contenedorHome header nav input:checked + ul > li:nth-child(1) a, .contenedorSobreMi header nav input:checked + ul > li:nth-child(1) a, .contenedorConocimientos header nav input:checked + ul > li:nth-child(1) a, .contenedorPortafolio header nav input:checked + ul > li:nth-child(1) a, .contenedorContacto header nav input:checked + ul > li:nth-child(1) a {
+      animation-name: animacion-nav-img;
+      animation-duration: .5s;
+      animation-iteration-count: 1;
+      animation-timing-function: ease-in-out;
+      animation-delay: 0s; }
+    .contenedorHome header nav input:checked + ul > li:nth-child(2) a, .contenedorSobreMi header nav input:checked + ul > li:nth-child(2) a, .contenedorConocimientos header nav input:checked + ul > li:nth-child(2) a, .contenedorPortafolio header nav input:checked + ul > li:nth-child(2) a, .contenedorContacto header nav input:checked + ul > li:nth-child(2) a {
+      animation-name: animacion-nav-img;
+      animation-duration: .5s;
+      animation-iteration-count: 1;
+      animation-timing-function: ease-in-out;
+      animation-delay: 0.2s; }
+    .contenedorHome header nav input:checked + ul > li:nth-child(3) a, .contenedorSobreMi header nav input:checked + ul > li:nth-child(3) a, .contenedorConocimientos header nav input:checked + ul > li:nth-child(3) a, .contenedorPortafolio header nav input:checked + ul > li:nth-child(3) a, .contenedorContacto header nav input:checked + ul > li:nth-child(3) a {
+      animation-name: animacion-nav-img;
+      animation-duration: .5s;
+      animation-iteration-count: 1;
+      animation-timing-function: ease-in-out;
+      animation-delay: 0.4s; }
+    .contenedorHome header nav input:checked + ul > li:nth-child(4) a, .contenedorSobreMi header nav input:checked + ul > li:nth-child(4) a, .contenedorConocimientos header nav input:checked + ul > li:nth-child(4) a, .contenedorPortafolio header nav input:checked + ul > li:nth-child(4) a, .contenedorContacto header nav input:checked + ul > li:nth-child(4) a {
+      animation-name: animacion-nav-img;
+      animation-duration: .5s;
+      animation-iteration-count: 1;
+      animation-timing-function: ease-in-out;
+      animation-delay: 0.6s; }
+    .contenedorHome header nav input:checked + ul > li:nth-child(5) a, .contenedorSobreMi header nav input:checked + ul > li:nth-child(5) a, .contenedorConocimientos header nav input:checked + ul > li:nth-child(5) a, .contenedorPortafolio header nav input:checked + ul > li:nth-child(5) a, .contenedorContacto header nav input:checked + ul > li:nth-child(5) a {
+      animation-name: animacion-nav-img;
+      animation-duration: .5s;
+      animation-iteration-count: 1;
+      animation-timing-function: ease-in-out;
+      animation-delay: 0.8s; }
+
+.contenedorHome header nav ul, .contenedorSobreMi header nav ul, .contenedorConocimientos header nav ul, .contenedorPortafolio header nav ul, .contenedorContacto header nav ul {
+  display: flex;
+  justify-content: space-around;
+  clip-path: circle(0% at 50% 0);
+  transition: clip-path .3s ease-in-out;
+  height: 60vh; }
+  .contenedorHome header nav ul li, .contenedorSobreMi header nav ul li, .contenedorConocimientos header nav ul li, .contenedorPortafolio header nav ul li, .contenedorContacto header nav ul li {
+    list-style: none; }
+    .contenedorHome header nav ul li a, .contenedorSobreMi header nav ul li a, .contenedorConocimientos header nav ul li a, .contenedorPortafolio header nav ul li a, .contenedorContacto header nav ul li a {
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+      align-items: center; }
+      .contenedorHome header nav ul li a img, .contenedorSobreMi header nav ul li a img, .contenedorConocimientos header nav ul li a img, .contenedorPortafolio header nav ul li a img, .contenedorContacto header nav ul li a img {
+        width: 3rem;
+        height: 3rem;
+        background-color: #BD2330;
+        margin-top: .3rem;
+        border-radius: 2rem;
+        padding: .6rem; }
+      .contenedorHome header nav ul li a p, .contenedorSobreMi header nav ul li a p, .contenedorConocimientos header nav ul li a p, .contenedorPortafolio header nav ul li a p, .contenedorContacto header nav ul li a p {
+        color: white;
+        background-color: #BD2330;
+        padding: .1rem;
+        border-radius: .3rem; }
+      .contenedorHome header nav ul li a:active, .contenedorSobreMi header nav ul li a:active, .contenedorConocimientos header nav ul li a:active, .contenedorPortafolio header nav ul li a:active, .contenedorContacto header nav ul li a:active {
+        transform: scale(0.9); }
 
 .contenedorHome footer div, .contenedorSobreMi footer div, .contenedorConocimientos footer div, .contenedorPortafolio footer div, .contenedorContacto footer div {
   display: flex;
@@ -36,6 +133,44 @@
     font-weight: bold;
     text-align: center; }
 
+@keyframes shake {
+  0% {
+    transform: rotate(0deg); }
+  10% {
+    transform: rotate(-3deg); }
+  20% {
+    transform: rotate(5deg); }
+  30% {
+    transform: rotate(-8deg); }
+  40% {
+    transform: rotate(8deg); }
+  50% {
+    transform: rotate(-5deg); }
+  60% {
+    transform: rotate(3deg); }
+  70% {
+    transform: rotate(0deg); } }
+
+@keyframes palpitar {
+  0% {
+    transform: scale(1); }
+  100% {
+    transform: scale(1.02); } }
+
+@keyframes animacion-nav-img {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.2); }
+  100% {
+    transform: scale(1); } }
+
+/*
+ animation-name: menu-mobile-img;
+                                            animation-duration:.5s;
+                                            animation-iteration-count: 1;
+                                            animation-timing-function: ease-in-out;
+*/
 .contenedorHome {
   background-color: #5454C5;
   display: grid;
@@ -43,9 +178,10 @@
   grid-template-areas: "headerHome" "mainHome" "sectionHome" "footerHome"; }
   .contenedorHome header {
     grid-area: headerHome;
+    height: 3rem;
     position: sticky;
     top: 0%;
-    z-index: 10; }
+    z-index: 15; }
     .contenedorHome header div {
       display: none; }
   .contenedorHome main {
@@ -138,9 +274,10 @@
   grid-template-areas: "headerSobreMi" "mainSobreMi" "sectionSobreMi" "footerSobreMi"; }
   .contenedorSobreMi header {
     grid-area: headerSobreMi;
+    height: 3rem;
     position: sticky;
     top: 0%;
-    z-index: 10; }
+    z-index: 15; }
     .contenedorSobreMi header div {
       display: none; }
   .contenedorSobreMi main {
@@ -196,8 +333,9 @@
   .contenedorConocimientos header {
     grid-area: headerConocimientos;
     position: sticky;
+    height: 3rem;
     top: 0%;
-    z-index: 10; }
+    z-index: 15; }
     .contenedorConocimientos header div {
       display: none; }
   .contenedorConocimientos main {
@@ -212,14 +350,14 @@
       font-size: 4rem;
       color: white;
       text-align: center;
-      padding: .6rem; }
+      padding: .3rem; }
     .contenedorConocimientos main div {
       display: flex;
       justify-content: center;
       flex-wrap: wrap; }
       .contenedorConocimientos main div img {
-        width: 12rem;
-        height: 12rem;
+        width: 10rem;
+        height: 10rem;
         padding: .6rem;
         /*animacion*/
         animation-name: palpitar;
@@ -289,6 +427,7 @@
   .contenedorPortafolio header {
     grid-area: headerPortafolio;
     position: sticky;
+    height: 3rem;
     top: 0%;
     z-index: 10; }
     .contenedorPortafolio header div {
@@ -344,6 +483,7 @@
   .contenedorContacto header {
     grid-area: headerContacto;
     position: sticky;
+    height: 3rem;
     top: 0%;
     z-index: 10; }
     .contenedorContacto header div {
@@ -424,24 +564,48 @@
       padding: .3rem;
       height: 9vh; }
       .contenedorHome header div {
-        display: block; }
+        display: inherit;
+        align-items: center; }
         .contenedorHome header div a {
           text-decoration: none;
           color: white; }
       .contenedorHome header nav {
-        margin-top: 0rem;
-        align-items: center; }
-        .contenedorHome header nav ul li {
-          transition: .2s ease-in-out; }
-          .contenedorHome header nav ul li:hover {
-            transform: scale(1.1);
-            background-color: #BD2330;
-            padding: .2rem;
-            border-radius: 1rem;
-            margin: .1rem; }
+        display: flex;
+        flex-direction: row; }
+        .contenedorHome header nav label img {
+          display: none; }
+        .contenedorHome header nav ul {
+          background-color: #5A5ACB;
+          height: auto;
+          clip-path: none;
+          display: inherit;
+          align-items: center;
+          border-radius: 1.2rem; }
           .contenedorHome header nav ul li a {
-            font-size: 1.2rem;
-            margin: .1rem; }
+            position: relative;
+            z-index: 1; }
+            .contenedorHome header nav ul li a:active {
+              transform: scale(0.9);
+              background-color: #b91724;
+              border-radius: 2rem; }
+            .contenedorHome header nav ul li a::before {
+              border-radius: 2rem;
+              content: "";
+              position: absolute;
+              inset: 0;
+              z-index: -1;
+              background: #BD2330;
+              transition: clip-path .3s ease-in-out;
+              clip-path: circle(0% at 50% 50%); }
+            .contenedorHome header nav ul li a:hover::before {
+              clip-path: circle(100% at 50% 50%); }
+            .contenedorHome header nav ul li a img {
+              display: none; }
+            .contenedorHome header nav ul li a p {
+              background-color: transparent;
+              font-size: 1.4rem;
+              margin: .2rem;
+              padding: .2rem; }
     .contenedorHome main {
       cursor: default; }
       .contenedorHome main img {
@@ -485,24 +649,48 @@
       padding: .3rem;
       height: 9vh; }
       .contenedorSobreMi header div {
-        display: block; }
+        display: inherit;
+        align-items: center; }
         .contenedorSobreMi header div a {
           text-decoration: none;
           color: white; }
       .contenedorSobreMi header nav {
-        margin-top: 0rem;
-        align-items: center; }
-        .contenedorSobreMi header nav ul li {
-          transition: .2s ease-in-out; }
-          .contenedorSobreMi header nav ul li:hover {
-            transform: scale(1.1);
-            background-color: #BD2330;
-            padding: .2rem;
-            border-radius: 1rem;
-            margin: .1rem; }
+        display: flex;
+        flex-direction: row; }
+        .contenedorSobreMi header nav label img {
+          display: none; }
+        .contenedorSobreMi header nav ul {
+          background-color: #5A5ACB;
+          height: auto;
+          clip-path: none;
+          display: inherit;
+          align-items: center;
+          border-radius: 1.2rem; }
           .contenedorSobreMi header nav ul li a {
-            font-size: 1.2rem;
-            margin: .1rem; }
+            position: relative;
+            z-index: 1; }
+            .contenedorSobreMi header nav ul li a:active {
+              transform: scale(0.9);
+              background-color: #b91724;
+              border-radius: 2rem; }
+            .contenedorSobreMi header nav ul li a::before {
+              border-radius: 2rem;
+              content: "";
+              position: absolute;
+              inset: 0;
+              z-index: -1;
+              background: #BD2330;
+              transition: clip-path .3s ease-in-out;
+              clip-path: circle(0% at 50% 50%); }
+            .contenedorSobreMi header nav ul li a:hover::before {
+              clip-path: circle(100% at 50% 50%); }
+            .contenedorSobreMi header nav ul li a img {
+              display: none; }
+            .contenedorSobreMi header nav ul li a p {
+              background-color: transparent;
+              font-size: 1.4rem;
+              margin: .2rem;
+              padding: .2rem; }
     .contenedorSobreMi main {
       flex-wrap: nowrap; }
       .contenedorSobreMi main div {
@@ -532,24 +720,48 @@
       padding: .3rem;
       height: 9vh; }
       .contenedorConocimientos header div {
-        display: block; }
+        display: inherit;
+        align-items: center; }
         .contenedorConocimientos header div a {
           text-decoration: none;
           color: white; }
       .contenedorConocimientos header nav {
-        margin-top: 0rem;
-        align-items: center; }
-        .contenedorConocimientos header nav ul li {
-          transition: .2s ease-in-out; }
-          .contenedorConocimientos header nav ul li:hover {
-            transform: scale(1.1);
-            background-color: #BD2330;
-            padding: .2rem;
-            border-radius: 1rem;
-            margin: .1rem; }
+        display: flex;
+        flex-direction: row; }
+        .contenedorConocimientos header nav label img {
+          display: none; }
+        .contenedorConocimientos header nav ul {
+          background-color: #5A5ACB;
+          height: auto;
+          clip-path: none;
+          display: inherit;
+          align-items: center;
+          border-radius: 1.2rem; }
           .contenedorConocimientos header nav ul li a {
-            font-size: 1.2rem;
-            margin: .1rem; }
+            position: relative;
+            z-index: 1; }
+            .contenedorConocimientos header nav ul li a:active {
+              transform: scale(0.9);
+              background-color: #b91724;
+              border-radius: 2rem; }
+            .contenedorConocimientos header nav ul li a::before {
+              border-radius: 2rem;
+              content: "";
+              position: absolute;
+              inset: 0;
+              z-index: -1;
+              background: #BD2330;
+              transition: clip-path .3s ease-in-out;
+              clip-path: circle(0% at 50% 50%); }
+            .contenedorConocimientos header nav ul li a:hover::before {
+              clip-path: circle(100% at 50% 50%); }
+            .contenedorConocimientos header nav ul li a img {
+              display: none; }
+            .contenedorConocimientos header nav ul li a p {
+              background-color: transparent;
+              font-size: 1.4rem;
+              margin: .2rem;
+              padding: .2rem; }
     .contenedorConocimientos main h1 {
       font-size: 3rem; }
     .contenedorConocimientos main div img {
@@ -576,24 +788,48 @@
       padding: .3rem;
       height: 9vh; }
       .contenedorPortafolio header div {
-        display: block; }
+        display: inherit;
+        align-items: center; }
         .contenedorPortafolio header div a {
           text-decoration: none;
           color: white; }
       .contenedorPortafolio header nav {
-        margin-top: 0rem;
-        align-items: center; }
-        .contenedorPortafolio header nav ul li {
-          transition: .2s ease-in-out; }
-          .contenedorPortafolio header nav ul li:hover {
-            transform: scale(1.1);
-            background-color: #BD2330;
-            padding: .2rem;
-            border-radius: 1rem;
-            margin: .1rem; }
+        display: flex;
+        flex-direction: row; }
+        .contenedorPortafolio header nav label img {
+          display: none; }
+        .contenedorPortafolio header nav ul {
+          background-color: #5A5ACB;
+          height: auto;
+          clip-path: none;
+          display: inherit;
+          align-items: center;
+          border-radius: 1.2rem; }
           .contenedorPortafolio header nav ul li a {
-            font-size: 1.2rem;
-            margin: .1rem; }
+            position: relative;
+            z-index: 1; }
+            .contenedorPortafolio header nav ul li a:active {
+              transform: scale(0.9);
+              background-color: #b91724;
+              border-radius: 2rem; }
+            .contenedorPortafolio header nav ul li a::before {
+              border-radius: 2rem;
+              content: "";
+              position: absolute;
+              inset: 0;
+              z-index: -1;
+              background: #BD2330;
+              transition: clip-path .3s ease-in-out;
+              clip-path: circle(0% at 50% 50%); }
+            .contenedorPortafolio header nav ul li a:hover::before {
+              clip-path: circle(100% at 50% 50%); }
+            .contenedorPortafolio header nav ul li a img {
+              display: none; }
+            .contenedorPortafolio header nav ul li a p {
+              background-color: transparent;
+              font-size: 1.4rem;
+              margin: .2rem;
+              padding: .2rem; }
     .contenedorPortafolio main {
       padding: 1rem; }
       .contenedorPortafolio main div img {
@@ -615,24 +851,48 @@
       padding: .3rem;
       height: 9vh; }
       .contenedorContacto header div {
-        display: block; }
+        display: inherit;
+        align-items: center; }
         .contenedorContacto header div a {
           text-decoration: none;
           color: white; }
       .contenedorContacto header nav {
-        margin-top: 0rem;
-        align-items: center; }
-        .contenedorContacto header nav ul li {
-          transition: .2s ease-in-out; }
-          .contenedorContacto header nav ul li:hover {
-            transform: scale(1.1);
-            background-color: #BD2330;
-            padding: .2rem;
-            border-radius: 1rem;
-            margin: .1rem; }
+        display: flex;
+        flex-direction: row; }
+        .contenedorContacto header nav label img {
+          display: none; }
+        .contenedorContacto header nav ul {
+          background-color: #5A5ACB;
+          height: auto;
+          clip-path: none;
+          display: inherit;
+          align-items: center;
+          border-radius: 1.2rem; }
           .contenedorContacto header nav ul li a {
-            font-size: 1.2rem;
-            margin: .1rem; }
+            position: relative;
+            z-index: 1; }
+            .contenedorContacto header nav ul li a:active {
+              transform: scale(0.9);
+              background-color: #b91724;
+              border-radius: 2rem; }
+            .contenedorContacto header nav ul li a::before {
+              border-radius: 2rem;
+              content: "";
+              position: absolute;
+              inset: 0;
+              z-index: -1;
+              background: #BD2330;
+              transition: clip-path .3s ease-in-out;
+              clip-path: circle(0% at 50% 50%); }
+            .contenedorContacto header nav ul li a:hover::before {
+              clip-path: circle(100% at 50% 50%); }
+            .contenedorContacto header nav ul li a img {
+              display: none; }
+            .contenedorContacto header nav ul li a p {
+              background-color: transparent;
+              font-size: 1.4rem;
+              margin: .2rem;
+              padding: .2rem; }
     .contenedorContacto main h1 {
       font-size: 6rem; }
     .contenedorContacto main h2 {
@@ -698,3 +958,18 @@
     transform: scale(1); }
   100% {
     transform: scale(1.02); } }
+
+@keyframes animacion-nav-img {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.2); }
+  100% {
+    transform: scale(1); } }
+
+/*
+ animation-name: menu-mobile-img;
+                                            animation-duration:.5s;
+                                            animation-iteration-count: 1;
+                                            animation-timing-function: ease-in-out;
+*/
