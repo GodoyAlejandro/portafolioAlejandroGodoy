@@ -1,11 +1,11 @@
 //estilos mobile-first
 .contenedorConocimientos{
-    @include conteiner ("headerConocimientos"
-    "mainConocimientos"
-    "sectionConocimientos"
-    "footerConocimientos");
+    @include conteiner ("header-conocimientos"
+    "main-conocimientos"
+    "section-conocimientos"
+    "footer-conocimientos");
     header{
-        grid-area: headerConocimientos;
+        grid-area: header-conocimientos;
         position: sticky;
         height: 3rem;
         top: 0%;
@@ -14,22 +14,22 @@
             display: none;
         }
         nav{
-            @extend %navM;
+            @extend %nav-m;
         }
     }
     main{
-        grid-area: mainConocimientos ;
-        background-color: $colorSecundario1;
+        grid-area: main-conocimientos ;
+        background-color: $color-secundario-1;
         display: flex;
         flex-direction: column;
         justify-content: center;
         margin: 0rem 1rem 0rem 1rem ;
         border-radius: 2rem;
         h1{
-            font-size: map-get($map: $fontSizeMobile, $key: h1 );
+            font-size: map-get($map: $font-size-mobile, $key: h1 );
             color: white;
             text-align: center;
-            padding: .3rem;
+            
         }
         div{
             display: flex;
@@ -65,59 +65,42 @@
         }        
     }
     section{
-        grid-area: sectionConocimientos ;
-        background-color: $colorSecundario2;
+        grid-area: section-conocimientos ;
+        background-color: $color-secundario-2;
         display: flex;
+        flex-direction: column;
         margin: 1rem;
         border-radius: 2rem;
-        justify-content: center;
+        align-items: center;
         .lista1{
-            background-color: $colorSecundario1;
+            background-color: $color-secundario-1;
             margin: 1rem;
             padding: .5rem;
             border-radius: 1rem;
-            
-            ul{
+            width: 25rem;
+            label{
                 color: white;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                h3{
-                    font-size: 1.2rem;
-                    font-weight:500;
-                    border-bottom: 1px solid white;
-                }
-                li{
-                    list-style: none;
-                }
+                text-transform: uppercase;
+                border-bottom: 1px solid white;
             }
         }
         .lista2{
-            margin: 1rem;
-            padding: .5rem;
-            background-color: $colorSecundario1;
-            border-radius: 1rem;
-            ul{
-                color: white;
-                display: flex;
-                align-items: center;
-                flex-direction: column;
-                h3{
-                    font-size: 1.2rem;
-                    font-weight:500;
-                    border-bottom: 1px solid white;
-                }
-                li{
-                    list-style: none;
-                }
-            }
-
+            @extend .lista1;
+        }
+        .lista3{
+            @extend .lista1;
+        }
+        .lista4{
+            @extend .lista1;
+        }
+        .lista5{
+            @extend .lista1;
         }
         
     }
     footer{
-        grid-area: footerConocimientos;
-        background-color: $colorPricipal2;
-        @extend %footerM;
+        grid-area: footer-conocimientos;
+        background-color: $color-pricipal-2;
+        @extend %footer-m;
     }
 }

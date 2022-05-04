@@ -1,10 +1,10 @@
 //reset
-@import "utilities/resetYVariables";
+@import "utilities/reset-y-variables.scss";
 
 //layout
 @import "views/home.scss";
 
-@import "views/sobreMi.scss";
+@import "views/sobre-mi.scss";
 
 @import "views/conocimientos.scss";
 
@@ -13,7 +13,7 @@
 @import "views/contacto.scss";
 
 //media queries
-@import "tamaños/mediaQueries";
+@import "tamaños/media-queries.scss";
 
 //animaciones
 @import "utilities/animaciones";

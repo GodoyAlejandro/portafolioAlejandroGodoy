@@ -1,12 +1,12 @@
 @import "../utilities/animaciones.scss";
 //estilos mobile-first
 .contenedorHome{
-    @include conteiner ("headerHome"
-    "mainHome"
-    "sectionHome"
-    "footerHome");
+    @include conteiner ("header-home"
+    "main-home"
+    "section-home"
+    "footer-home");
     header{
-        grid-area: headerHome;
+        grid-area: header-home;
         height: 3rem;
         position: sticky;
         top: 0%;
@@ -15,12 +15,12 @@
             display: none;
         }
         nav{
-            @extend %navM;
+            @extend %nav-m;
         }
     }
     main{
-        grid-area: mainHome ;
-        background-color: $colorSecundario1;
+        grid-area: main-home ;
+        background-color: $color-secundario-1;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -38,7 +38,7 @@
             h1{
                 color: white;
                 text-transform: uppercase;
-                font-size: map-get($map: $fontSizeMobile, $key: h1 ) ;
+                font-size: map-get($map: $font-size-mobile, $key: h1 ) ;
                 text-align: center;
                 padding: .5rem;
             }
@@ -47,7 +47,7 @@
                 justify-content: center;
                 
                 a{
-                    background-color: $colorBtn1;
+                    background-color: $color-btn-1;
                     margin: 1rem;
                     border-radius: .2rem;                    
                     text-decoration: none;
@@ -65,8 +65,8 @@
         }
     }
     section{
-        grid-area: sectionHome ;
-        background-color: $colorSecundario2;
+        grid-area: section-home ;
+        background-color: $color-secundario-2;
         display: flex;
         flex-direction: column;
         margin: 1rem;
@@ -77,7 +77,7 @@
             color: white;
             text-align: center;
             flex-wrap: wrap;
-            font-size: map-get($map: $fontSizeMobile, $key: h2 );
+            font-size: map-get($map: $font-size-mobile, $key: h2 );
             margin: .6rem;
         }
         div{
@@ -99,27 +99,26 @@
         }
         .btn{
             a{
-                background-color: $colorBtn2;
-                margin: 1rem;
-                border-radius: .2rem;                    
-                text-decoration: none;
-                color: white;
-                padding:.6rem;
-                font-size: 1.4rem;
-                /*animacion*/
-                animation-name: shake;
-                animation-duration: 4s;
-                animation-iteration-count: infinite;
-                animation-timing-function: ease-in-out;
-                animation-delay: .3s;
-
+            background-color: $color-btn-2;
+            margin: 1rem;
+            border-radius: .2rem;                    
+            text-decoration: none;
+            color: white;
+            padding:.6rem;
+            font-size: 1.4rem;
+            /*animacion*/
+            animation-name: shake;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            animation-delay: .3s;
             }
-        }
+    }
         
     }
     footer{
-        grid-area: footerHome;
-        background-color: $colorPricipal2;
-        @extend %footerM;
+        grid-area: footer-home;
+        background-color: $color-pricipal-2;
+        @extend %footer-m;
     }
 }

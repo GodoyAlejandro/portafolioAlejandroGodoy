@@ -1,11 +1,11 @@
 //layout mobile first
 .contenedorContacto{
-    @include conteiner ("headerContacto"
-    "mainContacto"
-    "sectionContacto"
-    "footerContacto");
+    @include conteiner ("header-contacto"
+    "main-contacto"
+    "section-contacto"
+    "footer-contacto");
     header{
-        grid-area: headerContacto;
+        grid-area: header-contacto;
         position: sticky;
         height: 3rem;
         top: 0%;
@@ -14,13 +14,13 @@
             display: none;
         }
         nav{
-            @extend %navM;
+            @extend %nav-m;
             
         }
     }
     main{
-        grid-area: mainContacto ;
-        background-color: $colorSecundario1;
+        grid-area: main-contacto ;
+        background-color: $color-secundario-1;
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
@@ -29,13 +29,13 @@
         color: white;
         padding: .4rem;
         h1{
-            font-size: map-get($map: $fontSizeMobile, $key: h1 );
+            font-size: map-get($map: $font-size-mobile, $key: h1 );
             text-align: center;
             text-transform: uppercase;
         }
         h2{
             text-align: center;
-            font-size: map-get($map: $fontSizeMobile, $key: h2 );
+            font-size: map-get($map: $font-size-mobile, $key: h2 );
         }
         p{
             text-align: center;
@@ -43,15 +43,15 @@
         }
     }
     section{
-        grid-area: sectionContacto ;
-        background-color: $colorSecundario2;
+        grid-area: section-contacto ;
+        background-color: $color-secundario-2;
         display: flex;
         flex-direction: column;
         padding: .4rem;
         margin: 1rem;
         border-radius: 2rem;
         h2{
-            font-size: map-get($map: $fontSizeMobile, $key: h2 );
+            font-size: map-get($map: $font-size-mobile, $key: h2 );
             text-align: center;
             color: white;
             padding: .5rem;
@@ -74,7 +74,7 @@
                         padding-left: .3rem;
                         &:focus{
                             outline: 1;
-                            outline-color: $colorBtn1;
+                            outline-color: $color-btn-1;
                         }
                     }
                     &:nth-child(5){
@@ -86,7 +86,7 @@
                     &:nth-child(6){
                         input{
                             width: 11rem;
-                            background-color: $colorBtn2;
+                            background-color: $color-btn-2;
                             color: white;
                             font-size: 1.3rem;
                         }
@@ -97,9 +97,9 @@
         
     }
     footer{
-        grid-area: footerContacto;
-        background-color: $colorPricipal2;
-        @extend %footerM;
+        grid-area: footer-contacto;
+        background-color: $color-pricipal-2;
+        @extend %footer-m;
         
     }
 }

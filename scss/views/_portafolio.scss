@@ -1,10 +1,10 @@
 //estilos mobile-first
 .contenedorPortafolio{
-    @include conteiner ("headerPortafolio"
-    "mainPortafolio"
-    "footerPortafolio");
+    @include conteiner ("header-portafolio"
+    "main-portafolio"
+    "footer-portafolio");
     header{
-        grid-area: headerPortafolio;
+        grid-area: header-portafolio;
         position: sticky;
         height: 3rem;
         top: 0%;
@@ -13,12 +13,12 @@
             display: none;
         }
         nav{
-            @extend %navM;
+            @extend %nav-m;
         }
     }
     main{
-        grid-area: mainPortafolio ;
-        background-color: $colorSecundario1;
+        grid-area: main-portafolio ;
+        background-color: $color-secundario-1;
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
@@ -26,7 +26,7 @@
         margin: 0rem 1rem 1rem 1rem ;
         border-radius: 1.3rem;
         div{
-            background-color: $colorSecundario2;
+            background-color: $color-secundario-2;
             padding: .5rem;
             margin: .6rem;
             border-radius: 2rem;
@@ -65,8 +65,8 @@
             }            
         }
     footer{
-        grid-area: footerPortafolio;
-        background-color: $colorPricipal2;
-        @extend %footerM;
+        grid-area: footer-portafolio;
+        background-color: $color-pricipal-2;
+        @extend %footer-m;
     }
 }

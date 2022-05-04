@@ -7,53 +7,54 @@
 @import "../utilities/animaciones.scss";
 
 //colores del layout
-$colorPrincipal1: #5454C5;
-$colorPricipal2: #ADA9BB;
-$colorSecundario1: #FC605E;
-$colorSecundario2: #484554;
+$color-principal-1: #5454C5;
+$color-pricipal-2: #ADA9BB;
+$color-secundario-1: #FC605E;
+$color-secundario-2: #484554;
 //colores de los botones y callouts
-$colorBtn1: #BD2330;
-$colorBtn2: #4ABEA1;
+$color-btn-1: #BD2330;
+$color-btn-2: #4ABEA1;
 
 //mixin para los contenedores
-@mixin conteiner ($gridTAreas){
-    background-color: $colorPrincipal1;
+@mixin conteiner ($grid-t-areas){
+    background-color: $color-principal-1;
     display: grid;
     height: 100%;
-    grid-template-areas: $gridTAreas;
+    grid-template-areas: $grid-t-areas;
 };
 //mixin para la media querie de nav
-@mixin navD{
+@mixin nav-d{
     display: flex;
-                flex-direction: row;
-                label{
-                    img{
-                        display: none;
-                    }
-                }
-                ul{
-                    background-color: #5A5ACB;
-                    height: auto;
-                    clip-path: none;
-                    display: inherit;
-                    align-items: center;
-                    border-radius: 1.2rem;
-                    li{
-                        a{
-                            position: relative;
-                            z-index: 1;
-                            &:active{
-                                transform: scale(.9);
-                                background-color: #b91724;
-                                border-radius: 2rem;
-                            }
-                            &::before{
-                            border-radius: 2rem;
-                            content: "";
-                            position: absolute;
+    flex-direction: row;
+    height: auto;
+    label{
+        img{
+            display: none;
+            }
+        }
+    ul{
+        background-color: #5A5ACB;
+        height: auto;
+        clip-path: none;
+        display: inherit;
+        align-items: center;
+        border-radius: 1.2rem;
+        li{
+            a{
+                position: relative;
+                z-index: 1;
+                &:active{
+                    transform: scale(.9);
+                    background-color: #b91724;
+                    border-radius: 2rem;
+                        }
+                &::before{
+                    border-radius: 2rem;
+                    content: "";
+                    position: absolute;
                             inset: 0;
                             z-index: -1;
-                            background: $colorBtn1;
+                            background: $color-btn-1;
                             transition: clip-path .3s ease-in-out;
                             clip-path: circle(0% at 50% 50%);
                             }
@@ -77,13 +78,13 @@ $colorBtn2: #4ABEA1;
 }
 
 //map para los tamaños de fuente
-$fontSizeMobile: (
+$font-size-mobile: (
     h1:4rem,
     h2:2rem,    
 );
 
 //extend para nav
-%navM{
+%nav-m{
     label{
         display: flex;
         justify-content: center;
@@ -138,7 +139,9 @@ $fontSizeMobile: (
         justify-content: space-around;
         clip-path: circle(0% at 50% 0);
         transition: clip-path .3s ease-in-out;
-        height: 60vh;       
+        height: 60vh;  
+        margin-bottom: 0rem;
+        padding-left: 0rem;     
         li{
             list-style: none;
             a{
@@ -149,14 +152,14 @@ $fontSizeMobile: (
                 img{
                     width: 3rem;
                     height: 3rem;
-                    background-color: $colorBtn1;
+                    background-color: $color-btn-1;
                     margin-top: .3rem;
                     border-radius: 2rem;
                     padding: .6rem;
                 }
                 p{
                     color: white;
-                    background-color: $colorBtn1;
+                    background-color: $color-btn-1;
                     padding: .1rem;
                     border-radius: .3rem;
                 }
@@ -170,7 +173,7 @@ $fontSizeMobile: (
 
 
 //extend para el footer
-%footerM {
+%footer-m {
     div{
         display: flex;
         justify-content: center;
@@ -184,7 +187,7 @@ $fontSizeMobile: (
             }
         }
     }
-    .copyRight{
+    .copy-right{
         margin: .3rem;
         p{
             font-weight: bold;

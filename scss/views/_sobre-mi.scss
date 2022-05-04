@@ -1,11 +1,11 @@
 //estilos mobile-first
 .contenedorSobreMi{
-    @include conteiner ("headerSobreMi"
-    "mainSobreMi"
-    "sectionSobreMi"
-    "footerSobreMi");
+    @include conteiner ("header-sobre-mi"
+    "main-sobre-mi"
+    "section-sobre-mi"
+    "footer-sobre-mi");
     header{
-        grid-area: headerSobreMi;
+        grid-area: header-sobre-mi;
         height: 3rem;
         position: sticky;
         top: 0%;
@@ -14,12 +14,12 @@
             display: none;
         }
         nav{
-            @extend %navM;
+            @extend %nav-m;
         }
     }
     main{
-        grid-area: mainSobreMi ;
-        background-color: $colorSecundario1;
+        grid-area: main-sobre-mi ;
+        background-color: $color-secundario-1;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -31,7 +31,7 @@
             h1{
                 color: white;
                 text-transform: uppercase;
-                font-size: map-get($map: $fontSizeMobile, $key: h1 );
+                font-size: map-get($map: $font-size-mobile, $key: h1 );
                 text-align: center;
                 
             }        
@@ -48,8 +48,8 @@
         
     }
     section{
-        grid-area: sectionSobreMi ;
-        background-color: $colorSecundario2;
+        grid-area: section-sobre-mi ;
+        background-color: $color-secundario-2;
         display: flex;
         flex-direction: column;
         padding: 1rem;
@@ -60,7 +60,7 @@
             color: white;
             text-align: center;
             flex-wrap: wrap;
-            font-size: map-get($map: $fontSizeMobile, $key: h2 );
+            font-size: map-get($map: $font-size-mobile, $key: h2 );
             margin: .6rem;
         }
         p{
@@ -72,8 +72,8 @@
         
     }
     footer{
-        grid-area: footerSobreMi;
-        background-color: $colorPricipal2;
-        @extend %footerM;
+        grid-area: footer-sobre-mi;
+        background-color: $color-pricipal-2;
+        @extend %footer-m;
     }
 }

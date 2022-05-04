@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="JavaScript, html, css3, sass, desarrollo web, Argentina, Latinoamerica,  php, responsive, DOM, Flexbox, nodeJs, Grid, Ajax, sass">
     <meta name="description" content="Conocimientos adquiridos que implemento en mis proyectos">
+    
+    <!--link de bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <!--link css-->
     <link rel="stylesheet" href="../css/main.css">
@@ -17,8 +20,9 @@
 
     <!--favicon-->
     <link rel="shortcut icon" href="../assets/img/favIcon.png" type="image/x-icon">
+
     <!--titulo-->
-    <title>Conocimientos Alejandro Godoy</title>
+    <title>Alejandro Godoy | Conocimientos</title>
 </head>
 <body>
     <div class="contenedorConocimientos">
@@ -32,33 +36,43 @@
             <nav>
                 <label for="menu">
                         <img src="../assets/img/boton-menu.svg" alt="">
-                    </label>
-                    <input type="checkbox" name="" id="menu">
+                </label>
+                <input type="checkbox" name="" id="menu">
                 <ul>
-                    <li><a href="../index.html">
-                        <img src="../assets/img/home-logo.svg" alt="">
-                       <p> Home </p>
-                    </a></li>
+                    <li>
+                        <a href="../index.html">
+                            <img src="../assets/img/home-logo.svg" alt="">
+                            <p> Home </p>
+                        </a>
+                    </li>
 
-                    <li><a href="sobreMi.html">
-                        <img src="../assets/img/sobre-mi-logo.svg" alt="">
-                        <p>Sobre Mi</p>
-                    </a></li>
+                    <li>
+                        <a href="sobreMi.html">
+                            <img src="../assets/img/sobre-mi-logo.svg" alt="">
+                            <p>Sobre Mi</p>
+                        </a>
+                    </li>
 
-                    <li><a href="conocimientos.html">
-                        <img src="../assets/img/conocimientos-logo.svg" alt="">
-                        <p>Conocimientos</p>
-                    </a></li>
+                    <li>
+                        <a href="conocimientos.html">
+                            <img src="../assets/img/conocimientos-logo.svg" alt="">
+                            <p>Conocimientos</p>
+                        </a>
+                    </li>
 
-                    <li><a href="portafolio.html">
-                        <img src="../assets/img/portafolio-logo.svg" alt="">
-                        <p>Portafolio</p>
-                    </a></li>
+                    <li>
+                        <a href="portafolio.html">
+                            <img src="../assets/img/portafolio-logo.svg" alt="">
+                            <p>Portafolio</p>
+                        </a>
+                    </li>
 
-                    <li><a href="contacto.html">
-                        <img src="../assets/img/contacto-logo.svg" alt="">
-                        <p>Contacto</p>
-                    </a></li>
+                    <li>
+                        <a href="contacto.html">
+                            <img src="../assets/img/contacto-logo.svg" alt="">
+                            <p>Contacto</p>
+                        </a>
+                    </li>
                 </ul>
             </nav>
             
@@ -74,42 +88,45 @@
                     
                 <img src="../assets/img/css.png" alt="css">
                     
-                <img src="../assets/img/js.png" alt="javaScript">
+                <img src="../assets/img/js.png" alt="java-script">
                     
-                <img src="../assets/img/atomic.png" alt="ReactJS">
+                <img src="../assets/img/atomic.png" alt="React-js">
                     
-                <img src="../assets/img/bootstrap.png" alt="bootsTrap">
+                <img src="../assets/img/bootstrap.png" alt="boots-trap">
                     
-                <img src="../assets/img/php.png" alt="pHP">
+                <img src="../assets/img/php.png" alt="php">
                     
-                <img src="../assets/img/responsive.png" alt="Responsive"> 
+                <img src="../assets/img/responsive.png" alt="responsive"> 
             </div>           
         </main>
         <!--fin del main-->
         
         <!--inicio del section-->
-        <section>            
-                <div class="lista1">
-                    <ul> <h3>Desarrollo Web</h3>
-                        <li>HTML5</li>
-                        <li>CSS</li>
-                        <li>Box Modeling</li>
-                        <li>Flexbox</li>
-                        <li>BEM</li>
-                        <li>camelCase</li>
-                        <li>GRIDS</li>
-                        <li>SASS</li>
-                    </ul>
+        <section>         
+                <div class="lista1 text-center">
+                    <label for="disabledRange" class="form-label" >HTML5</label>
+                    <input type="range" class="form-range" max="100" value="90" id="disabledRange" disabled>
                 </div>
-                <div class="lista2">
-                    <ul> <h3>JavaScript</h3>
-                        <li>DOM</li>
-                        <li>Storage</li>
-                        <li>AJAX</li>
-                        <li>NodeJS</li>
-                        <li>ReactJS</li>
-                    </ul>
-                </div>            
+
+                <div class="lista2 text-center">
+                    <label for="disabledRange" class="form-label">CSS</label>
+                    <input type="range" class="form-range" max="100" value="80" id="disabledRange" disabled>
+                </div>
+                
+                <div class="lista3 text-center">
+                    <label for="disabledRange" class="form-label">Sass</label>
+                    <input type="range" class="form-range" max="100" value="87" id="disabledRange" disabled>
+                </div>
+
+                <div class="lista4 text-center">
+                    <label for="disabledRange" class="form-label">JavaScript</label>
+                    <input type="range" class="form-range" max="100"  value="5" id="disabledRange" disabled>
+                </div>
+
+                <div class="lista5 text-center">
+                    <label for="disabledRange" class="form-label">ReactJs</label>
+                    <input type="range" class="form-range" max="100" value="10"  id="disabledRange" disabled >
+                </div>                 
         </section>
         <!--fin del section-->
         
@@ -117,23 +134,25 @@
         <footer>
             <div class="linksFooter">
                 <a href="">
-                    <img src="../assets/img/linkedin.png" alt="linkedIn">
+                    <img src="../assets/img/linkedin.png" alt="linked-in">
                 </a>
                                             
                 <a href="">
-                    <img src="../assets/img/github.png" alt="gitHub">
+                    <img src="../assets/img/github.png" alt="git-hub">
                 </a>
                                             
                 <a href="">
-                    <img src="../assets/img/whatsapp.png" alt="whatsApp">
+                    <img src="../assets/img/whatsapp.png" alt="whats-app">
                 </a>                        
             </div>
             
-            <div class="copyRight">
+            <div class="copy-right">
                 <p>Realizado con esfuerzo por <br> Alejandro Godoy</p>
             </div>
         </footer>
         <!--fin del footer-->
     </div>
+    <!--script de bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
