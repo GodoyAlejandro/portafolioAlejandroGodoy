@@ -36,87 +36,81 @@
   100% {
     transform: scale(1); } }
 
-/*
- animation-name: menu-mobile-img;
-                                            animation-duration:.5s;
-                                            animation-iteration-count: 1;
-                                            animation-timing-function: ease-in-out;
-*/
-.contenedorHome header nav label, .contenedorSobreMi header nav label, .contenedorConocimientos header nav label, .contenedorPortafolio header nav label, .contenedorContacto header nav label {
-  display: flex;
-  justify-content: center; }
-  .contenedorHome header nav label img, .contenedorSobreMi header nav label img, .contenedorConocimientos header nav label img, .contenedorPortafolio header nav label img, .contenedorContacto header nav label img {
-    width: 3rem;
-    height: 3rem;
-    background-color: #5A5ACB;
-    border-radius: 50%; }
-    .contenedorHome header nav label img:active, .contenedorSobreMi header nav label img:active, .contenedorConocimientos header nav label img:active, .contenedorPortafolio header nav label img:active, .contenedorContacto header nav label img:active {
-      transform: scale(0.9); }
-
-.contenedorHome header nav input, .contenedorSobreMi header nav input, .contenedorConocimientos header nav input, .contenedorPortafolio header nav input, .contenedorContacto header nav input {
-  display: none; }
-  .contenedorHome header nav input:checked + ul, .contenedorSobreMi header nav input:checked + ul, .contenedorConocimientos header nav input:checked + ul, .contenedorPortafolio header nav input:checked + ul, .contenedorContacto header nav input:checked + ul {
-    clip-path: circle(60% at 50% 0); }
-    .contenedorHome header nav input:checked + ul > li:nth-child(1) a, .contenedorSobreMi header nav input:checked + ul > li:nth-child(1) a, .contenedorConocimientos header nav input:checked + ul > li:nth-child(1) a, .contenedorPortafolio header nav input:checked + ul > li:nth-child(1) a, .contenedorContacto header nav input:checked + ul > li:nth-child(1) a {
-      animation-name: animacion-nav-img;
-      animation-duration: .5s;
-      animation-iteration-count: 1;
-      animation-timing-function: ease-in-out;
-      animation-delay: 0s; }
-    .contenedorHome header nav input:checked + ul > li:nth-child(2) a, .contenedorSobreMi header nav input:checked + ul > li:nth-child(2) a, .contenedorConocimientos header nav input:checked + ul > li:nth-child(2) a, .contenedorPortafolio header nav input:checked + ul > li:nth-child(2) a, .contenedorContacto header nav input:checked + ul > li:nth-child(2) a {
-      animation-name: animacion-nav-img;
-      animation-duration: .5s;
-      animation-iteration-count: 1;
-      animation-timing-function: ease-in-out;
-      animation-delay: 0.2s; }
-    .contenedorHome header nav input:checked + ul > li:nth-child(3) a, .contenedorSobreMi header nav input:checked + ul > li:nth-child(3) a, .contenedorConocimientos header nav input:checked + ul > li:nth-child(3) a, .contenedorPortafolio header nav input:checked + ul > li:nth-child(3) a, .contenedorContacto header nav input:checked + ul > li:nth-child(3) a {
-      animation-name: animacion-nav-img;
-      animation-duration: .5s;
-      animation-iteration-count: 1;
-      animation-timing-function: ease-in-out;
-      animation-delay: 0.4s; }
-    .contenedorHome header nav input:checked + ul > li:nth-child(4) a, .contenedorSobreMi header nav input:checked + ul > li:nth-child(4) a, .contenedorConocimientos header nav input:checked + ul > li:nth-child(4) a, .contenedorPortafolio header nav input:checked + ul > li:nth-child(4) a, .contenedorContacto header nav input:checked + ul > li:nth-child(4) a {
-      animation-name: animacion-nav-img;
-      animation-duration: .5s;
-      animation-iteration-count: 1;
-      animation-timing-function: ease-in-out;
-      animation-delay: 0.6s; }
-    .contenedorHome header nav input:checked + ul > li:nth-child(5) a, .contenedorSobreMi header nav input:checked + ul > li:nth-child(5) a, .contenedorConocimientos header nav input:checked + ul > li:nth-child(5) a, .contenedorPortafolio header nav input:checked + ul > li:nth-child(5) a, .contenedorContacto header nav input:checked + ul > li:nth-child(5) a {
-      animation-name: animacion-nav-img;
-      animation-duration: .5s;
-      animation-iteration-count: 1;
-      animation-timing-function: ease-in-out;
-      animation-delay: 0.8s; }
-
-.contenedorHome header nav ul, .contenedorSobreMi header nav ul, .contenedorConocimientos header nav ul, .contenedorPortafolio header nav ul, .contenedorContacto header nav ul {
-  display: flex;
-  justify-content: space-around;
-  clip-path: circle(0% at 50% 0);
-  transition: clip-path .3s ease-in-out;
-  height: 60vh;
-  margin-bottom: 0rem;
-  padding-left: 0rem; }
-  .contenedorHome header nav ul li, .contenedorSobreMi header nav ul li, .contenedorConocimientos header nav ul li, .contenedorPortafolio header nav ul li, .contenedorContacto header nav ul li {
-    list-style: none; }
-    .contenedorHome header nav ul li a, .contenedorSobreMi header nav ul li a, .contenedorConocimientos header nav ul li a, .contenedorPortafolio header nav ul li a, .contenedorContacto header nav ul li a {
-      display: flex;
-      flex-direction: column;
-      text-decoration: none;
-      align-items: center; }
-      .contenedorHome header nav ul li a img, .contenedorSobreMi header nav ul li a img, .contenedorConocimientos header nav ul li a img, .contenedorPortafolio header nav ul li a img, .contenedorContacto header nav ul li a img {
-        width: 3rem;
-        height: 3rem;
-        background-color: #BD2330;
-        margin-top: .3rem;
-        border-radius: 2rem;
-        padding: .6rem; }
-      .contenedorHome header nav ul li a p, .contenedorSobreMi header nav ul li a p, .contenedorConocimientos header nav ul li a p, .contenedorPortafolio header nav ul li a p, .contenedorContacto header nav ul li a p {
-        color: white;
-        background-color: #BD2330;
-        padding: .1rem;
-        border-radius: .3rem; }
-      .contenedorHome header nav ul li a:active, .contenedorSobreMi header nav ul li a:active, .contenedorConocimientos header nav ul li a:active, .contenedorPortafolio header nav ul li a:active, .contenedorContacto header nav ul li a:active {
+.contenedorHome header nav, .contenedorSobreMi header nav, .contenedorConocimientos header nav, .contenedorPortafolio header nav, .contenedorContacto header nav {
+  margin: .3rem; }
+  .contenedorHome header nav label, .contenedorSobreMi header nav label, .contenedorConocimientos header nav label, .contenedorPortafolio header nav label, .contenedorContacto header nav label {
+    display: flex;
+    justify-content: end; }
+    .contenedorHome header nav label img, .contenedorSobreMi header nav label img, .contenedorConocimientos header nav label img, .contenedorPortafolio header nav label img, .contenedorContacto header nav label img {
+      width: 3rem;
+      height: 3rem;
+      background-color: #5A5ACB;
+      border-radius: 50%; }
+      .contenedorHome header nav label img:active, .contenedorSobreMi header nav label img:active, .contenedorConocimientos header nav label img:active, .contenedorPortafolio header nav label img:active, .contenedorContacto header nav label img:active {
         transform: scale(0.9); }
+  .contenedorHome header nav input, .contenedorSobreMi header nav input, .contenedorConocimientos header nav input, .contenedorPortafolio header nav input, .contenedorContacto header nav input {
+    display: none; }
+    .contenedorHome header nav input:checked + ul, .contenedorSobreMi header nav input:checked + ul, .contenedorConocimientos header nav input:checked + ul, .contenedorPortafolio header nav input:checked + ul, .contenedorContacto header nav input:checked + ul {
+      clip-path: circle(60% at 50% 0); }
+      .contenedorHome header nav input:checked + ul > li:nth-child(1) a, .contenedorSobreMi header nav input:checked + ul > li:nth-child(1) a, .contenedorConocimientos header nav input:checked + ul > li:nth-child(1) a, .contenedorPortafolio header nav input:checked + ul > li:nth-child(1) a, .contenedorContacto header nav input:checked + ul > li:nth-child(1) a {
+        animation-name: animacion-nav-img;
+        animation-duration: .5s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in-out;
+        animation-delay: 0s; }
+      .contenedorHome header nav input:checked + ul > li:nth-child(2) a, .contenedorSobreMi header nav input:checked + ul > li:nth-child(2) a, .contenedorConocimientos header nav input:checked + ul > li:nth-child(2) a, .contenedorPortafolio header nav input:checked + ul > li:nth-child(2) a, .contenedorContacto header nav input:checked + ul > li:nth-child(2) a {
+        animation-name: animacion-nav-img;
+        animation-duration: .5s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in-out;
+        animation-delay: 0.2s; }
+      .contenedorHome header nav input:checked + ul > li:nth-child(3) a, .contenedorSobreMi header nav input:checked + ul > li:nth-child(3) a, .contenedorConocimientos header nav input:checked + ul > li:nth-child(3) a, .contenedorPortafolio header nav input:checked + ul > li:nth-child(3) a, .contenedorContacto header nav input:checked + ul > li:nth-child(3) a {
+        animation-name: animacion-nav-img;
+        animation-duration: .5s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in-out;
+        animation-delay: 0.4s; }
+      .contenedorHome header nav input:checked + ul > li:nth-child(4) a, .contenedorSobreMi header nav input:checked + ul > li:nth-child(4) a, .contenedorConocimientos header nav input:checked + ul > li:nth-child(4) a, .contenedorPortafolio header nav input:checked + ul > li:nth-child(4) a, .contenedorContacto header nav input:checked + ul > li:nth-child(4) a {
+        animation-name: animacion-nav-img;
+        animation-duration: .5s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in-out;
+        animation-delay: 0.6s; }
+      .contenedorHome header nav input:checked + ul > li:nth-child(5) a, .contenedorSobreMi header nav input:checked + ul > li:nth-child(5) a, .contenedorConocimientos header nav input:checked + ul > li:nth-child(5) a, .contenedorPortafolio header nav input:checked + ul > li:nth-child(5) a, .contenedorContacto header nav input:checked + ul > li:nth-child(5) a {
+        animation-name: animacion-nav-img;
+        animation-duration: .5s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in-out;
+        animation-delay: 0.8s; }
+  .contenedorHome header nav ul, .contenedorSobreMi header nav ul, .contenedorConocimientos header nav ul, .contenedorPortafolio header nav ul, .contenedorContacto header nav ul {
+    display: flex;
+    justify-content: space-around;
+    clip-path: circle(0% at 50% 0);
+    transition: clip-path .3s ease-in-out;
+    height: 60vh;
+    margin-bottom: 0rem;
+    padding-left: 0rem; }
+    .contenedorHome header nav ul li, .contenedorSobreMi header nav ul li, .contenedorConocimientos header nav ul li, .contenedorPortafolio header nav ul li, .contenedorContacto header nav ul li {
+      list-style: none; }
+      .contenedorHome header nav ul li a, .contenedorSobreMi header nav ul li a, .contenedorConocimientos header nav ul li a, .contenedorPortafolio header nav ul li a, .contenedorContacto header nav ul li a {
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        align-items: center; }
+        .contenedorHome header nav ul li a img, .contenedorSobreMi header nav ul li a img, .contenedorConocimientos header nav ul li a img, .contenedorPortafolio header nav ul li a img, .contenedorContacto header nav ul li a img {
+          width: 3rem;
+          height: 3rem;
+          background-color: #BD2330;
+          margin-top: .3rem;
+          border-radius: 2rem;
+          padding: .6rem; }
+        .contenedorHome header nav ul li a p, .contenedorSobreMi header nav ul li a p, .contenedorConocimientos header nav ul li a p, .contenedorPortafolio header nav ul li a p, .contenedorContacto header nav ul li a p {
+          color: white;
+          background-color: #BD2330;
+          padding: .1rem;
+          border-radius: .3rem; }
+        .contenedorHome header nav ul li a:active, .contenedorSobreMi header nav ul li a:active, .contenedorConocimientos header nav ul li a:active, .contenedorPortafolio header nav ul li a:active, .contenedorContacto header nav ul li a:active {
+          transform: scale(0.9); }
 
 .contenedorHome footer div, .contenedorSobreMi footer div, .contenedorConocimientos footer div, .contenedorPortafolio footer div, .contenedorContacto footer div {
   display: flex;
@@ -167,12 +161,6 @@
   100% {
     transform: scale(1); } }
 
-/*
- animation-name: menu-mobile-img;
-                                            animation-duration:.5s;
-                                            animation-iteration-count: 1;
-                                            animation-timing-function: ease-in-out;
-*/
 .contenedorHome {
   background-color: #5454C5;
   display: grid;
@@ -183,16 +171,21 @@
     height: 3rem;
     position: sticky;
     top: 0%;
-    z-index: 15; }
+    z-index: 15;
+    display: flex;
+    justify-content: space-between; }
     .contenedorHome header div {
-      display: none; }
+      margin: .4rem; }
+      .contenedorHome header div a img {
+        width: 3rem;
+        height: 3rem; }
   .contenedorHome main {
     grid-area: main-home;
     background-color: #FC605E;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0rem 1rem 0rem 1rem;
+    margin: 1rem 1rem 0rem 1rem;
     border-radius: 2rem; }
     .contenedorHome main img {
       display: none; }
@@ -279,9 +272,14 @@
     height: 3rem;
     position: sticky;
     top: 0%;
-    z-index: 15; }
+    z-index: 15;
+    display: flex;
+    justify-content: space-between; }
     .contenedorSobreMi header div {
-      display: none; }
+      margin: .3rem; }
+      .contenedorSobreMi header div a img {
+        width: 3rem;
+        height: 3rem; }
   .contenedorSobreMi main {
     grid-area: main-sobre-mi;
     background-color: #FC605E;
@@ -337,9 +335,14 @@
     position: sticky;
     height: 3rem;
     top: 0%;
-    z-index: 15; }
+    z-index: 15;
+    display: flex;
+    justify-content: space-between; }
     .contenedorConocimientos header div {
-      display: none; }
+      margin: .3rem; }
+      .contenedorConocimientos header div a img {
+        width: 3rem;
+        height: 3rem; }
   .contenedorConocimientos main {
     grid-area: main-conocimientos;
     background-color: #FC605E;
@@ -351,7 +354,8 @@
     .contenedorConocimientos main h1 {
       font-size: 4rem;
       color: white;
-      text-align: center; }
+      text-align: center;
+      font-weight: bold; }
     .contenedorConocimientos main div {
       display: flex;
       justify-content: center;
@@ -409,9 +413,14 @@
     position: sticky;
     height: 3rem;
     top: 0%;
-    z-index: 10; }
+    z-index: 10;
+    display: flex;
+    justify-content: space-between; }
     .contenedorPortafolio header div {
-      display: none; }
+      margin: .3rem; }
+      .contenedorPortafolio header div a img {
+        width: 3rem;
+        height: 3rem; }
   .contenedorPortafolio main {
     grid-area: main-portafolio;
     background-color: #FC605E;
@@ -465,9 +474,14 @@
     position: sticky;
     height: 3rem;
     top: 0%;
-    z-index: 10; }
+    z-index: 10;
+    display: flex;
+    justify-content: space-between; }
     .contenedorContacto header div {
-      display: none; }
+      margin: .3rem; }
+      .contenedorContacto header div a img {
+        width: 3rem;
+        height: 3rem; }
   .contenedorContacto main {
     grid-area: main-contacto;
     background-color: #FC605E;
@@ -594,8 +608,6 @@
     .contenedorConocimientos main {
       width: 83vh;
       justify-self: center; }
-      .contenedorConocimientos main h1 {
-        font-weight: bold; }
     .contenedorConocimientos section {
       width: 83vh;
       justify-self: center; }
@@ -1088,10 +1100,3 @@
     transform: scale(1.2); }
   100% {
     transform: scale(1); } }
-
-/*
- animation-name: menu-mobile-img;
-                                            animation-duration:.5s;
-                                            animation-iteration-count: 1;
-                                            animation-timing-function: ease-in-out;
-*/

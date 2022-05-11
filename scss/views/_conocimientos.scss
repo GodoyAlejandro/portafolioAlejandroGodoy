@@ -10,8 +10,16 @@
         height: 3rem;
         top: 0%;
         z-index: 15;
+        display: flex;
+        justify-content: space-between;
         div{
-            display: none;
+            margin: .3rem;
+            a{
+                img{
+                    width: 3rem;
+                    height: 3rem;
+                }
+            }
         }
         nav{
             @extend %nav-m;
@@ -29,7 +37,7 @@
             font-size: map-get($map: $font-size-mobile, $key: h1 );
             color: white;
             text-align: center;
-            
+            font-weight: bold;
         }
         div{
             display: flex;

@@ -85,9 +85,10 @@ $font-size-mobile: (
 
 //extend para nav
 %nav-m{
+    margin: .3rem;
     label{
         display: flex;
-        justify-content: center;
+        justify-content: end;
         img{
             width: 3rem;
             height: 3rem;
