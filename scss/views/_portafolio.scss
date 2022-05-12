@@ -5,24 +5,7 @@
     "footer-portafolio");
     header{
         grid-area: header-portafolio;
-        position: sticky;
-        height: 3rem;
-        top: 0%;
-        z-index: 10;
-        display: flex;
-        justify-content: space-between;
-        div{
-            margin: .3rem;
-            a{
-                img{
-                    width: 3rem;
-                    height: 3rem;
-                }
-            }
-        }
-        nav{
-            @extend %nav-m;
-        }
+        @extend %header;
     }
     main{
         grid-area: main-portafolio ;
@@ -31,7 +14,7 @@
         justify-content: center;
         flex-wrap: wrap;
         align-items: center;
-        margin: 0rem 1rem 1rem 1rem ;
+        margin: 1rem 1rem 1rem 1rem ;
         border-radius: 1.3rem;
         div{
             background-color: $color-secundario-2;

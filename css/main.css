@@ -36,81 +36,93 @@
   100% {
     transform: scale(1); } }
 
-.contenedorHome header nav, .contenedorSobreMi header nav, .contenedorConocimientos header nav, .contenedorPortafolio header nav, .contenedorContacto header nav {
-  margin: .3rem; }
-  .contenedorHome header nav label, .contenedorSobreMi header nav label, .contenedorConocimientos header nav label, .contenedorPortafolio header nav label, .contenedorContacto header nav label {
-    display: flex;
-    justify-content: end; }
-    .contenedorHome header nav label img, .contenedorSobreMi header nav label img, .contenedorConocimientos header nav label img, .contenedorPortafolio header nav label img, .contenedorContacto header nav label img {
-      width: 3rem;
-      height: 3rem;
-      background-color: #5A5ACB;
-      border-radius: 50%; }
-      .contenedorHome header nav label img:active, .contenedorSobreMi header nav label img:active, .contenedorConocimientos header nav label img:active, .contenedorPortafolio header nav label img:active, .contenedorContacto header nav label img:active {
-        transform: scale(0.9); }
-  .contenedorHome header nav input, .contenedorSobreMi header nav input, .contenedorConocimientos header nav input, .contenedorPortafolio header nav input, .contenedorContacto header nav input {
+.contenedorHome header, .contenedorSobreMi header, .contenedorConocimientos header, .contenedorPortafolio header, .contenedorContacto header {
+  height: 7vh;
+  position: sticky;
+  top: 0%;
+  z-index: 15;
+  background-color: #5A5ACB; }
+  .contenedorHome header div, .contenedorSobreMi header div, .contenedorConocimientos header div, .contenedorPortafolio header div, .contenedorContacto header div {
     display: none; }
-    .contenedorHome header nav input:checked + ul, .contenedorSobreMi header nav input:checked + ul, .contenedorConocimientos header nav input:checked + ul, .contenedorPortafolio header nav input:checked + ul, .contenedorContacto header nav input:checked + ul {
-      clip-path: circle(60% at 50% 0); }
-      .contenedorHome header nav input:checked + ul > li:nth-child(1) a, .contenedorSobreMi header nav input:checked + ul > li:nth-child(1) a, .contenedorConocimientos header nav input:checked + ul > li:nth-child(1) a, .contenedorPortafolio header nav input:checked + ul > li:nth-child(1) a, .contenedorContacto header nav input:checked + ul > li:nth-child(1) a {
-        animation-name: animacion-nav-img;
-        animation-duration: .5s;
-        animation-iteration-count: 1;
-        animation-timing-function: ease-in-out;
-        animation-delay: 0s; }
-      .contenedorHome header nav input:checked + ul > li:nth-child(2) a, .contenedorSobreMi header nav input:checked + ul > li:nth-child(2) a, .contenedorConocimientos header nav input:checked + ul > li:nth-child(2) a, .contenedorPortafolio header nav input:checked + ul > li:nth-child(2) a, .contenedorContacto header nav input:checked + ul > li:nth-child(2) a {
-        animation-name: animacion-nav-img;
-        animation-duration: .5s;
-        animation-iteration-count: 1;
-        animation-timing-function: ease-in-out;
-        animation-delay: 0.2s; }
-      .contenedorHome header nav input:checked + ul > li:nth-child(3) a, .contenedorSobreMi header nav input:checked + ul > li:nth-child(3) a, .contenedorConocimientos header nav input:checked + ul > li:nth-child(3) a, .contenedorPortafolio header nav input:checked + ul > li:nth-child(3) a, .contenedorContacto header nav input:checked + ul > li:nth-child(3) a {
-        animation-name: animacion-nav-img;
-        animation-duration: .5s;
-        animation-iteration-count: 1;
-        animation-timing-function: ease-in-out;
-        animation-delay: 0.4s; }
-      .contenedorHome header nav input:checked + ul > li:nth-child(4) a, .contenedorSobreMi header nav input:checked + ul > li:nth-child(4) a, .contenedorConocimientos header nav input:checked + ul > li:nth-child(4) a, .contenedorPortafolio header nav input:checked + ul > li:nth-child(4) a, .contenedorContacto header nav input:checked + ul > li:nth-child(4) a {
-        animation-name: animacion-nav-img;
-        animation-duration: .5s;
-        animation-iteration-count: 1;
-        animation-timing-function: ease-in-out;
-        animation-delay: 0.6s; }
-      .contenedorHome header nav input:checked + ul > li:nth-child(5) a, .contenedorSobreMi header nav input:checked + ul > li:nth-child(5) a, .contenedorConocimientos header nav input:checked + ul > li:nth-child(5) a, .contenedorPortafolio header nav input:checked + ul > li:nth-child(5) a, .contenedorContacto header nav input:checked + ul > li:nth-child(5) a {
-        animation-name: animacion-nav-img;
-        animation-duration: .5s;
-        animation-iteration-count: 1;
-        animation-timing-function: ease-in-out;
-        animation-delay: 0.8s; }
-  .contenedorHome header nav ul, .contenedorSobreMi header nav ul, .contenedorConocimientos header nav ul, .contenedorPortafolio header nav ul, .contenedorContacto header nav ul {
-    display: flex;
-    justify-content: space-around;
-    clip-path: circle(0% at 50% 0);
-    transition: clip-path .3s ease-in-out;
-    height: 60vh;
-    margin-bottom: 0rem;
-    padding-left: 0rem; }
-    .contenedorHome header nav ul li, .contenedorSobreMi header nav ul li, .contenedorConocimientos header nav ul li, .contenedorPortafolio header nav ul li, .contenedorContacto header nav ul li {
-      list-style: none; }
-      .contenedorHome header nav ul li a, .contenedorSobreMi header nav ul li a, .contenedorConocimientos header nav ul li a, .contenedorPortafolio header nav ul li a, .contenedorContacto header nav ul li a {
-        display: flex;
-        flex-direction: column;
-        text-decoration: none;
-        align-items: center; }
-        .contenedorHome header nav ul li a img, .contenedorSobreMi header nav ul li a img, .contenedorConocimientos header nav ul li a img, .contenedorPortafolio header nav ul li a img, .contenedorContacto header nav ul li a img {
-          width: 3rem;
-          height: 3rem;
-          background-color: #BD2330;
-          margin-top: .3rem;
-          border-radius: 2rem;
-          padding: .6rem; }
-        .contenedorHome header nav ul li a p, .contenedorSobreMi header nav ul li a p, .contenedorConocimientos header nav ul li a p, .contenedorPortafolio header nav ul li a p, .contenedorContacto header nav ul li a p {
-          color: white;
-          background-color: #BD2330;
-          padding: .1rem;
-          border-radius: .3rem; }
-        .contenedorHome header nav ul li a:active, .contenedorSobreMi header nav ul li a:active, .contenedorConocimientos header nav ul li a:active, .contenedorPortafolio header nav ul li a:active, .contenedorContacto header nav ul li a:active {
+  .contenedorHome header nav, .contenedorSobreMi header nav, .contenedorConocimientos header nav, .contenedorPortafolio header nav, .contenedorContacto header nav {
+    margin-top: .2rem; }
+    .contenedorHome header nav label, .contenedorSobreMi header nav label, .contenedorConocimientos header nav label, .contenedorPortafolio header nav label, .contenedorContacto header nav label {
+      display: flex;
+      justify-content: center; }
+      .contenedorHome header nav label img, .contenedorSobreMi header nav label img, .contenedorConocimientos header nav label img, .contenedorPortafolio header nav label img, .contenedorContacto header nav label img {
+        margin-top: .2rem;
+        width: 2.5rem;
+        height: 2.5rem;
+        display: inherit;
+        align-self: center; }
+        .contenedorHome header nav label img:active, .contenedorSobreMi header nav label img:active, .contenedorConocimientos header nav label img:active, .contenedorPortafolio header nav label img:active, .contenedorContacto header nav label img:active {
           transform: scale(0.9); }
+    .contenedorHome header nav input, .contenedorSobreMi header nav input, .contenedorConocimientos header nav input, .contenedorPortafolio header nav input, .contenedorContacto header nav input {
+      display: none; }
+      .contenedorHome header nav input:checked + ul, .contenedorSobreMi header nav input:checked + ul, .contenedorConocimientos header nav input:checked + ul, .contenedorPortafolio header nav input:checked + ul, .contenedorContacto header nav input:checked + ul {
+        background-color: #5A5ACB;
+        clip-path: circle(150% at 50% 0); }
+        .contenedorHome header nav input:checked + ul > li:nth-child(1) a, .contenedorSobreMi header nav input:checked + ul > li:nth-child(1) a, .contenedorConocimientos header nav input:checked + ul > li:nth-child(1) a, .contenedorPortafolio header nav input:checked + ul > li:nth-child(1) a, .contenedorContacto header nav input:checked + ul > li:nth-child(1) a {
+          animation-name: animacion-nav-img;
+          animation-duration: .5s;
+          animation-iteration-count: 1;
+          animation-timing-function: ease-in-out;
+          animation-delay: 0s; }
+        .contenedorHome header nav input:checked + ul > li:nth-child(2) a, .contenedorSobreMi header nav input:checked + ul > li:nth-child(2) a, .contenedorConocimientos header nav input:checked + ul > li:nth-child(2) a, .contenedorPortafolio header nav input:checked + ul > li:nth-child(2) a, .contenedorContacto header nav input:checked + ul > li:nth-child(2) a {
+          animation-name: animacion-nav-img;
+          animation-duration: .5s;
+          animation-iteration-count: 1;
+          animation-timing-function: ease-in-out;
+          animation-delay: 0.2s; }
+        .contenedorHome header nav input:checked + ul > li:nth-child(3) a, .contenedorSobreMi header nav input:checked + ul > li:nth-child(3) a, .contenedorConocimientos header nav input:checked + ul > li:nth-child(3) a, .contenedorPortafolio header nav input:checked + ul > li:nth-child(3) a, .contenedorContacto header nav input:checked + ul > li:nth-child(3) a {
+          animation-name: animacion-nav-img;
+          animation-duration: .5s;
+          animation-iteration-count: 1;
+          animation-timing-function: ease-in-out;
+          animation-delay: 0.4s; }
+        .contenedorHome header nav input:checked + ul > li:nth-child(4) a, .contenedorSobreMi header nav input:checked + ul > li:nth-child(4) a, .contenedorConocimientos header nav input:checked + ul > li:nth-child(4) a, .contenedorPortafolio header nav input:checked + ul > li:nth-child(4) a, .contenedorContacto header nav input:checked + ul > li:nth-child(4) a {
+          animation-name: animacion-nav-img;
+          animation-duration: .5s;
+          animation-iteration-count: 1;
+          animation-timing-function: ease-in-out;
+          animation-delay: 0.6s; }
+        .contenedorHome header nav input:checked + ul > li:nth-child(5) a, .contenedorSobreMi header nav input:checked + ul > li:nth-child(5) a, .contenedorConocimientos header nav input:checked + ul > li:nth-child(5) a, .contenedorPortafolio header nav input:checked + ul > li:nth-child(5) a, .contenedorContacto header nav input:checked + ul > li:nth-child(5) a {
+          animation-name: animacion-nav-img;
+          animation-duration: .5s;
+          animation-iteration-count: 1;
+          animation-timing-function: ease-in-out;
+          animation-delay: 0.8s; }
+    .contenedorHome header nav ul, .contenedorSobreMi header nav ul, .contenedorConocimientos header nav ul, .contenedorPortafolio header nav ul, .contenedorContacto header nav ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      clip-path: circle(0% at 50% 0);
+      transition: clip-path .3s ease-in-out;
+      height: 50vh;
+      margin: 0rem;
+      padding-left: 0rem;
+      background-color: #5A5ACB; }
+      .contenedorHome header nav ul li, .contenedorSobreMi header nav ul li, .contenedorConocimientos header nav ul li, .contenedorPortafolio header nav ul li, .contenedorContacto header nav ul li {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .contenedorHome header nav ul li a, .contenedorSobreMi header nav ul li a, .contenedorConocimientos header nav ul li a, .contenedorPortafolio header nav ul li a, .contenedorContacto header nav ul li a {
+          display: flex;
+          text-decoration: none; }
+          .contenedorHome header nav ul li a img, .contenedorSobreMi header nav ul li a img, .contenedorConocimientos header nav ul li a img, .contenedorPortafolio header nav ul li a img, .contenedorContacto header nav ul li a img {
+            width: 2rem;
+            height: 2rem;
+            margin: .5rem; }
+          .contenedorHome header nav ul li a p, .contenedorSobreMi header nav ul li a p, .contenedorConocimientos header nav ul li a p, .contenedorPortafolio header nav ul li a p, .contenedorContacto header nav ul li a p {
+            color: white;
+            font-size: 2rem;
+            border-bottom: 1px solid #BD2330;
+            border-bottom-style: dotted; }
+          .contenedorHome header nav ul li a:active, .contenedorSobreMi header nav ul li a:active, .contenedorConocimientos header nav ul li a:active, .contenedorPortafolio header nav ul li a:active, .contenedorContacto header nav ul li a:active {
+            transform: scale(0.9); }
+            .contenedorHome header nav ul li a:active p, .contenedorSobreMi header nav ul li a:active p, .contenedorConocimientos header nav ul li a:active p, .contenedorPortafolio header nav ul li a:active p, .contenedorContacto header nav ul li a:active p {
+              color: #BD2330; }
 
 .contenedorHome footer div, .contenedorSobreMi footer div, .contenedorConocimientos footer div, .contenedorPortafolio footer div, .contenedorContacto footer div {
   display: flex;
@@ -129,56 +141,13 @@
     font-weight: bold;
     text-align: center; }
 
-@keyframes shake {
-  0% {
-    transform: rotate(0deg); }
-  10% {
-    transform: rotate(-3deg); }
-  20% {
-    transform: rotate(5deg); }
-  30% {
-    transform: rotate(-8deg); }
-  40% {
-    transform: rotate(8deg); }
-  50% {
-    transform: rotate(-5deg); }
-  60% {
-    transform: rotate(3deg); }
-  70% {
-    transform: rotate(0deg); } }
-
-@keyframes palpitar {
-  0% {
-    transform: scale(1); }
-  100% {
-    transform: scale(1.02); } }
-
-@keyframes animacion-nav-img {
-  0% {
-    transform: scale(1); }
-  50% {
-    transform: scale(1.2); }
-  100% {
-    transform: scale(1); } }
-
 .contenedorHome {
   background-color: #5454C5;
   display: grid;
   height: 100%;
   grid-template-areas: "header-home" "main-home" "section-home" "footer-home"; }
   .contenedorHome header {
-    grid-area: header-home;
-    height: 3rem;
-    position: sticky;
-    top: 0%;
-    z-index: 15;
-    display: flex;
-    justify-content: space-between; }
-    .contenedorHome header div {
-      margin: .4rem; }
-      .contenedorHome header div a img {
-        width: 3rem;
-        height: 3rem; }
+    grid-area: header-home; }
   .contenedorHome main {
     grid-area: main-home;
     background-color: #FC605E;
@@ -209,12 +178,13 @@
         text-decoration: none;
         color: white;
         padding: .6rem;
-        font-size: 1.4rem;
-        /*animacion*/
-        animation-name: shake;
-        animation-duration: 4s;
-        animation-iteration-count: infinite;
-        animation-timing-function: ease-in-out; }
+        font-size: 1.4rem; }
+        .contenedorHome main div div a:hover {
+          /*animacion*/
+          animation-name: shake;
+          animation-duration: .7s;
+          animation-iteration-count: infinite;
+          animation-timing-function: ease-in-out; }
   .contenedorHome section {
     grid-area: section-home;
     background-color: #484554;
@@ -251,13 +221,13 @@
       text-decoration: none;
       color: white;
       padding: .6rem;
-      font-size: 1.4rem;
-      /*animacion*/
-      animation-name: shake;
-      animation-duration: 4s;
-      animation-iteration-count: infinite;
-      animation-timing-function: ease-in-out;
-      animation-delay: .3s; }
+      font-size: 1.4rem; }
+      .contenedorHome section .btn a:hover {
+        /*animacion*/
+        animation-name: shake;
+        animation-duration: .7s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out; }
   .contenedorHome footer {
     grid-area: footer-home;
     background-color: #ADA9BB; }
@@ -268,18 +238,7 @@
   height: 100%;
   grid-template-areas: "header-sobre-mi" "main-sobre-mi" "section-sobre-mi" "footer-sobre-mi"; }
   .contenedorSobreMi header {
-    grid-area: header-sobre-mi;
-    height: 3rem;
-    position: sticky;
-    top: 0%;
-    z-index: 15;
-    display: flex;
-    justify-content: space-between; }
-    .contenedorSobreMi header div {
-      margin: .3rem; }
-      .contenedorSobreMi header div a img {
-        width: 3rem;
-        height: 3rem; }
+    grid-area: header-sobre-mi; }
   .contenedorSobreMi main {
     grid-area: main-sobre-mi;
     background-color: #FC605E;
@@ -331,25 +290,17 @@
   height: 100%;
   grid-template-areas: "header-conocimientos" "main-conocimientos" "section-conocimientos" "footer-conocimientos"; }
   .contenedorConocimientos header {
-    grid-area: header-conocimientos;
-    position: sticky;
-    height: 3rem;
-    top: 0%;
-    z-index: 15;
-    display: flex;
-    justify-content: space-between; }
-    .contenedorConocimientos header div {
-      margin: .3rem; }
-      .contenedorConocimientos header div a img {
-        width: 3rem;
-        height: 3rem; }
+    grid-area: header-conocimientos; }
+    .contenedorConocimientos header nav ul li a p {
+      /*resets de estilos de BootsTrap*/
+      margin-bottom: 0rem; }
   .contenedorConocimientos main {
     grid-area: main-conocimientos;
     background-color: #FC605E;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 0rem 1rem 0rem 1rem;
+    margin: 1rem 1rem 0rem 1rem;
     border-radius: 2rem; }
     .contenedorConocimientos main h1 {
       font-size: 4rem;
@@ -409,18 +360,7 @@
   height: 100%;
   grid-template-areas: "header-portafolio" "main-portafolio" "footer-portafolio"; }
   .contenedorPortafolio header {
-    grid-area: header-portafolio;
-    position: sticky;
-    height: 3rem;
-    top: 0%;
-    z-index: 10;
-    display: flex;
-    justify-content: space-between; }
-    .contenedorPortafolio header div {
-      margin: .3rem; }
-      .contenedorPortafolio header div a img {
-        width: 3rem;
-        height: 3rem; }
+    grid-area: header-portafolio; }
   .contenedorPortafolio main {
     grid-area: main-portafolio;
     background-color: #FC605E;
@@ -428,7 +368,7 @@
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
-    margin: 0rem 1rem 1rem 1rem;
+    margin: 1rem 1rem 1rem 1rem;
     border-radius: 1.3rem; }
     .contenedorPortafolio main div {
       background-color: #484554;
@@ -470,25 +410,14 @@
   height: 100%;
   grid-template-areas: "header-contacto" "main-contacto" "section-contacto" "footer-contacto"; }
   .contenedorContacto header {
-    grid-area: header-contacto;
-    position: sticky;
-    height: 3rem;
-    top: 0%;
-    z-index: 10;
-    display: flex;
-    justify-content: space-between; }
-    .contenedorContacto header div {
-      margin: .3rem; }
-      .contenedorContacto header div a img {
-        width: 3rem;
-        height: 3rem; }
+    grid-area: header-contacto; }
   .contenedorContacto main {
     grid-area: main-contacto;
     background-color: #FC605E;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    margin: 0rem 1rem 0rem 1rem;
+    margin: 1rem 1rem 0rem 1rem;
     border-radius: 2rem;
     color: white;
     padding: .4rem; }
@@ -552,16 +481,32 @@
     height: 100%;
     grid-template-areas: "header-home header-home header-home" "main-home main-home main-home" "section-home section-home section-home" "footer-home footer-home footer-home"; }
     .contenedorHome header {
-      margin-bottom: 2.5rem; }
+      display: flex;
+      justify-content: space-between;
+      height: 10vh; }
+      .contenedorHome header div {
+        display: block;
+        align-self: center; }
+        .contenedorHome header div a img {
+          width: 3.5rem;
+          padding-left: .2rem; }
       .contenedorHome header nav {
+        margin-top: .1rem;
         display: flex;
-        padding: .2rem; }
+        flex-direction: column;
+        padding: .2rem;
+        height: 100vh;
+        width: 60vh; }
+        .contenedorHome header nav label {
+          display: inherit;
+          justify-content: end; }
         .contenedorHome header nav input:checked + ul {
-          clip-path: circle(150% at 0 50%); }
+          clip-path: circle(150% at 100 0%); }
         .contenedorHome header nav ul {
-          width: 100%;
-          clip-path: circle(0% at 0 50%); }
+          height: 100vh;
+          clip-path: circle(0% at 100 0%); }
     .contenedorHome main {
+      margin-top: 1rem;
       width: 80vh;
       justify-self: center; }
     .contenedorHome section {
@@ -574,15 +519,30 @@
     height: 100%;
     grid-template-areas: "header-sobre-mi header-sobre-mi header-sobre-mi" "main-sobre-mi main-sobre-mi main-sobre-mi" "section-sobre-mi section-sobre-mi section-sobre-mi" "footer-sobre-mi footer-sobre-mi footer-sobre-mi"; }
     .contenedorSobreMi header {
-      margin-bottom: 2rem; }
+      display: flex;
+      justify-content: space-between;
+      height: 10vh; }
+      .contenedorSobreMi header div {
+        display: block;
+        align-self: center; }
+        .contenedorSobreMi header div a img {
+          width: 3.5rem;
+          padding-left: .2rem; }
       .contenedorSobreMi header nav {
+        margin-top: .1rem;
         display: flex;
-        padding: .2rem; }
+        flex-direction: column;
+        padding: .2rem;
+        height: 100vh;
+        width: 60vh; }
+        .contenedorSobreMi header nav label {
+          display: inherit;
+          justify-content: end; }
         .contenedorSobreMi header nav input:checked + ul {
-          clip-path: circle(150% at 0 50%); }
+          clip-path: circle(150% at 100 0%); }
         .contenedorSobreMi header nav ul {
-          width: 100%;
-          clip-path: circle(0% at 0 50%); }
+          height: 100vh;
+          clip-path: circle(0% at 100 0%); }
     .contenedorSobreMi main {
       width: 80vh;
       justify-self: center; }
@@ -596,15 +556,30 @@
     height: 100%;
     grid-template-areas: "header-conocimientos header-conocimientos header-conocimientos" "main-conocimientos main-conocimientos main-conocimientos" "section-conocimientos section-conocimientos section-conocimientos" "footer-conocimientos footer-conocimientos footer-conocimientos"; }
     .contenedorConocimientos header {
-      margin-bottom: 2.5rem; }
+      display: flex;
+      justify-content: space-between;
+      height: 10vh; }
+      .contenedorConocimientos header div {
+        display: block;
+        align-self: center; }
+        .contenedorConocimientos header div a img {
+          width: 3.5rem;
+          padding-left: .2rem; }
       .contenedorConocimientos header nav {
+        margin-top: .1rem;
         display: flex;
-        padding: .2rem; }
+        flex-direction: column;
+        padding: .2rem;
+        height: 100vh;
+        width: 60vh; }
+        .contenedorConocimientos header nav label {
+          display: inherit;
+          justify-content: end; }
         .contenedorConocimientos header nav input:checked + ul {
-          clip-path: circle(150% at 0 50%); }
+          clip-path: circle(150% at 100 0%); }
         .contenedorConocimientos header nav ul {
-          width: 100%;
-          clip-path: circle(0% at 0 50%); }
+          height: 100vh;
+          clip-path: circle(0% at 100 0%); }
     .contenedorConocimientos main {
       width: 83vh;
       justify-self: center; }
@@ -618,15 +593,30 @@
     height: 100%;
     grid-template-areas: " header-portafolio header-portafolio header-portafolio" "main-portafolio main-portafolio main-portafolio" "section-portafolio section-portafolio section-portafolio" "footer-portafolio footer-portafolio footer-portafolio"; }
     .contenedorPortafolio header {
-      margin-bottom: 2rem; }
+      display: flex;
+      justify-content: space-between;
+      height: 10vh; }
+      .contenedorPortafolio header div {
+        display: block;
+        align-self: center; }
+        .contenedorPortafolio header div a img {
+          width: 3.5rem;
+          padding-left: .2rem; }
       .contenedorPortafolio header nav {
+        margin-top: .1rem;
         display: flex;
-        padding: .2rem; }
+        flex-direction: column;
+        padding: .2rem;
+        height: 100vh;
+        width: 60vh; }
+        .contenedorPortafolio header nav label {
+          display: inherit;
+          justify-content: end; }
         .contenedorPortafolio header nav input:checked + ul {
-          clip-path: circle(150% at 0 50%); }
+          clip-path: circle(150% at 100 0%); }
         .contenedorPortafolio header nav ul {
-          width: 100%;
-          clip-path: circle(0% at 0 50%); }
+          height: 100vh;
+          clip-path: circle(0% at 100 0%); }
     .contenedorPortafolio main {
       width: 80vh;
       justify-self: center; }
@@ -637,15 +627,30 @@
     height: 100%;
     grid-template-areas: "header-contacto header-contacto header-contacto" "main-contacto main-contacto main-contacto" "section-contacto section-contacto section-contacto" "footer-contacto footer-contacto footer-contacto"; }
     .contenedorContacto header {
-      margin-bottom: 2rem; }
+      display: flex;
+      justify-content: space-between;
+      height: 10vh; }
+      .contenedorContacto header div {
+        display: block;
+        align-self: center; }
+        .contenedorContacto header div a img {
+          width: 3.5rem;
+          padding-left: .2rem; }
       .contenedorContacto header nav {
+        margin-top: .1rem;
         display: flex;
-        padding: .2rem; }
+        flex-direction: column;
+        padding: .2rem;
+        height: 100vh;
+        width: 60vh; }
+        .contenedorContacto header nav label {
+          display: inherit;
+          justify-content: end; }
         .contenedorContacto header nav input:checked + ul {
-          clip-path: circle(150% at 0 50%); }
+          clip-path: circle(150% at 100 0%); }
         .contenedorContacto header nav ul {
-          width: 100%;
-          clip-path: circle(0% at 0 50%); }
+          height: 100vh;
+          clip-path: circle(0% at 100 0%); }
     .contenedorContacto main {
       width: 80vh;
       justify-self: center; }
@@ -661,32 +666,21 @@
     height: 100%;
     grid-template-areas: "header-home header-home header-home header-home" "main-home main-home main-home main-home" "section-home section-home section-home section-home" "footer-home footer-home footer-home footer-home"; }
     .contenedorHome header {
-      background-color: #5454C5;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
       padding: .3rem;
       height: 9vh;
       margin-bottom: 0rem; }
-      .contenedorHome header div {
-        display: inherit;
-        align-items: center; }
-        .contenedorHome header div a {
-          text-decoration: none;
-          color: white; }
       .contenedorHome header nav {
         display: flex;
-        flex-direction: row;
-        height: auto; }
+        height: auto;
+        width: auto; }
         .contenedorHome header nav label img {
           display: none; }
         .contenedorHome header nav ul {
-          background-color: #5A5ACB;
           height: auto;
           clip-path: none;
-          display: inherit;
-          align-items: center;
-          border-radius: 1.2rem; }
+          border-radius: 1.2rem;
+          display: flex;
+          flex-direction: row; }
           .contenedorHome header nav ul li a {
             position: relative;
             z-index: 1; }
@@ -711,7 +705,10 @@
               background-color: transparent;
               font-size: 1.4rem;
               margin: .2rem;
-              padding: .2rem; }
+              padding: .2rem;
+              border-bottom: 0px; }
+              .contenedorHome header nav ul li a p:active {
+                color: white; }
     .contenedorHome main {
       cursor: default;
       width: auto; }
@@ -751,35 +748,21 @@
     height: 100%;
     grid-template-areas: "header-sobre-mi header-sobre-mi header-sobre-mi header-sobre-mi" "main-sobre-mi main-sobre-mi main-sobre-mi main-sobre-mi" "section-sobre-mi section-sobre-mi section-sobre-mi section-sobre-mi" "footer-sobre-mi footer-sobre-mi footer-sobre-mi footer-sobre-mi"; }
     .contenedorSobreMi header {
-      background-color: #5454C5;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
       padding: .3rem;
       height: 9vh;
       margin-bottom: 0rem; }
-      .contenedorSobreMi header div {
-        display: inherit;
-        align-items: center; }
-        .contenedorSobreMi header div a {
-          text-decoration: none;
-          color: white; }
-          .contenedorSobreMi header div a h1 {
-            font-size: 2rem;
-            font-weight: bold; }
       .contenedorSobreMi header nav {
         display: flex;
-        flex-direction: row;
-        height: auto; }
+        height: auto;
+        width: auto; }
         .contenedorSobreMi header nav label img {
           display: none; }
         .contenedorSobreMi header nav ul {
-          background-color: #5A5ACB;
           height: auto;
           clip-path: none;
-          display: inherit;
-          align-items: center;
-          border-radius: 1.2rem; }
+          border-radius: 1.2rem;
+          display: flex;
+          flex-direction: row; }
           .contenedorSobreMi header nav ul li a {
             position: relative;
             z-index: 1; }
@@ -804,7 +787,10 @@
               background-color: transparent;
               font-size: 1.4rem;
               margin: .2rem;
-              padding: .2rem; }
+              padding: .2rem;
+              border-bottom: 0px; }
+              .contenedorSobreMi header nav ul li a p:active {
+                color: white; }
     .contenedorSobreMi main {
       flex-wrap: nowrap;
       width: auto; }
@@ -831,34 +817,21 @@
     height: 100%;
     grid-template-areas: "header-conocimientos header-conocimientos header-conocimientos header-conocimientos" "main-conocimientos main-conocimientos main-conocimientos main-conocimientos" "section-conocimientos section-conocimientos section-conocimientos section-conocimientos" "footer-conocimientos footer-conocimientos footer-conocimientos footer-conocimientos"; }
     .contenedorConocimientos header {
-      background-color: #5454C5;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
       padding: .3rem;
       height: 9vh;
       margin-bottom: 0rem; }
-      .contenedorConocimientos header div {
-        display: inherit; }
-        .contenedorConocimientos header div a {
-          text-decoration: none;
-          color: white; }
-          .contenedorConocimientos header div a h1 {
-            font-size: 2rem;
-            font-weight: bold; }
       .contenedorConocimientos header nav {
         display: flex;
-        flex-direction: row;
-        height: auto; }
+        height: auto;
+        width: auto; }
         .contenedorConocimientos header nav label img {
           display: none; }
         .contenedorConocimientos header nav ul {
-          background-color: #5A5ACB;
           height: auto;
           clip-path: none;
-          display: inherit;
-          align-items: center;
-          border-radius: 1.2rem; }
+          border-radius: 1.2rem;
+          display: flex;
+          flex-direction: row; }
           .contenedorConocimientos header nav ul li a {
             position: relative;
             z-index: 1; }
@@ -883,7 +856,10 @@
               background-color: transparent;
               font-size: 1.4rem;
               margin: .2rem;
-              padding: .2rem; }
+              padding: .2rem;
+              border-bottom: 0px; }
+              .contenedorConocimientos header nav ul li a p:active {
+                color: white; }
     .contenedorConocimientos main {
       width: auto; }
       .contenedorConocimientos main h1 {
@@ -905,32 +881,21 @@
     height: 100%;
     grid-template-areas: "header{ortafolio header{ortafolio header{ortafolio header{ortafolio" "main{ortafolio main{ortafolio main{ortafolio main{ortafolio" "section{ortafolio section{ortafolio section{ortafolio section{ortafolio" "footer{ortafolio footer{ortafolio footer{ortafolio footer{ortafolio"; }
     .contenedorPortafolio header {
-      background-color: #5454C5;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
       padding: .3rem;
       height: 9vh;
       margin-bottom: 0rem; }
-      .contenedorPortafolio header div {
-        display: inherit;
-        align-items: center; }
-        .contenedorPortafolio header div a {
-          text-decoration: none;
-          color: white; }
       .contenedorPortafolio header nav {
         display: flex;
-        flex-direction: row;
-        height: auto; }
+        height: auto;
+        width: auto; }
         .contenedorPortafolio header nav label img {
           display: none; }
         .contenedorPortafolio header nav ul {
-          background-color: #5A5ACB;
           height: auto;
           clip-path: none;
-          display: inherit;
-          align-items: center;
-          border-radius: 1.2rem; }
+          border-radius: 1.2rem;
+          display: flex;
+          flex-direction: row; }
           .contenedorPortafolio header nav ul li a {
             position: relative;
             z-index: 1; }
@@ -955,7 +920,10 @@
               background-color: transparent;
               font-size: 1.4rem;
               margin: .2rem;
-              padding: .2rem; }
+              padding: .2rem;
+              border-bottom: 0px; }
+              .contenedorPortafolio header nav ul li a p:active {
+                color: white; }
     .contenedorPortafolio main {
       padding: 1rem;
       width: auto; }
@@ -972,32 +940,21 @@
     height: 100%;
     grid-template-areas: "header-contacto header-contacto header-contacto header-contacto" "main-contacto main-contacto main-contacto main-contacto" "section-contacto section-contacto section-contacto section-contacto" "footer-contacto footer-contacto footer-contacto footer-contacto"; }
     .contenedorContacto header {
-      background-color: #5454C5;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
       padding: .3rem;
       height: 9vh;
       margin-bottom: 0rem; }
-      .contenedorContacto header div {
-        display: inherit;
-        align-items: center; }
-        .contenedorContacto header div a {
-          text-decoration: none;
-          color: white; }
       .contenedorContacto header nav {
         display: flex;
-        flex-direction: row;
-        height: auto; }
+        height: auto;
+        width: auto; }
         .contenedorContacto header nav label img {
           display: none; }
         .contenedorContacto header nav ul {
-          background-color: #5A5ACB;
           height: auto;
           clip-path: none;
-          display: inherit;
-          align-items: center;
-          border-radius: 1.2rem; }
+          border-radius: 1.2rem;
+          display: flex;
+          flex-direction: row; }
           .contenedorContacto header nav ul li a {
             position: relative;
             z-index: 1; }
@@ -1022,7 +979,10 @@
               background-color: transparent;
               font-size: 1.4rem;
               margin: .2rem;
-              padding: .2rem; }
+              padding: .2rem;
+              border-bottom: 0px; }
+              .contenedorContacto header nav ul li a p:active {
+                color: white; }
     .contenedorContacto main {
       width: auto; }
       .contenedorContacto main h1 {

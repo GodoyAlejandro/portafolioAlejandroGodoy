@@ -7,24 +7,10 @@
                             "section-home section-home section-home"
                             "footer-home footer-home footer-home");
         header{
-            margin-bottom: 2.5rem;
-            nav{
-                display: flex;
-                padding: .2rem;
-                input{
-                    &:checked{
-                        +ul{
-                            clip-path: circle(150% at 0 50%);
-                        }
-                    }
-                }               
-                ul{
-                    width: 100%;
-                    clip-path: circle(0% at 0 50%);
-                }
-            }
+            @include header-t;
         }
         main{
+            margin-top: 1rem;
             width: 80vh;
             justify-self: center;
         }
@@ -41,22 +27,7 @@
         "section-sobre-mi section-sobre-mi section-sobre-mi"
         "footer-sobre-mi footer-sobre-mi footer-sobre-mi");
         header{
-            margin-bottom: 2rem;
-            nav{
-                display: flex;
-                padding: .2rem;
-                input{
-                    &:checked{
-                        +ul{
-                            clip-path: circle(150% at 0 50%);
-                        }
-                    }
-                }               
-                ul{
-                    width: 100%;
-                    clip-path: circle(0% at 0 50%);
-                }
-            }
+            @include header-t;
         }
         main{
             width: 80vh;
@@ -75,22 +46,7 @@
         "section-conocimientos section-conocimientos section-conocimientos"
         "footer-conocimientos footer-conocimientos footer-conocimientos");
         header{
-            margin-bottom: 2.5rem;
-            nav{
-                display: flex;
-                padding: .2rem;
-                input{
-                    &:checked{
-                        +ul{
-                            clip-path: circle(150% at 0 50%);
-                        }
-                    }
-                }               
-                ul{
-                    width: 100%;
-                    clip-path: circle(0% at 0 50%);
-                }
-            }
+            @include header-t;
         }
         main{
             width: 83vh;
@@ -109,22 +65,7 @@
         "section-portafolio section-portafolio section-portafolio"
         "footer-portafolio footer-portafolio footer-portafolio");
         header{
-            margin-bottom: 2rem;
-            nav{
-                display: flex;
-                padding: .2rem;
-                input{
-                    &:checked{
-                        +ul{
-                            clip-path: circle(150% at 0 50%);
-                        }
-                    }
-                }               
-                ul{
-                    width: 100%;
-                    clip-path: circle(0% at 0 50%);
-                }
-            }
+            @include header-t;
         }
         main{
             width: 80vh;
@@ -140,22 +81,7 @@
         "section-contacto section-contacto section-contacto"
         "footer-contacto footer-contacto footer-contacto");
         header{
-            margin-bottom: 2rem;
-            nav{
-                display: flex;
-                padding: .2rem;
-                input{
-                    &:checked{
-                        +ul{
-                            clip-path: circle(150% at 0 50%);
-                        }
-                    }
-                }               
-                ul{
-                    width: 100%;
-                    clip-path: circle(0% at 0 50%);
-                }
-            }
+            @include header-t;
         }
         main{
             width: 80vh;
@@ -177,24 +103,7 @@
                             "section-home section-home section-home section-home"
                             "footer-home footer-home footer-home footer-home");
         header{
-            background-color:$color-principal-1;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: .3rem;
-            height: 9vh;
-            margin-bottom: 0rem;
-            div{
-                display: inherit;
-                align-items: center;
-                a{
-                    text-decoration: none;
-                    color: white;
-                }
-            }
-            nav{
-                @include nav-d;    
-            }
+            @include header-d;
         }
         main{
             cursor:default;
@@ -251,28 +160,7 @@
         "section-sobre-mi section-sobre-mi section-sobre-mi section-sobre-mi"
         "footer-sobre-mi footer-sobre-mi footer-sobre-mi footer-sobre-mi");
         header{
-            background-color:$color-principal-1;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: .3rem;
-            height: 9vh;
-            margin-bottom: 0rem;
-            div{
-                display: inherit;
-                align-items: center;
-                a{
-                    text-decoration: none;
-                    color: white;
-                    h1{
-                        font-size: 2rem;
-                        font-weight: bold;
-                    }
-                }
-            }
-            nav{
-                @include nav-d;
-            }
+            @include header-d;
         }
         main{
             flex-wrap: nowrap;
@@ -309,27 +197,7 @@
         "section-conocimientos section-conocimientos section-conocimientos section-conocimientos"
         "footer-conocimientos footer-conocimientos footer-conocimientos footer-conocimientos");
         header{
-            background-color:$color-principal-1;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: .3rem;
-            height: 9vh;
-            margin-bottom: 0rem;
-            div{
-                display: inherit;
-                a{
-                    text-decoration: none;
-                    color: white;
-                    h1{
-                        font-size: 2rem;
-                        font-weight: bold;
-                    }
-                }
-            }
-            nav{
-               @include nav-d;
-            }
+            @include header-d;
         }
         main{
             width: auto;
@@ -361,24 +229,7 @@
         "section{ortafolio section{ortafolio section{ortafolio section{ortafolio"
         "footer{ortafolio footer{ortafolio footer{ortafolio footer{ortafolio");
         header{
-            background-color:$color-principal-1;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: .3rem;
-            height: 9vh;
-            margin-bottom: 0rem;
-            div{
-                display: inherit;
-                align-items: center;
-                a{
-                    text-decoration: none;
-                    color: white;
-                }
-            }
-            nav{
-                @include nav-d;
-            }
+            @include header-d;
         }
         main{
             padding: 1rem;
@@ -402,24 +253,7 @@
         "section-contacto section-contacto section-contacto section-contacto"
         "footer-contacto footer-contacto footer-contacto footer-contacto");
         header{
-            background-color:$color-principal-1;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: .3rem;
-            height: 9vh;
-            margin-bottom: 0rem;
-            div{
-                display: inherit;
-                align-items: center;
-                a{
-                    text-decoration: none;
-                    color: white;
-                }
-            }
-            nav{
-                @include nav-d;
-            }
+            @include header-d;
         }
         main{
             width: auto;

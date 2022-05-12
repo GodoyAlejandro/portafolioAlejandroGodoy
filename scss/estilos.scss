@@ -1,6 +1,9 @@
 //reset
 @import "utilities/reset-y-variables.scss";
 
+//estilos principales
+@import "utilities/layout-principal.scss";
+
 //layout
 @import "views/home.scss";
 
@@ -16,4 +19,4 @@
 @import "tamaños/media-queries.scss";
 
 //animaciones
-@import "utilities/animaciones";
+@import "utilities/animaciones.scss";

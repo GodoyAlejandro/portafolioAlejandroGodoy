@@ -6,25 +6,7 @@
     "footer-contacto");
     header{
         grid-area: header-contacto;
-        position: sticky;
-        height: 3rem;
-        top: 0%;
-        z-index: 10;
-        display: flex;
-        justify-content: space-between;
-        div{
-            margin: .3rem;
-            a{
-                img{
-                    width: 3rem;
-                    height: 3rem;
-                }
-            }
-        }
-        nav{
-            @extend %nav-m;
-            
-        }
+        @extend %header;
     }
     main{
         grid-area: main-contacto ;
@@ -32,7 +14,7 @@
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
-        margin: 0rem 1rem 0rem 1rem ;
+        margin: 1rem 1rem 0rem 1rem ;
         border-radius: 2rem;
         color: white;
         padding: .4rem;

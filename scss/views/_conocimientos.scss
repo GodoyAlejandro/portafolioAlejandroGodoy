@@ -6,23 +6,18 @@
     "footer-conocimientos");
     header{
         grid-area: header-conocimientos;
-        position: sticky;
-        height: 3rem;
-        top: 0%;
-        z-index: 15;
-        display: flex;
-        justify-content: space-between;
-        div{
-            margin: .3rem;
-            a{
-                img{
-                    width: 3rem;
-                    height: 3rem;
+        @extend %header;
+        nav{
+            ul{
+                li{
+                    a{
+                        p{
+                            /*resets de estilos de BootsTrap*/
+                            margin-bottom: 0rem;
+                        }
+                    }
                 }
             }
-        }
-        nav{
-            @extend %nav-m;
         }
     }
     main{
@@ -31,7 +26,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin: 0rem 1rem 0rem 1rem ;
+        margin: 1rem 1rem 0rem 1rem ;
         border-radius: 2rem;
         h1{
             font-size: map-get($map: $font-size-mobile, $key: h1 );
