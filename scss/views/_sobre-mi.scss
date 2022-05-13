@@ -1,21 +1,12 @@
 //estilos mobile-first
-.contenedorSobreMi{
+.contenedor-sobre-mi{
     @include conteiner ("header-sobre-mi"
     "main-sobre-mi"
     "section-sobre-mi"
     "footer-sobre-mi");
     header{
         grid-area: header-sobre-mi;
-        height: 3rem;
-        position: sticky;
-        top: 0%;
-        z-index: 15;
-        div{
-            display: none;
-        }
-        nav{
-            @extend %nav-m;
-        }
+        @extend %header;
     }
     main{
         grid-area: main-sobre-mi ;

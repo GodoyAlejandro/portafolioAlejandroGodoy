@@ -36,181 +36,156 @@
   100% {
     transform: scale(1); } }
 
-.contenedorHome header nav label, .contenedorSobreMi header nav label, .contenedorConocimientos header nav label, .contenedorPortafolio header nav label, .contenedorContacto header nav label {
-  display: flex;
-  justify-content: center; }
-  .contenedorHome header nav label img, .contenedorSobreMi header nav label img, .contenedorConocimientos header nav label img, .contenedorPortafolio header nav label img, .contenedorContacto header nav label img {
-    width: 3rem;
-    height: 3rem;
-    background-color: #5A5ACB;
-    border-radius: 50%; }
-    .contenedorHome header nav label img:active, .contenedorSobreMi header nav label img:active, .contenedorConocimientos header nav label img:active, .contenedorPortafolio header nav label img:active, .contenedorContacto header nav label img:active {
-      transform: scale(0.9); }
-
-.contenedorHome header nav input, .contenedorSobreMi header nav input, .contenedorConocimientos header nav input, .contenedorPortafolio header nav input, .contenedorContacto header nav input {
-  display: none; }
-  .contenedorHome header nav input:checked + ul, .contenedorSobreMi header nav input:checked + ul, .contenedorConocimientos header nav input:checked + ul, .contenedorPortafolio header nav input:checked + ul, .contenedorContacto header nav input:checked + ul {
-    clip-path: circle(60% at 50% 0); }
-    .contenedorHome header nav input:checked + ul > li:nth-child(1) a, .contenedorSobreMi header nav input:checked + ul > li:nth-child(1) a, .contenedorConocimientos header nav input:checked + ul > li:nth-child(1) a, .contenedorPortafolio header nav input:checked + ul > li:nth-child(1) a, .contenedorContacto header nav input:checked + ul > li:nth-child(1) a {
-      animation-name: animacion-nav-img;
-      animation-duration: .5s;
-      animation-iteration-count: 1;
-      animation-timing-function: ease-in-out;
-      animation-delay: 0s; }
-    .contenedorHome header nav input:checked + ul > li:nth-child(2) a, .contenedorSobreMi header nav input:checked + ul > li:nth-child(2) a, .contenedorConocimientos header nav input:checked + ul > li:nth-child(2) a, .contenedorPortafolio header nav input:checked + ul > li:nth-child(2) a, .contenedorContacto header nav input:checked + ul > li:nth-child(2) a {
-      animation-name: animacion-nav-img;
-      animation-duration: .5s;
-      animation-iteration-count: 1;
-      animation-timing-function: ease-in-out;
-      animation-delay: 0.2s; }
-    .contenedorHome header nav input:checked + ul > li:nth-child(3) a, .contenedorSobreMi header nav input:checked + ul > li:nth-child(3) a, .contenedorConocimientos header nav input:checked + ul > li:nth-child(3) a, .contenedorPortafolio header nav input:checked + ul > li:nth-child(3) a, .contenedorContacto header nav input:checked + ul > li:nth-child(3) a {
-      animation-name: animacion-nav-img;
-      animation-duration: .5s;
-      animation-iteration-count: 1;
-      animation-timing-function: ease-in-out;
-      animation-delay: 0.4s; }
-    .contenedorHome header nav input:checked + ul > li:nth-child(4) a, .contenedorSobreMi header nav input:checked + ul > li:nth-child(4) a, .contenedorConocimientos header nav input:checked + ul > li:nth-child(4) a, .contenedorPortafolio header nav input:checked + ul > li:nth-child(4) a, .contenedorContacto header nav input:checked + ul > li:nth-child(4) a {
-      animation-name: animacion-nav-img;
-      animation-duration: .5s;
-      animation-iteration-count: 1;
-      animation-timing-function: ease-in-out;
-      animation-delay: 0.6s; }
-    .contenedorHome header nav input:checked + ul > li:nth-child(5) a, .contenedorSobreMi header nav input:checked + ul > li:nth-child(5) a, .contenedorConocimientos header nav input:checked + ul > li:nth-child(5) a, .contenedorPortafolio header nav input:checked + ul > li:nth-child(5) a, .contenedorContacto header nav input:checked + ul > li:nth-child(5) a {
-      animation-name: animacion-nav-img;
-      animation-duration: .5s;
-      animation-iteration-count: 1;
-      animation-timing-function: ease-in-out;
-      animation-delay: 0.8s; }
-
-.contenedorHome header nav ul, .contenedorSobreMi header nav ul, .contenedorConocimientos header nav ul, .contenedorPortafolio header nav ul, .contenedorContacto header nav ul {
-  display: flex;
-  justify-content: space-around;
-  clip-path: circle(0% at 50% 0);
-  transition: clip-path .3s ease-in-out;
-  height: 60vh;
-  margin-bottom: 0rem;
-  padding-left: 0rem; }
-  .contenedorHome header nav ul li, .contenedorSobreMi header nav ul li, .contenedorConocimientos header nav ul li, .contenedorPortafolio header nav ul li, .contenedorContacto header nav ul li {
-    list-style: none; }
-    .contenedorHome header nav ul li a, .contenedorSobreMi header nav ul li a, .contenedorConocimientos header nav ul li a, .contenedorPortafolio header nav ul li a, .contenedorContacto header nav ul li a {
-      display: flex;
-      flex-direction: column;
-      text-decoration: none;
-      align-items: center; }
-      .contenedorHome header nav ul li a img, .contenedorSobreMi header nav ul li a img, .contenedorConocimientos header nav ul li a img, .contenedorPortafolio header nav ul li a img, .contenedorContacto header nav ul li a img {
-        width: 3rem;
-        height: 3rem;
-        background-color: #BD2330;
-        margin-top: .3rem;
-        border-radius: 2rem;
-        padding: .6rem; }
-      .contenedorHome header nav ul li a p, .contenedorSobreMi header nav ul li a p, .contenedorConocimientos header nav ul li a p, .contenedorPortafolio header nav ul li a p, .contenedorContacto header nav ul li a p {
-        color: white;
-        background-color: #BD2330;
-        padding: .1rem;
-        border-radius: .3rem; }
-      .contenedorHome header nav ul li a:active, .contenedorSobreMi header nav ul li a:active, .contenedorConocimientos header nav ul li a:active, .contenedorPortafolio header nav ul li a:active, .contenedorContacto header nav ul li a:active {
+.contenedor-home header, .contenedor-sobre-mi header, .contenedor-conocimientos header, .contenedor-portafolio header, .contenedor-contacto header {
+  height: 7vh;
+  position: sticky;
+  top: 0%;
+  z-index: 15;
+  background-color: #5A5ACB; }
+  .contenedor-home header div, .contenedor-sobre-mi header div, .contenedor-conocimientos header div, .contenedor-portafolio header div, .contenedor-contacto header div {
+    display: none; }
+  .contenedor-home header nav label, .contenedor-sobre-mi header nav label, .contenedor-conocimientos header nav label, .contenedor-portafolio header nav label, .contenedor-contacto header nav label {
+    display: flex;
+    justify-content: center; }
+    .contenedor-home header nav label img, .contenedor-sobre-mi header nav label img, .contenedor-conocimientos header nav label img, .contenedor-portafolio header nav label img, .contenedor-contacto header nav label img {
+      margin-top: .2rem;
+      width: 2.5rem;
+      height: 2.5rem;
+      display: inherit;
+      align-self: center; }
+      .contenedor-home header nav label img:active, .contenedor-sobre-mi header nav label img:active, .contenedor-conocimientos header nav label img:active, .contenedor-portafolio header nav label img:active, .contenedor-contacto header nav label img:active {
         transform: scale(0.9); }
+  .contenedor-home header nav input, .contenedor-sobre-mi header nav input, .contenedor-conocimientos header nav input, .contenedor-portafolio header nav input, .contenedor-contacto header nav input {
+    display: none; }
+    .contenedor-home header nav input:checked + ul, .contenedor-sobre-mi header nav input:checked + ul, .contenedor-conocimientos header nav input:checked + ul, .contenedor-portafolio header nav input:checked + ul, .contenedor-contacto header nav input:checked + ul {
+      background-color: #5A5ACB;
+      clip-path: circle(150% at 50% 0); }
+      .contenedor-home header nav input:checked + ul > li:nth-child(1) a, .contenedor-sobre-mi header nav input:checked + ul > li:nth-child(1) a, .contenedor-conocimientos header nav input:checked + ul > li:nth-child(1) a, .contenedor-portafolio header nav input:checked + ul > li:nth-child(1) a, .contenedor-contacto header nav input:checked + ul > li:nth-child(1) a {
+        animation-name: animacion-nav-img;
+        animation-duration: .5s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in-out;
+        animation-delay: 0s; }
+      .contenedor-home header nav input:checked + ul > li:nth-child(2) a, .contenedor-sobre-mi header nav input:checked + ul > li:nth-child(2) a, .contenedor-conocimientos header nav input:checked + ul > li:nth-child(2) a, .contenedor-portafolio header nav input:checked + ul > li:nth-child(2) a, .contenedor-contacto header nav input:checked + ul > li:nth-child(2) a {
+        animation-name: animacion-nav-img;
+        animation-duration: .5s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in-out;
+        animation-delay: 0.2s; }
+      .contenedor-home header nav input:checked + ul > li:nth-child(3) a, .contenedor-sobre-mi header nav input:checked + ul > li:nth-child(3) a, .contenedor-conocimientos header nav input:checked + ul > li:nth-child(3) a, .contenedor-portafolio header nav input:checked + ul > li:nth-child(3) a, .contenedor-contacto header nav input:checked + ul > li:nth-child(3) a {
+        animation-name: animacion-nav-img;
+        animation-duration: .5s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in-out;
+        animation-delay: 0.4s; }
+      .contenedor-home header nav input:checked + ul > li:nth-child(4) a, .contenedor-sobre-mi header nav input:checked + ul > li:nth-child(4) a, .contenedor-conocimientos header nav input:checked + ul > li:nth-child(4) a, .contenedor-portafolio header nav input:checked + ul > li:nth-child(4) a, .contenedor-contacto header nav input:checked + ul > li:nth-child(4) a {
+        animation-name: animacion-nav-img;
+        animation-duration: .5s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in-out;
+        animation-delay: 0.6s; }
+      .contenedor-home header nav input:checked + ul > li:nth-child(5) a, .contenedor-sobre-mi header nav input:checked + ul > li:nth-child(5) a, .contenedor-conocimientos header nav input:checked + ul > li:nth-child(5) a, .contenedor-portafolio header nav input:checked + ul > li:nth-child(5) a, .contenedor-contacto header nav input:checked + ul > li:nth-child(5) a {
+        animation-name: animacion-nav-img;
+        animation-duration: .5s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in-out;
+        animation-delay: 0.8s; }
+  .contenedor-home header nav ul, .contenedor-sobre-mi header nav ul, .contenedor-conocimientos header nav ul, .contenedor-portafolio header nav ul, .contenedor-contacto header nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    clip-path: circle(0% at 50% 0);
+    transition: clip-path .3s ease-in-out;
+    height: 50vh;
+    margin: 0rem;
+    padding-left: 0rem;
+    background-color: #5A5ACB; }
+    .contenedor-home header nav ul li, .contenedor-sobre-mi header nav ul li, .contenedor-conocimientos header nav ul li, .contenedor-portafolio header nav ul li, .contenedor-contacto header nav ul li {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .contenedor-home header nav ul li a, .contenedor-sobre-mi header nav ul li a, .contenedor-conocimientos header nav ul li a, .contenedor-portafolio header nav ul li a, .contenedor-contacto header nav ul li a {
+        display: flex;
+        text-decoration: none; }
+        .contenedor-home header nav ul li a img, .contenedor-sobre-mi header nav ul li a img, .contenedor-conocimientos header nav ul li a img, .contenedor-portafolio header nav ul li a img, .contenedor-contacto header nav ul li a img {
+          width: 2rem;
+          height: 2rem;
+          margin: .5rem; }
+        .contenedor-home header nav ul li a p, .contenedor-sobre-mi header nav ul li a p, .contenedor-conocimientos header nav ul li a p, .contenedor-portafolio header nav ul li a p, .contenedor-contacto header nav ul li a p {
+          color: white;
+          font-size: 2rem;
+          border-bottom: 1px solid #BD2330;
+          border-bottom-style: dotted; }
+        .contenedor-home header nav ul li a:active, .contenedor-sobre-mi header nav ul li a:active, .contenedor-conocimientos header nav ul li a:active, .contenedor-portafolio header nav ul li a:active, .contenedor-contacto header nav ul li a:active {
+          transform: scale(0.9); }
+          .contenedor-home header nav ul li a:active p, .contenedor-sobre-mi header nav ul li a:active p, .contenedor-conocimientos header nav ul li a:active p, .contenedor-portafolio header nav ul li a:active p, .contenedor-contacto header nav ul li a:active p {
+            color: #BD2330; }
 
-.contenedorHome footer div, .contenedorSobreMi footer div, .contenedorConocimientos footer div, .contenedorPortafolio footer div, .contenedorContacto footer div {
+.contenedor-home footer div, .contenedor-sobre-mi footer div, .contenedor-conocimientos footer div, .contenedor-portafolio footer div, .contenedor-contacto footer div {
   display: flex;
   justify-content: center; }
-  .contenedorHome footer div a, .contenedorSobreMi footer div a, .contenedorConocimientos footer div a, .contenedorPortafolio footer div a, .contenedorContacto footer div a {
+  .contenedor-home footer div a, .contenedor-sobre-mi footer div a, .contenedor-conocimientos footer div a, .contenedor-portafolio footer div a, .contenedor-contacto footer div a {
     text-decoration: none;
     border-bottom: 1px solid #9D9090; }
-    .contenedorHome footer div a img, .contenedorSobreMi footer div a img, .contenedorConocimientos footer div a img, .contenedorPortafolio footer div a img, .contenedorContacto footer div a img {
+    .contenedor-home footer div a img, .contenedor-sobre-mi footer div a img, .contenedor-conocimientos footer div a img, .contenedor-portafolio footer div a img, .contenedor-contacto footer div a img {
       width: 3rem;
       height: 3rem;
       margin: 0.5rem; }
 
-.contenedorHome footer .copy-right, .contenedorSobreMi footer .copy-right, .contenedorConocimientos footer .copy-right, .contenedorPortafolio footer .copy-right, .contenedorContacto footer .copy-right {
-  margin: .3rem; }
-  .contenedorHome footer .copy-right p, .contenedorSobreMi footer .copy-right p, .contenedorConocimientos footer .copy-right p, .contenedorPortafolio footer .copy-right p, .contenedorContacto footer .copy-right p {
+.contenedor-home footer .copy-right, .contenedor-sobre-mi footer .copy-right, .contenedor-conocimientos footer .copy-right, .contenedor-portafolio footer .copy-right, .contenedor-contacto footer .copy-right {
+  margin: .3rem;
+  display: flex;
+  flex-direction: column; }
+  .contenedor-home footer .copy-right span, .contenedor-sobre-mi footer .copy-right span, .contenedor-conocimientos footer .copy-right span, .contenedor-portafolio footer .copy-right span, .contenedor-contacto footer .copy-right span {
     font-weight: bold;
     text-align: center; }
 
-@keyframes shake {
-  0% {
-    transform: rotate(0deg); }
-  10% {
-    transform: rotate(-3deg); }
-  20% {
-    transform: rotate(5deg); }
-  30% {
-    transform: rotate(-8deg); }
-  40% {
-    transform: rotate(8deg); }
-  50% {
-    transform: rotate(-5deg); }
-  60% {
-    transform: rotate(3deg); }
-  70% {
-    transform: rotate(0deg); } }
-
-@keyframes palpitar {
-  0% {
-    transform: scale(1); }
-  100% {
-    transform: scale(1.02); } }
-
-@keyframes animacion-nav-img {
-  0% {
-    transform: scale(1); }
-  50% {
-    transform: scale(1.2); }
-  100% {
-    transform: scale(1); } }
-
-.contenedorHome {
+.contenedor-home {
   background-color: #5454C5;
   display: grid;
   height: 100%;
   grid-template-areas: "header-home" "main-home" "section-home" "footer-home"; }
-  .contenedorHome header {
-    grid-area: header-home;
-    height: 3rem;
-    position: sticky;
-    top: 0%;
-    z-index: 15; }
-    .contenedorHome header div {
-      display: none; }
-  .contenedorHome main {
+  .contenedor-home header {
+    grid-area: header-home; }
+  .contenedor-home main {
     grid-area: main-home;
     background-color: #FC605E;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0rem 1rem 0rem 1rem;
+    margin: 1rem 1rem 0rem 1rem;
     border-radius: 2rem; }
-    .contenedorHome main img {
+    .contenedor-home main img {
       display: none; }
-    .contenedorHome main div p {
+    .contenedor-home main div p {
       color: white;
       text-align: center;
       font-size: 2.3rem; }
-    .contenedorHome main div h1 {
+    .contenedor-home main div h1 {
       color: white;
       text-transform: uppercase;
       font-size: 4rem;
       text-align: center;
       padding: .5rem; }
-    .contenedorHome main div div {
+    .contenedor-home main div div {
       display: flex;
       justify-content: center; }
-      .contenedorHome main div div a {
+      .contenedor-home main div div a {
         background-color: #BD2330;
         margin: 1rem;
         border-radius: .2rem;
         text-decoration: none;
         color: white;
         padding: .6rem;
-        font-size: 1.4rem;
-        /*animacion*/
-        animation-name: shake;
-        animation-duration: 4s;
-        animation-iteration-count: infinite;
-        animation-timing-function: ease-in-out; }
-  .contenedorHome section {
+        font-size: 1.4rem; }
+        .contenedor-home main div div a:hover {
+          /*animacion*/
+          animation-name: shake;
+          animation-duration: .7s;
+          animation-iteration-count: infinite;
+          animation-timing-function: ease-in-out; }
+  .contenedor-home section {
     grid-area: section-home;
     background-color: #484554;
     display: flex;
@@ -219,17 +194,17 @@
     border-radius: 2rem;
     align-items: center;
     justify-content: center; }
-    .contenedorHome section h2 {
+    .contenedor-home section h2 {
       color: white;
       text-align: center;
       flex-wrap: wrap;
       font-size: 2rem;
       margin: .6rem; }
-    .contenedorHome section div {
+    .contenedor-home section div {
       display: flex;
       justify-content: center;
       flex-wrap: wrap; }
-      .contenedorHome section div img {
+      .contenedor-home section div img {
         width: 13rem;
         height: 13rem;
         padding: 1rem;
@@ -239,38 +214,32 @@
         animation-iteration-count: infinite;
         animation-direction: alternate;
         animation-timing-function: ease-in-out; }
-    .contenedorHome section .btn a {
+    .contenedor-home section .btn a {
       background-color: #4ABEA1;
       margin: 1rem;
       border-radius: .2rem;
       text-decoration: none;
       color: white;
       padding: .6rem;
-      font-size: 1.4rem;
-      /*animacion*/
-      animation-name: shake;
-      animation-duration: 4s;
-      animation-iteration-count: infinite;
-      animation-timing-function: ease-in-out;
-      animation-delay: .3s; }
-  .contenedorHome footer {
+      font-size: 1.4rem; }
+      .contenedor-home section .btn a:hover {
+        /*animacion*/
+        animation-name: shake;
+        animation-duration: .7s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out; }
+  .contenedor-home footer {
     grid-area: footer-home;
     background-color: #ADA9BB; }
 
-.contenedorSobreMi {
+.contenedor-sobre-mi {
   background-color: #5454C5;
   display: grid;
   height: 100%;
   grid-template-areas: "header-sobre-mi" "main-sobre-mi" "section-sobre-mi" "footer-sobre-mi"; }
-  .contenedorSobreMi header {
-    grid-area: header-sobre-mi;
-    height: 3rem;
-    position: sticky;
-    top: 0%;
-    z-index: 15; }
-    .contenedorSobreMi header div {
-      display: none; }
-  .contenedorSobreMi main {
+  .contenedor-sobre-mi header {
+    grid-area: header-sobre-mi; }
+  .contenedor-sobre-mi main {
     grid-area: main-sobre-mi;
     background-color: #FC605E;
     display: flex;
@@ -279,20 +248,20 @@
     align-items: center;
     margin: 1rem;
     border-radius: 2rem; }
-    .contenedorSobreMi main div {
+    .contenedor-sobre-mi main div {
       padding: 1rem; }
-      .contenedorSobreMi main div h1 {
+      .contenedor-sobre-mi main div h1 {
         color: white;
         text-transform: uppercase;
         font-size: 4rem;
         text-align: center; }
-      .contenedorSobreMi main div h2 {
+      .contenedor-sobre-mi main div h2 {
         color: white;
         font-size: 2rem;
         text-align: center; }
-    .contenedorSobreMi main img {
+    .contenedor-sobre-mi main img {
       display: none; }
-  .contenedorSobreMi section {
+  .contenedor-sobre-mi section {
     grid-area: section-sobre-mi;
     background-color: #484554;
     display: flex;
@@ -301,71 +270,71 @@
     margin: 0rem 1rem 1rem 1rem;
     border-radius: 2rem;
     justify-content: center; }
-    .contenedorSobreMi section h2 {
+    .contenedor-sobre-mi section h2 {
       color: white;
       text-align: center;
       flex-wrap: wrap;
       font-size: 2rem;
       margin: .6rem; }
-    .contenedorSobreMi section p {
+    .contenedor-sobre-mi section p {
       color: white;
       text-align: center;
       font-size: 1.6rem; }
-  .contenedorSobreMi footer {
+  .contenedor-sobre-mi footer {
     grid-area: footer-sobre-mi;
     background-color: #ADA9BB; }
 
-.contenedorConocimientos {
+.contenedor-conocimientos {
   background-color: #5454C5;
   display: grid;
   height: 100%;
   grid-template-areas: "header-conocimientos" "main-conocimientos" "section-conocimientos" "footer-conocimientos"; }
-  .contenedorConocimientos header {
-    grid-area: header-conocimientos;
-    position: sticky;
-    height: 3rem;
-    top: 0%;
-    z-index: 15; }
-    .contenedorConocimientos header div {
-      display: none; }
-  .contenedorConocimientos main {
+  .contenedor-conocimientos header {
+    grid-area: header-conocimientos; }
+    .contenedor-conocimientos header nav ul li a p {
+      /*resets de estilos de BootsTrap*/
+      margin-bottom: 0rem; }
+  .contenedor-conocimientos main {
     grid-area: main-conocimientos;
     background-color: #FC605E;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 0rem 1rem 0rem 1rem;
+    margin: 1rem 1rem 0rem 1rem;
     border-radius: 2rem; }
-    .contenedorConocimientos main h1 {
+    .contenedor-conocimientos main h1 {
       font-size: 4rem;
       color: white;
-      text-align: center; }
-    .contenedorConocimientos main div {
+      text-align: center;
+      font-weight: bold; }
+    .contenedor-conocimientos main div {
       display: flex;
-      justify-content: center;
+      justify-content: space-evenly;
       flex-wrap: wrap; }
-      .contenedorConocimientos main div img {
-        width: 10rem;
-        height: 10rem;
+      .contenedor-conocimientos main div img {
+        width: 12rem;
+        height: 12rem;
         padding: .6rem;
         /*animacion*/
         animation-name: palpitar;
-        animation-duration: 2s;
+        animation-duration: 1s;
         animation-iteration-count: infinite;
         animation-direction: alternate;
         animation-timing-function: ease-in-out;
         /*modificando elementos especificos*/ }
-        .contenedorConocimientos main div img:nth-child(2) {
+        .contenedor-conocimientos main div img:nth-child(2) {
           animation-delay: .5s; }
-        .contenedorConocimientos main div img:nth-child(3) {
+        .contenedor-conocimientos main div img:nth-child(3) {
           animation-delay: 1s; }
-        .contenedorConocimientos main div img:nth-child(4) {
+        .contenedor-conocimientos main div img:nth-child(4) {
           animation-delay: 1.5s; }
-        .contenedorConocimientos main div img:nth-child(5) {
+        .contenedor-conocimientos main div img:nth-child(5) {
           animation-delay: 2s; }
-        .contenedorConocimientos main div img:nth-child(6) {
+        .contenedor-conocimientos main div img:nth-child(6) {
           animation-delay: 2.5s; }
-  .contenedorConocimientos section {
+        .contenedor-conocimientos main div img:nth-child(7) {
+          animation-delay: 3s; }
+  .contenedor-conocimientos section {
     grid-area: section-conocimientos;
     background-color: #484554;
     display: flex;
@@ -373,43 +342,37 @@
     margin: 1rem;
     border-radius: 2rem;
     align-items: center; }
-    .contenedorConocimientos section .lista1, .contenedorConocimientos section .lista2, .contenedorConocimientos section .lista3, .contenedorConocimientos section .lista4, .contenedorConocimientos section .lista5 {
+    .contenedor-conocimientos section .lista1, .contenedor-conocimientos section .lista2, .contenedor-conocimientos section .lista3, .contenedor-conocimientos section .lista4, .contenedor-conocimientos section .lista5 {
       background-color: #FC605E;
       margin: 1rem;
       padding: .5rem;
       border-radius: 1rem;
       width: 25rem; }
-      .contenedorConocimientos section .lista1 label, .contenedorConocimientos section .lista2 label, .contenedorConocimientos section .lista3 label, .contenedorConocimientos section .lista4 label, .contenedorConocimientos section .lista5 label {
+      .contenedor-conocimientos section .lista1 label, .contenedor-conocimientos section .lista2 label, .contenedor-conocimientos section .lista3 label, .contenedor-conocimientos section .lista4 label, .contenedor-conocimientos section .lista5 label {
         color: white;
         text-transform: uppercase;
         border-bottom: 1px solid white; }
-  .contenedorConocimientos footer {
+  .contenedor-conocimientos footer {
     grid-area: footer-conocimientos;
     background-color: #ADA9BB; }
 
-.contenedorPortafolio {
+.contenedor-portafolio {
   background-color: #5454C5;
   display: grid;
   height: 100%;
   grid-template-areas: "header-portafolio" "main-portafolio" "footer-portafolio"; }
-  .contenedorPortafolio header {
-    grid-area: header-portafolio;
-    position: sticky;
-    height: 3rem;
-    top: 0%;
-    z-index: 10; }
-    .contenedorPortafolio header div {
-      display: none; }
-  .contenedorPortafolio main {
+  .contenedor-portafolio header {
+    grid-area: header-portafolio; }
+  .contenedor-portafolio main {
     grid-area: main-portafolio;
     background-color: #FC605E;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     align-items: center;
-    margin: 0rem 1rem 1rem 1rem;
+    margin: 1rem 1rem 1rem 1rem;
     border-radius: 1.3rem; }
-    .contenedorPortafolio main div {
+    .contenedor-portafolio main div {
       background-color: #484554;
       padding: .5rem;
       margin: .6rem;
@@ -421,62 +384,56 @@
       animation-direction: alternate;
       animation-timing-function: ease-in-out;
       /*modificando elementos especificos*/ }
-      .contenedorPortafolio main div:nth-child(2) {
+      .contenedor-portafolio main div:nth-child(2) {
         animation-delay: .5s; }
-      .contenedorPortafolio main div:nth-child(3) {
+      .contenedor-portafolio main div:nth-child(3) {
         animation-delay: 1s; }
-      .contenedorPortafolio main div:nth-child(4) {
+      .contenedor-portafolio main div:nth-child(4) {
         animation-delay: 1.5s; }
-      .contenedorPortafolio main div:nth-child(5) {
+      .contenedor-portafolio main div:nth-child(5) {
         animation-delay: 2s; }
-      .contenedorPortafolio main div:nth-child(6) {
+      .contenedor-portafolio main div:nth-child(6) {
         animation-delay: 2.5s; }
-      .contenedorPortafolio main div img {
+      .contenedor-portafolio main div img {
         width: 11rem;
         height: 11rem;
         padding: .3rem; }
-      .contenedorPortafolio main div p {
+      .contenedor-portafolio main div p {
         color: white;
         text-align: center;
         font-size: 1.4rem; }
-  .contenedorPortafolio footer {
+  .contenedor-portafolio footer {
     grid-area: footer-portafolio;
     background-color: #ADA9BB; }
 
-.contenedorContacto {
+.contenedor-contacto {
   background-color: #5454C5;
   display: grid;
   height: 100%;
   grid-template-areas: "header-contacto" "main-contacto" "section-contacto" "footer-contacto"; }
-  .contenedorContacto header {
-    grid-area: header-contacto;
-    position: sticky;
-    height: 3rem;
-    top: 0%;
-    z-index: 10; }
-    .contenedorContacto header div {
-      display: none; }
-  .contenedorContacto main {
+  .contenedor-contacto header {
+    grid-area: header-contacto; }
+  .contenedor-contacto main {
     grid-area: main-contacto;
     background-color: #FC605E;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    margin: 0rem 1rem 0rem 1rem;
+    margin: 1rem 1rem 0rem 1rem;
     border-radius: 2rem;
     color: white;
     padding: .4rem; }
-    .contenedorContacto main h1 {
+    .contenedor-contacto main h1 {
       font-size: 4rem;
       text-align: center;
       text-transform: uppercase; }
-    .contenedorContacto main h2 {
+    .contenedor-contacto main h2 {
       text-align: center;
       font-size: 2rem; }
-    .contenedorContacto main p {
+    .contenedor-contacto main p {
       text-align: center;
       font-size: 1.5rem; }
-  .contenedorContacto section {
+  .contenedor-contacto section {
     grid-area: section-contacto;
     background-color: #484554;
     display: flex;
@@ -484,193 +441,256 @@
     padding: .4rem;
     margin: 1rem;
     border-radius: 2rem; }
-    .contenedorContacto section h2 {
+    .contenedor-contacto section h2 {
       font-size: 2rem;
       text-align: center;
       color: white;
       padding: .5rem; }
-    .contenedorContacto section form fieldset {
+    .contenedor-contacto section form fieldset {
       display: flex;
       flex-direction: column;
       align-items: center;
       border: 0px; }
-      .contenedorContacto section form fieldset div {
+      .contenedor-contacto section form fieldset div {
         padding: .6rem;
         display: flex;
         justify-content: center; }
-        .contenedorContacto section form fieldset div input {
+        .contenedor-contacto section form fieldset div input {
           width: 20rem;
           height: 3rem;
           border-radius: 1.3rem;
           border: none;
           padding-left: .3rem; }
-          .contenedorContacto section form fieldset div input:focus {
+          .contenedor-contacto section form fieldset div input:focus {
             outline: 1;
-            outline-color: #BD2330; }
-        .contenedorContacto section form fieldset div:nth-child(5) input {
+            outline-color: #4ABEA1; }
+        .contenedor-contacto section form fieldset div:nth-child(5) input {
           padding: 1.4rem 0rem 9rem .5rem; }
-        .contenedorContacto section form fieldset div:nth-child(6) input {
+        .contenedor-contacto section form fieldset div:nth-child(6) input {
           width: 11rem;
           background-color: #4ABEA1;
           color: white;
           font-size: 1.3rem; }
-  .contenedorContacto footer {
+  .contenedor-contacto footer {
     grid-area: footer-contacto;
     background-color: #ADA9BB; }
 
 @media only screen and (min-width: 768px) {
   /*home*/
-  .contenedorHome {
+  .contenedor-home {
     background-color: #5454C5;
     display: grid;
     height: 100%;
     grid-template-areas: "header-home header-home header-home" "main-home main-home main-home" "section-home section-home section-home" "footer-home footer-home footer-home"; }
-    .contenedorHome header {
-      margin-bottom: 2.5rem; }
-      .contenedorHome header nav {
+    .contenedor-home header {
+      display: flex;
+      justify-content: space-between;
+      height: 10vh; }
+      .contenedor-home header div {
+        display: block;
+        align-self: center; }
+        .contenedor-home header div a img {
+          width: 3.5rem;
+          padding-left: .2rem; }
+      .contenedor-home header nav {
+        margin-top: .1rem;
         display: flex;
-        padding: .2rem; }
-        .contenedorHome header nav input:checked + ul {
-          clip-path: circle(150% at 0 50%); }
-        .contenedorHome header nav ul {
-          width: 100%;
-          clip-path: circle(0% at 0 50%); }
-    .contenedorHome main {
+        flex-direction: column;
+        padding: .2rem;
+        height: 100vh;
+        width: 60vh; }
+        .contenedor-home header nav label {
+          display: inherit;
+          justify-content: end; }
+        .contenedor-home header nav input:checked + ul {
+          clip-path: circle(150% at 100 0%); }
+        .contenedor-home header nav ul {
+          height: 100vh;
+          clip-path: circle(0% at 100 0%); }
+    .contenedor-home main {
+      margin-top: 1rem;
       width: 80vh;
       justify-self: center; }
-    .contenedorHome section {
+    .contenedor-home section {
       width: 80vh;
       justify-self: center; }
   /*Sobre Mi*/
-  .contenedorSobreMi {
+  .contenedor-sobre-mi {
     background-color: #5454C5;
     display: grid;
     height: 100%;
     grid-template-areas: "header-sobre-mi header-sobre-mi header-sobre-mi" "main-sobre-mi main-sobre-mi main-sobre-mi" "section-sobre-mi section-sobre-mi section-sobre-mi" "footer-sobre-mi footer-sobre-mi footer-sobre-mi"; }
-    .contenedorSobreMi header {
-      margin-bottom: 2rem; }
-      .contenedorSobreMi header nav {
+    .contenedor-sobre-mi header {
+      display: flex;
+      justify-content: space-between;
+      height: 10vh; }
+      .contenedor-sobre-mi header div {
+        display: block;
+        align-self: center; }
+        .contenedor-sobre-mi header div a img {
+          width: 3.5rem;
+          padding-left: .2rem; }
+      .contenedor-sobre-mi header nav {
+        margin-top: .1rem;
         display: flex;
-        padding: .2rem; }
-        .contenedorSobreMi header nav input:checked + ul {
-          clip-path: circle(150% at 0 50%); }
-        .contenedorSobreMi header nav ul {
-          width: 100%;
-          clip-path: circle(0% at 0 50%); }
-    .contenedorSobreMi main {
+        flex-direction: column;
+        padding: .2rem;
+        height: 100vh;
+        width: 60vh; }
+        .contenedor-sobre-mi header nav label {
+          display: inherit;
+          justify-content: end; }
+        .contenedor-sobre-mi header nav input:checked + ul {
+          clip-path: circle(150% at 100 0%); }
+        .contenedor-sobre-mi header nav ul {
+          height: 100vh;
+          clip-path: circle(0% at 100 0%); }
+    .contenedor-sobre-mi main {
       width: 80vh;
       justify-self: center; }
-    .contenedorSobreMi section {
+    .contenedor-sobre-mi section {
       width: 80vh;
       justify-self: center; }
   /*Conocimientos*/
-  .contenedorConocimientos {
+  .contenedor-conocimientos {
     background-color: #5454C5;
     display: grid;
     height: 100%;
     grid-template-areas: "header-conocimientos header-conocimientos header-conocimientos" "main-conocimientos main-conocimientos main-conocimientos" "section-conocimientos section-conocimientos section-conocimientos" "footer-conocimientos footer-conocimientos footer-conocimientos"; }
-    .contenedorConocimientos header {
-      margin-bottom: 2.5rem; }
-      .contenedorConocimientos header nav {
+    .contenedor-conocimientos header {
+      display: flex;
+      justify-content: space-between;
+      height: 10vh; }
+      .contenedor-conocimientos header div {
+        display: block;
+        align-self: center; }
+        .contenedor-conocimientos header div a img {
+          width: 3.5rem;
+          padding-left: .2rem; }
+      .contenedor-conocimientos header nav {
+        margin-top: .1rem;
         display: flex;
-        padding: .2rem; }
-        .contenedorConocimientos header nav input:checked + ul {
-          clip-path: circle(150% at 0 50%); }
-        .contenedorConocimientos header nav ul {
-          width: 100%;
-          clip-path: circle(0% at 0 50%); }
-    .contenedorConocimientos main {
+        flex-direction: column;
+        padding: .2rem;
+        height: 100vh;
+        width: 60vh; }
+        .contenedor-conocimientos header nav label {
+          display: inherit;
+          justify-content: end; }
+        .contenedor-conocimientos header nav input:checked + ul {
+          clip-path: circle(150% at 100 0%); }
+        .contenedor-conocimientos header nav ul {
+          height: 100vh;
+          clip-path: circle(0% at 100 0%); }
+    .contenedor-conocimientos main {
       width: 83vh;
       justify-self: center; }
-      .contenedorConocimientos main h1 {
-        font-weight: bold; }
-    .contenedorConocimientos section {
+    .contenedor-conocimientos section {
       width: 83vh;
       justify-self: center; }
   /*portafolio*/
-  .contenedorPortafolio {
+  .contenedor-portafolio {
     background-color: #5454C5;
     display: grid;
     height: 100%;
     grid-template-areas: " header-portafolio header-portafolio header-portafolio" "main-portafolio main-portafolio main-portafolio" "section-portafolio section-portafolio section-portafolio" "footer-portafolio footer-portafolio footer-portafolio"; }
-    .contenedorPortafolio header {
-      margin-bottom: 2rem; }
-      .contenedorPortafolio header nav {
+    .contenedor-portafolio header {
+      display: flex;
+      justify-content: space-between;
+      height: 10vh; }
+      .contenedor-portafolio header div {
+        display: block;
+        align-self: center; }
+        .contenedor-portafolio header div a img {
+          width: 3.5rem;
+          padding-left: .2rem; }
+      .contenedor-portafolio header nav {
+        margin-top: .1rem;
         display: flex;
-        padding: .2rem; }
-        .contenedorPortafolio header nav input:checked + ul {
-          clip-path: circle(150% at 0 50%); }
-        .contenedorPortafolio header nav ul {
-          width: 100%;
-          clip-path: circle(0% at 0 50%); }
-    .contenedorPortafolio main {
+        flex-direction: column;
+        padding: .2rem;
+        height: 100vh;
+        width: 60vh; }
+        .contenedor-portafolio header nav label {
+          display: inherit;
+          justify-content: end; }
+        .contenedor-portafolio header nav input:checked + ul {
+          clip-path: circle(150% at 100 0%); }
+        .contenedor-portafolio header nav ul {
+          height: 100vh;
+          clip-path: circle(0% at 100 0%); }
+    .contenedor-portafolio main {
       width: 80vh;
       justify-self: center; }
   /*Contacto*/
-  .contenedorContacto {
+  .contenedor-contacto {
     background-color: #5454C5;
     display: grid;
     height: 100%;
     grid-template-areas: "header-contacto header-contacto header-contacto" "main-contacto main-contacto main-contacto" "section-contacto section-contacto section-contacto" "footer-contacto footer-contacto footer-contacto"; }
-    .contenedorContacto header {
-      margin-bottom: 2rem; }
-      .contenedorContacto header nav {
+    .contenedor-contacto header {
+      display: flex;
+      justify-content: space-between;
+      height: 10vh; }
+      .contenedor-contacto header div {
+        display: block;
+        align-self: center; }
+        .contenedor-contacto header div a img {
+          width: 3.5rem;
+          padding-left: .2rem; }
+      .contenedor-contacto header nav {
+        margin-top: .1rem;
         display: flex;
-        padding: .2rem; }
-        .contenedorContacto header nav input:checked + ul {
-          clip-path: circle(150% at 0 50%); }
-        .contenedorContacto header nav ul {
-          width: 100%;
-          clip-path: circle(0% at 0 50%); }
-    .contenedorContacto main {
+        flex-direction: column;
+        padding: .2rem;
+        height: 100vh;
+        width: 60vh; }
+        .contenedor-contacto header nav label {
+          display: inherit;
+          justify-content: end; }
+        .contenedor-contacto header nav input:checked + ul {
+          clip-path: circle(150% at 100 0%); }
+        .contenedor-contacto header nav ul {
+          height: 100vh;
+          clip-path: circle(0% at 100 0%); }
+    .contenedor-contacto main {
       width: 80vh;
       justify-self: center; }
-    .contenedorContacto section {
+    .contenedor-contacto section {
       width: 80vh;
       justify-self: center; } }
 
 @media only screen and (min-width: 1024px) {
   /*Home*/
-  .contenedorHome {
+  .contenedor-home {
     background-color: #5454C5;
     display: grid;
     height: 100%;
     grid-template-areas: "header-home header-home header-home header-home" "main-home main-home main-home main-home" "section-home section-home section-home section-home" "footer-home footer-home footer-home footer-home"; }
-    .contenedorHome header {
-      background-color: #5454C5;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+    .contenedor-home header {
       padding: .3rem;
       height: 9vh;
       margin-bottom: 0rem; }
-      .contenedorHome header div {
-        display: inherit;
-        align-items: center; }
-        .contenedorHome header div a {
-          text-decoration: none;
-          color: white; }
-      .contenedorHome header nav {
+      .contenedor-home header nav {
         display: flex;
-        flex-direction: row;
-        height: auto; }
-        .contenedorHome header nav label img {
+        height: auto;
+        width: auto; }
+        .contenedor-home header nav label img {
           display: none; }
-        .contenedorHome header nav ul {
-          background-color: #5A5ACB;
+        .contenedor-home header nav ul {
           height: auto;
           clip-path: none;
-          display: inherit;
-          align-items: center;
-          border-radius: 1.2rem; }
-          .contenedorHome header nav ul li a {
+          border-radius: 1.2rem;
+          display: flex;
+          flex-direction: row; }
+          .contenedor-home header nav ul li a {
             position: relative;
             z-index: 1; }
-            .contenedorHome header nav ul li a:active {
+            .contenedor-home header nav ul li a:active {
               transform: scale(0.9);
               background-color: #b91724;
               border-radius: 2rem; }
-            .contenedorHome header nav ul li a::before {
+            .contenedor-home header nav ul li a::before {
               border-radius: 2rem;
               content: "";
               position: absolute;
@@ -679,91 +699,80 @@
               background: #BD2330;
               transition: clip-path .3s ease-in-out;
               clip-path: circle(0% at 50% 50%); }
-            .contenedorHome header nav ul li a:hover::before {
+            .contenedor-home header nav ul li a:hover::before {
               clip-path: circle(100% at 50% 50%); }
-            .contenedorHome header nav ul li a img {
+            .contenedor-home header nav ul li a img {
               display: none; }
-            .contenedorHome header nav ul li a p {
+            .contenedor-home header nav ul li a p {
               background-color: transparent;
               font-size: 1.4rem;
               margin: .2rem;
-              padding: .2rem; }
-    .contenedorHome main {
+              padding: .2rem;
+              border-bottom: 0px; }
+              .contenedor-home header nav ul li a p:active {
+                color: white; }
+    .contenedor-home main {
       cursor: default;
       width: auto; }
-      .contenedorHome main img {
+      .contenedor-home main img {
         display: block;
         padding: 1rem; }
-      .contenedorHome main div p {
+      .contenedor-home main div p {
         font-size: 4rem; }
-      .contenedorHome main div h1 {
+      .contenedor-home main div h1 {
         font-size: 6rem; }
-      .contenedorHome main div div a {
+      .contenedor-home main div div a {
         font-size: 2rem; }
-    .contenedorHome section {
+    .contenedor-home section {
       width: auto;
       cursor: default;
       display: grid;
       grid-template-columns: 1fr 1fr; }
-      .contenedorHome section h2 {
+      .contenedor-home section h2 {
         font-size: 5rem; }
-      .contenedorHome section div {
+      .contenedor-home section div {
         padding-top: 4rem; }
-        .contenedorHome section div img {
+        .contenedor-home section div img {
           width: 14rem;
           height: 14rem;
           padding: .6rem; }
-      .contenedorHome section .btn {
+      .contenedor-home section .btn {
         height: 13vh; }
-        .contenedorHome section .btn a {
+        .contenedor-home section .btn a {
           font-size: 2rem;
           margin: 0rem;
           position: relative;
           bottom: 4rem; }
   /*sobreMi.html*/
-  .contenedorSobreMi {
+  .contenedor-sobre-mi {
     background-color: #5454C5;
     display: grid;
     height: 100%;
     grid-template-areas: "header-sobre-mi header-sobre-mi header-sobre-mi header-sobre-mi" "main-sobre-mi main-sobre-mi main-sobre-mi main-sobre-mi" "section-sobre-mi section-sobre-mi section-sobre-mi section-sobre-mi" "footer-sobre-mi footer-sobre-mi footer-sobre-mi footer-sobre-mi"; }
-    .contenedorSobreMi header {
-      background-color: #5454C5;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+    .contenedor-sobre-mi header {
       padding: .3rem;
       height: 9vh;
       margin-bottom: 0rem; }
-      .contenedorSobreMi header div {
-        display: inherit;
-        align-items: center; }
-        .contenedorSobreMi header div a {
-          text-decoration: none;
-          color: white; }
-          .contenedorSobreMi header div a h1 {
-            font-size: 2rem;
-            font-weight: bold; }
-      .contenedorSobreMi header nav {
+      .contenedor-sobre-mi header nav {
         display: flex;
-        flex-direction: row;
-        height: auto; }
-        .contenedorSobreMi header nav label img {
+        height: auto;
+        width: auto; }
+        .contenedor-sobre-mi header nav label img {
           display: none; }
-        .contenedorSobreMi header nav ul {
-          background-color: #5A5ACB;
+        .contenedor-sobre-mi header nav ul {
           height: auto;
           clip-path: none;
-          display: inherit;
-          align-items: center;
-          border-radius: 1.2rem; }
-          .contenedorSobreMi header nav ul li a {
+          border-radius: 1.2rem;
+          display: flex;
+          flex-direction: row; }
+          .contenedor-sobre-mi header nav ul li a {
             position: relative;
             z-index: 1; }
-            .contenedorSobreMi header nav ul li a:active {
+            .contenedor-sobre-mi header nav ul li a:active {
               transform: scale(0.9);
               background-color: #b91724;
               border-radius: 2rem; }
-            .contenedorSobreMi header nav ul li a::before {
+            .contenedor-sobre-mi header nav ul li a::before {
               border-radius: 2rem;
               content: "";
               position: absolute;
@@ -772,77 +781,67 @@
               background: #BD2330;
               transition: clip-path .3s ease-in-out;
               clip-path: circle(0% at 50% 50%); }
-            .contenedorSobreMi header nav ul li a:hover::before {
+            .contenedor-sobre-mi header nav ul li a:hover::before {
               clip-path: circle(100% at 50% 50%); }
-            .contenedorSobreMi header nav ul li a img {
+            .contenedor-sobre-mi header nav ul li a img {
               display: none; }
-            .contenedorSobreMi header nav ul li a p {
+            .contenedor-sobre-mi header nav ul li a p {
               background-color: transparent;
               font-size: 1.4rem;
               margin: .2rem;
-              padding: .2rem; }
-    .contenedorSobreMi main {
+              padding: .2rem;
+              border-bottom: 0px; }
+              .contenedor-sobre-mi header nav ul li a p:active {
+                color: white; }
+    .contenedor-sobre-mi main {
       flex-wrap: nowrap;
       width: auto; }
-      .contenedorSobreMi main div {
+      .contenedor-sobre-mi main div {
         padding: .3rem; }
-        .contenedorSobreMi main div h1 {
+        .contenedor-sobre-mi main div h1 {
           font-size: 6rem; }
-        .contenedorSobreMi main div h2 {
+        .contenedor-sobre-mi main div h2 {
           font-size: 2.4rem; }
-      .contenedorSobreMi main img {
+      .contenedor-sobre-mi main img {
         display: block;
         height: 32rem;
         width: 32rem; }
-    .contenedorSobreMi section {
+    .contenedor-sobre-mi section {
       width: auto; }
-      .contenedorSobreMi section h2 {
+      .contenedor-sobre-mi section h2 {
         font-size: 2.2rem; }
-      .contenedorSobreMi section p {
+      .contenedor-sobre-mi section p {
         font-size: 2.2rem; }
   /*Conocimientos.html*/
-  .contenedorConocimientos {
+  .contenedor-conocimientos {
     background-color: #5454C5;
     display: grid;
     height: 100%;
     grid-template-areas: "header-conocimientos header-conocimientos header-conocimientos header-conocimientos" "main-conocimientos main-conocimientos main-conocimientos main-conocimientos" "section-conocimientos section-conocimientos section-conocimientos section-conocimientos" "footer-conocimientos footer-conocimientos footer-conocimientos footer-conocimientos"; }
-    .contenedorConocimientos header {
-      background-color: #5454C5;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+    .contenedor-conocimientos header {
       padding: .3rem;
       height: 9vh;
       margin-bottom: 0rem; }
-      .contenedorConocimientos header div {
-        display: inherit; }
-        .contenedorConocimientos header div a {
-          text-decoration: none;
-          color: white; }
-          .contenedorConocimientos header div a h1 {
-            font-size: 2rem;
-            font-weight: bold; }
-      .contenedorConocimientos header nav {
+      .contenedor-conocimientos header nav {
         display: flex;
-        flex-direction: row;
-        height: auto; }
-        .contenedorConocimientos header nav label img {
+        height: auto;
+        width: auto; }
+        .contenedor-conocimientos header nav label img {
           display: none; }
-        .contenedorConocimientos header nav ul {
-          background-color: #5A5ACB;
+        .contenedor-conocimientos header nav ul {
           height: auto;
           clip-path: none;
-          display: inherit;
-          align-items: center;
-          border-radius: 1.2rem; }
-          .contenedorConocimientos header nav ul li a {
+          border-radius: 1.2rem;
+          display: flex;
+          flex-direction: row; }
+          .contenedor-conocimientos header nav ul li a {
             position: relative;
             z-index: 1; }
-            .contenedorConocimientos header nav ul li a:active {
+            .contenedor-conocimientos header nav ul li a:active {
               transform: scale(0.9);
               background-color: #b91724;
               border-radius: 2rem; }
-            .contenedorConocimientos header nav ul li a::before {
+            .contenedor-conocimientos header nav ul li a::before {
               border-radius: 2rem;
               content: "";
               position: absolute;
@@ -851,70 +850,62 @@
               background: #BD2330;
               transition: clip-path .3s ease-in-out;
               clip-path: circle(0% at 50% 50%); }
-            .contenedorConocimientos header nav ul li a:hover::before {
+            .contenedor-conocimientos header nav ul li a:hover::before {
               clip-path: circle(100% at 50% 50%); }
-            .contenedorConocimientos header nav ul li a img {
+            .contenedor-conocimientos header nav ul li a img {
               display: none; }
-            .contenedorConocimientos header nav ul li a p {
+            .contenedor-conocimientos header nav ul li a p {
               background-color: transparent;
               font-size: 1.4rem;
               margin: .2rem;
-              padding: .2rem; }
-    .contenedorConocimientos main {
+              padding: .2rem;
+              border-bottom: 0px; }
+              .contenedor-conocimientos header nav ul li a p:active {
+                color: white; }
+    .contenedor-conocimientos main {
       width: auto; }
-      .contenedorConocimientos main h1 {
+      .contenedor-conocimientos main h1 {
         font-size: 4rem; }
-      .contenedorConocimientos main div img {
+      .contenedor-conocimientos main div img {
         width: 17rem;
         height: 17rem; }
-    .contenedorConocimientos section {
+    .contenedor-conocimientos section {
       width: auto;
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: center; }
-      .contenedorConocimientos section .lista1, .contenedorConocimientos section .lista2, .contenedorConocimientos section .lista3, .contenedorConocimientos section .lista4, .contenedorConocimientos section .lista5 {
+      .contenedor-conocimientos section .lista1, .contenedor-conocimientos section .lista2, .contenedor-conocimientos section .lista3, .contenedor-conocimientos section .lista4, .contenedor-conocimientos section .lista5 {
         height: 7rem; }
   /*portafolio.html*/
-  .contenedorPortafolio {
+  .contenedor-portafolio {
     background-color: #5454C5;
     display: grid;
     height: 100%;
     grid-template-areas: "header{ortafolio header{ortafolio header{ortafolio header{ortafolio" "main{ortafolio main{ortafolio main{ortafolio main{ortafolio" "section{ortafolio section{ortafolio section{ortafolio section{ortafolio" "footer{ortafolio footer{ortafolio footer{ortafolio footer{ortafolio"; }
-    .contenedorPortafolio header {
-      background-color: #5454C5;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+    .contenedor-portafolio header {
       padding: .3rem;
       height: 9vh;
       margin-bottom: 0rem; }
-      .contenedorPortafolio header div {
-        display: inherit;
-        align-items: center; }
-        .contenedorPortafolio header div a {
-          text-decoration: none;
-          color: white; }
-      .contenedorPortafolio header nav {
+      .contenedor-portafolio header nav {
         display: flex;
-        flex-direction: row;
-        height: auto; }
-        .contenedorPortafolio header nav label img {
+        height: auto;
+        width: auto; }
+        .contenedor-portafolio header nav label img {
           display: none; }
-        .contenedorPortafolio header nav ul {
-          background-color: #5A5ACB;
+        .contenedor-portafolio header nav ul {
           height: auto;
           clip-path: none;
-          display: inherit;
-          align-items: center;
-          border-radius: 1.2rem; }
-          .contenedorPortafolio header nav ul li a {
+          border-radius: 1.2rem;
+          display: flex;
+          flex-direction: row; }
+          .contenedor-portafolio header nav ul li a {
             position: relative;
             z-index: 1; }
-            .contenedorPortafolio header nav ul li a:active {
+            .contenedor-portafolio header nav ul li a:active {
               transform: scale(0.9);
               background-color: #b91724;
               border-radius: 2rem; }
-            .contenedorPortafolio header nav ul li a::before {
+            .contenedor-portafolio header nav ul li a::before {
               border-radius: 2rem;
               content: "";
               position: absolute;
@@ -923,65 +914,57 @@
               background: #BD2330;
               transition: clip-path .3s ease-in-out;
               clip-path: circle(0% at 50% 50%); }
-            .contenedorPortafolio header nav ul li a:hover::before {
+            .contenedor-portafolio header nav ul li a:hover::before {
               clip-path: circle(100% at 50% 50%); }
-            .contenedorPortafolio header nav ul li a img {
+            .contenedor-portafolio header nav ul li a img {
               display: none; }
-            .contenedorPortafolio header nav ul li a p {
+            .contenedor-portafolio header nav ul li a p {
               background-color: transparent;
               font-size: 1.4rem;
               margin: .2rem;
-              padding: .2rem; }
-    .contenedorPortafolio main {
+              padding: .2rem;
+              border-bottom: 0px; }
+              .contenedor-portafolio header nav ul li a p:active {
+                color: white; }
+    .contenedor-portafolio main {
       padding: 1rem;
       width: auto; }
-      .contenedorPortafolio main div img {
+      .contenedor-portafolio main div img {
         width: 19rem;
         height: 19rem;
         padding: .6rem; }
-      .contenedorPortafolio main div p {
+      .contenedor-portafolio main div p {
         font-size: 2rem; }
   /*contacto.html*/
-  .contenedorContacto {
+  .contenedor-contacto {
     background-color: #5454C5;
     display: grid;
     height: 100%;
     grid-template-areas: "header-contacto header-contacto header-contacto header-contacto" "main-contacto main-contacto main-contacto main-contacto" "section-contacto section-contacto section-contacto section-contacto" "footer-contacto footer-contacto footer-contacto footer-contacto"; }
-    .contenedorContacto header {
-      background-color: #5454C5;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+    .contenedor-contacto header {
       padding: .3rem;
       height: 9vh;
       margin-bottom: 0rem; }
-      .contenedorContacto header div {
-        display: inherit;
-        align-items: center; }
-        .contenedorContacto header div a {
-          text-decoration: none;
-          color: white; }
-      .contenedorContacto header nav {
+      .contenedor-contacto header nav {
         display: flex;
-        flex-direction: row;
-        height: auto; }
-        .contenedorContacto header nav label img {
+        height: auto;
+        width: auto; }
+        .contenedor-contacto header nav label img {
           display: none; }
-        .contenedorContacto header nav ul {
-          background-color: #5A5ACB;
+        .contenedor-contacto header nav ul {
           height: auto;
           clip-path: none;
-          display: inherit;
-          align-items: center;
-          border-radius: 1.2rem; }
-          .contenedorContacto header nav ul li a {
+          border-radius: 1.2rem;
+          display: flex;
+          flex-direction: row; }
+          .contenedor-contacto header nav ul li a {
             position: relative;
             z-index: 1; }
-            .contenedorContacto header nav ul li a:active {
+            .contenedor-contacto header nav ul li a:active {
               transform: scale(0.9);
               background-color: #b91724;
               border-radius: 2rem; }
-            .contenedorContacto header nav ul li a::before {
+            .contenedor-contacto header nav ul li a::before {
               border-radius: 2rem;
               content: "";
               position: absolute;
@@ -990,59 +973,62 @@
               background: #BD2330;
               transition: clip-path .3s ease-in-out;
               clip-path: circle(0% at 50% 50%); }
-            .contenedorContacto header nav ul li a:hover::before {
+            .contenedor-contacto header nav ul li a:hover::before {
               clip-path: circle(100% at 50% 50%); }
-            .contenedorContacto header nav ul li a img {
+            .contenedor-contacto header nav ul li a img {
               display: none; }
-            .contenedorContacto header nav ul li a p {
+            .contenedor-contacto header nav ul li a p {
               background-color: transparent;
               font-size: 1.4rem;
               margin: .2rem;
-              padding: .2rem; }
-    .contenedorContacto main {
+              padding: .2rem;
+              border-bottom: 0px; }
+              .contenedor-contacto header nav ul li a p:active {
+                color: white; }
+    .contenedor-contacto main {
       width: auto; }
-      .contenedorContacto main h1 {
+      .contenedor-contacto main h1 {
         font-size: 6rem; }
-      .contenedorContacto main h2 {
+      .contenedor-contacto main h2 {
         font-size: 3rem; }
-      .contenedorContacto main p {
+      .contenedor-contacto main p {
         font-size: 2.5rem; }
-    .contenedorContacto section {
+    .contenedor-contacto section {
       width: 97.8%; }
-      .contenedorContacto section h1 {
+      .contenedor-contacto section h1 {
         font-size: 4rem; }
-      .contenedorContacto section form fieldset {
+      .contenedor-contacto section form fieldset {
         display: grid;
         grid-template-columns: 1fr 1fr; }
-        .contenedorContacto section form fieldset div input {
+        .contenedor-contacto section form fieldset div input {
           width: 26rem; }
-        .contenedorContacto section form fieldset div:nth-child(1) {
+        .contenedor-contacto section form fieldset div:nth-child(1) {
           order: 1;
           justify-self: end; }
-        .contenedorContacto section form fieldset div:nth-child(2) {
+        .contenedor-contacto section form fieldset div:nth-child(2) {
           order: 3;
           position: relative;
           bottom: 3.6rem;
           justify-self: end; }
-        .contenedorContacto section form fieldset div:nth-child(3) {
+        .contenedor-contacto section form fieldset div:nth-child(3) {
           order: 5;
           position: relative;
           bottom: 7rem;
           justify-self: end; }
-        .contenedorContacto section form fieldset div:nth-child(4) {
+        .contenedor-contacto section form fieldset div:nth-child(4) {
           order: 2;
           justify-self: start; }
-        .contenedorContacto section form fieldset div:nth-child(5) {
+        .contenedor-contacto section form fieldset div:nth-child(5) {
           order: 3;
           justify-self: start; }
-        .contenedorContacto section form fieldset div:nth-child(6) {
+        .contenedor-contacto section form fieldset div:nth-child(6) {
           order: 6;
           justify-self: start;
           position: relative;
           left: 7rem; }
-          .contenedorContacto section form fieldset div:nth-child(6) input {
+          .contenedor-contacto section form fieldset div:nth-child(6) input {
             transition: .3s ease-in-out; }
-            .contenedorContacto section form fieldset div:nth-child(6) input:hover {
+            .contenedor-contacto section form fieldset div:nth-child(6) input:hover {
               transform: scale(1.1); } }
 
 @keyframes shake {

@@ -1,35 +1,27 @@
 //estilos mobile-first
-.contenedorPortafolio{
+.contenedor-portafolio{
     @include conteiner ("header-portafolio"
     "main-portafolio"
     "footer-portafolio");
     header{
         grid-area: header-portafolio;
-        position: sticky;
-        height: 3rem;
-        top: 0%;
-        z-index: 10;
-        div{
-            display: none;
-        }
-        nav{
-            @extend %nav-m;
-        }
+        @extend %header;
     }
     main{
         grid-area: main-portafolio ;
         background-color: $color-secundario-1;
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
         flex-wrap: wrap;
         align-items: center;
-        margin: 0rem 1rem 1rem 1rem ;
+        margin: 1rem 1rem 1rem 1rem ;
         border-radius: 1.3rem;
         div{
             background-color: $color-secundario-2;
             padding: .5rem;
             margin: .6rem;
             border-radius: 2rem;
+
             /*animacion*/
             animation-name: palpitar;
             animation-duration: 2s;

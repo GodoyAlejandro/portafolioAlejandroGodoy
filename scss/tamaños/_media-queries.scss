@@ -1,30 +1,16 @@
 //media querie tablet
 @media only screen and (min-width:768px){
     /*home*/
-    .contenedorHome{
+    .contenedor-home{
         @include conteiner ("header-home header-home header-home"
                             "main-home main-home main-home"
                             "section-home section-home section-home"
                             "footer-home footer-home footer-home");
         header{
-            margin-bottom: 2.5rem;
-            nav{
-                display: flex;
-                padding: .2rem;
-                input{
-                    &:checked{
-                        +ul{
-                            clip-path: circle(150% at 0 50%);
-                        }
-                    }
-                }               
-                ul{
-                    width: 100%;
-                    clip-path: circle(0% at 0 50%);
-                }
-            }
+            @include header-t;
         }
         main{
+            margin-top: 1rem;
             width: 80vh;
             justify-self: center;
         }
@@ -35,28 +21,13 @@
     }
 
     /*Sobre Mi*/
-    .contenedorSobreMi{
+    .contenedor-sobre-mi{
         @include conteiner ("header-sobre-mi header-sobre-mi header-sobre-mi"
         "main-sobre-mi main-sobre-mi main-sobre-mi"
         "section-sobre-mi section-sobre-mi section-sobre-mi"
         "footer-sobre-mi footer-sobre-mi footer-sobre-mi");
         header{
-            margin-bottom: 2rem;
-            nav{
-                display: flex;
-                padding: .2rem;
-                input{
-                    &:checked{
-                        +ul{
-                            clip-path: circle(150% at 0 50%);
-                        }
-                    }
-                }               
-                ul{
-                    width: 100%;
-                    clip-path: circle(0% at 0 50%);
-                }
-            }
+            @include header-t;
         }
         main{
             width: 80vh;
@@ -69,35 +40,17 @@
     }
 
     /*Conocimientos*/
-    .contenedorConocimientos{
+    .contenedor-conocimientos{
         @include conteiner ("header-conocimientos header-conocimientos header-conocimientos"
         "main-conocimientos main-conocimientos main-conocimientos"
         "section-conocimientos section-conocimientos section-conocimientos"
         "footer-conocimientos footer-conocimientos footer-conocimientos");
         header{
-            margin-bottom: 2.5rem;
-            nav{
-                display: flex;
-                padding: .2rem;
-                input{
-                    &:checked{
-                        +ul{
-                            clip-path: circle(150% at 0 50%);
-                        }
-                    }
-                }               
-                ul{
-                    width: 100%;
-                    clip-path: circle(0% at 0 50%);
-                }
-            }
+            @include header-t;
         }
         main{
             width: 83vh;
             justify-self: center;
-            h1{
-                font-weight: bold;
-            }
         }
         section{
             width: 83vh;
@@ -106,28 +59,13 @@
     }
 
     /*portafolio*/
-    .contenedorPortafolio{
+    .contenedor-portafolio{
         @include conteiner (" header-portafolio header-portafolio header-portafolio"
         "main-portafolio main-portafolio main-portafolio"
         "section-portafolio section-portafolio section-portafolio"
         "footer-portafolio footer-portafolio footer-portafolio");
         header{
-            margin-bottom: 2rem;
-            nav{
-                display: flex;
-                padding: .2rem;
-                input{
-                    &:checked{
-                        +ul{
-                            clip-path: circle(150% at 0 50%);
-                        }
-                    }
-                }               
-                ul{
-                    width: 100%;
-                    clip-path: circle(0% at 0 50%);
-                }
-            }
+            @include header-t;
         }
         main{
             width: 80vh;
@@ -137,28 +75,13 @@
     }
 
     /*Contacto*/
-    .contenedorContacto{
+    .contenedor-contacto{
         @include conteiner ("header-contacto header-contacto header-contacto"
         "main-contacto main-contacto main-contacto"
         "section-contacto section-contacto section-contacto"
         "footer-contacto footer-contacto footer-contacto");
         header{
-            margin-bottom: 2rem;
-            nav{
-                display: flex;
-                padding: .2rem;
-                input{
-                    &:checked{
-                        +ul{
-                            clip-path: circle(150% at 0 50%);
-                        }
-                    }
-                }               
-                ul{
-                    width: 100%;
-                    clip-path: circle(0% at 0 50%);
-                }
-            }
+            @include header-t;
         }
         main{
             width: 80vh;
@@ -174,30 +97,13 @@
 //media querie desktop
 @media only screen and (min-width:1024px){
     /*Home*/
-    .contenedorHome{
+    .contenedor-home{
         @include conteiner ("header-home header-home header-home header-home"
                             "main-home main-home main-home main-home"
                             "section-home section-home section-home section-home"
                             "footer-home footer-home footer-home footer-home");
         header{
-            background-color:$color-principal-1;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: .3rem;
-            height: 9vh;
-            margin-bottom: 0rem;
-            div{
-                display: inherit;
-                align-items: center;
-                a{
-                    text-decoration: none;
-                    color: white;
-                }
-            }
-            nav{
-                @include nav-d;    
-            }
+            @include header-d;
         }
         main{
             cursor:default;
@@ -248,34 +154,13 @@
         }                 
     }
     /*sobreMi.html*/
-    .contenedorSobreMi{
+    .contenedor-sobre-mi{
         @include conteiner ("header-sobre-mi header-sobre-mi header-sobre-mi header-sobre-mi"
         "main-sobre-mi main-sobre-mi main-sobre-mi main-sobre-mi"
         "section-sobre-mi section-sobre-mi section-sobre-mi section-sobre-mi"
         "footer-sobre-mi footer-sobre-mi footer-sobre-mi footer-sobre-mi");
         header{
-            background-color:$color-principal-1;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: .3rem;
-            height: 9vh;
-            margin-bottom: 0rem;
-            div{
-                display: inherit;
-                align-items: center;
-                a{
-                    text-decoration: none;
-                    color: white;
-                    h1{
-                        font-size: 2rem;
-                        font-weight: bold;
-                    }
-                }
-            }
-            nav{
-                @include nav-d;
-            }
+            @include header-d;
         }
         main{
             flex-wrap: nowrap;
@@ -306,33 +191,13 @@
         }
     }
     /*Conocimientos.html*/
-    .contenedorConocimientos{
+    .contenedor-conocimientos{
         @include conteiner ("header-conocimientos header-conocimientos header-conocimientos header-conocimientos"
         "main-conocimientos main-conocimientos main-conocimientos main-conocimientos"
         "section-conocimientos section-conocimientos section-conocimientos section-conocimientos"
         "footer-conocimientos footer-conocimientos footer-conocimientos footer-conocimientos");
         header{
-            background-color:$color-principal-1;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: .3rem;
-            height: 9vh;
-            margin-bottom: 0rem;
-            div{
-                display: inherit;
-                a{
-                    text-decoration: none;
-                    color: white;
-                    h1{
-                        font-size: 2rem;
-                        font-weight: bold;
-                    }
-                }
-            }
-            nav{
-               @include nav-d;
-            }
+            @include header-d;
         }
         main{
             width: auto;
@@ -358,30 +223,13 @@
         }
     }
     /*portafolio.html*/
-    .contenedorPortafolio{
+    .contenedor-portafolio{
         @include conteiner ("header{ortafolio header{ortafolio header{ortafolio header{ortafolio"
         "main{ortafolio main{ortafolio main{ortafolio main{ortafolio"
         "section{ortafolio section{ortafolio section{ortafolio section{ortafolio"
         "footer{ortafolio footer{ortafolio footer{ortafolio footer{ortafolio");
         header{
-            background-color:$color-principal-1;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: .3rem;
-            height: 9vh;
-            margin-bottom: 0rem;
-            div{
-                display: inherit;
-                align-items: center;
-                a{
-                    text-decoration: none;
-                    color: white;
-                }
-            }
-            nav{
-                @include nav-d;
-            }
+            @include header-d;
         }
         main{
             padding: 1rem;
@@ -399,30 +247,13 @@
         }
     }
     /*contacto.html*/
-    .contenedorContacto{
+    .contenedor-contacto{
         @include conteiner ("header-contacto header-contacto header-contacto header-contacto"
         "main-contacto main-contacto main-contacto main-contacto"
         "section-contacto section-contacto section-contacto section-contacto"
         "footer-contacto footer-contacto footer-contacto footer-contacto");
         header{
-            background-color:$color-principal-1;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: .3rem;
-            height: 9vh;
-            margin-bottom: 0rem;
-            div{
-                display: inherit;
-                align-items: center;
-                a{
-                    text-decoration: none;
-                    color: white;
-                }
-            }
-            nav{
-                @include nav-d;
-            }
+            @include header-d;
         }
         main{
             width: auto;

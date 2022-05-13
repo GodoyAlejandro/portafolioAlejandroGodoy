@@ -1,0 +1,234 @@
+//mixin para contenedores
+@mixin conteiner ($grid-t-areas){
+    background-color: $color-principal-1;
+    display: grid;
+    height: 100%;
+    grid-template-areas: $grid-t-areas;
+};
+//extend del header mobile
+%header {
+        height: 7vh;
+        position: sticky ;
+        top: 0%;
+        z-index: 15;
+        background-color: $color-header;
+        div{
+            display: none;
+        }
+        nav{
+            label{
+                display: flex;
+                justify-content: center;
+                img{
+                    margin-top: .2rem;
+                    width: 2.5rem;
+                    height: 2.5rem;
+                    display: inherit;
+                    align-self: center;
+                    &:active{
+                        transform: scale(.9);
+                    }
+                }
+            }
+            input{
+                display: none;
+                &:checked{
+                        + ul{
+                            background-color: $color-header;
+                            clip-path: circle(150% at 50% 0);
+                            > li{
+                                &:nth-child(1){
+                                    a{
+                                      @include animacion-nav( 0s);
+                                    }
+                                }
+                                &:nth-child(2){
+                                    a{
+                                        @include animacion-nav (.2s);
+                                    }
+                                }
+                                &:nth-child(3){
+                                    a{
+                                        @include animacion-nav (.4s);
+                                    }
+                                }
+                                &:nth-child(4){
+                                    a{
+                                        @include animacion-nav (.6s);
+                                    }
+                                }
+                                &:nth-child(5){
+                                    a{
+                                        @include animacion-nav (.8s);
+                                    }
+                                }
+                            }   
+                        }
+                    
+                }
+            }
+            ul{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                clip-path: circle(0% at 50% 0);
+                transition: clip-path .3s ease-in-out;
+                height: 50vh;  
+                margin: 0rem;
+                padding-left: 0rem;  
+                background-color: $color-header;   
+                li{
+                    list-style: none;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    a{
+                        display: flex;
+                        text-decoration: none;
+                        img{
+                            width: 2rem;
+                            height: 2rem;
+                            margin: .5rem;
+                        }
+                        p{
+                            color: white; 
+                            font-size: 2rem;
+                            border-bottom: 1px solid $color-btn-1 ;
+                            border-bottom-style: dotted ;
+                        }
+                        &:active{
+                            transform: scale(.9);
+                            p{
+                                color: $color-btn-1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+}
+//mixin del header tablet
+@mixin header-t {
+        display: flex;
+        justify-content: space-between;
+        height: 10vh;
+        div{
+            display: block;
+            align-self: center;
+            a{
+                img{
+                    width: 3.5rem;
+                    padding-left: .2rem;
+                }
+            }
+        }
+        nav{
+            margin-top: .1rem;
+            display: flex;
+            flex-direction: column;
+            padding: .2rem;
+            height: 100vh;
+            width: 60vh;
+            label{
+                display: inherit;
+                justify-content: end;
+            }
+            input{
+                &:checked{
+                    +ul{
+                        clip-path: circle(150% at 100 0%);
+                    }
+                }
+            }               
+            ul{
+                height: 100vh;
+                clip-path: circle(0% at 100 0%);
+            }
+        }
+}
+//mixin del header desktop
+@mixin header-d{
+    padding: .3rem;
+    height: 9vh;
+    margin-bottom: 0rem;
+    nav{
+        display: flex;
+    height: auto;
+    width: auto;
+    label{
+        img{
+            display: none;
+            }
+        }
+    ul{
+        height: auto;
+        clip-path: none;
+        border-radius: 1.2rem;
+        display: flex;
+        flex-direction: row;
+        li{
+            a{
+                position: relative;
+                z-index: 1;
+                &:active{
+                    transform: scale(.9);
+                    background-color: #b91724;
+                    border-radius: 2rem;
+                        }
+                &::before{
+                    border-radius: 2rem;
+                    content: "";
+                    position: absolute;
+                            inset: 0;
+                            z-index: -1;
+                            background: $color-btn-1;
+                            transition: clip-path .3s ease-in-out;
+                            clip-path: circle(0% at 50% 50%);
+                            }
+
+                            &:hover::before{
+                                clip-path: circle(100% at 50% 50%)
+                            }
+                            img{
+                                display: none;
+                            }
+                            p{
+                                background-color: transparent;
+                                font-size: 1.4rem;
+                                margin: .2rem;
+                                padding: .2rem;
+                                border-bottom: 0px;
+                                &:active{
+                                    color: white;
+                                }
+                            }
+                        }
+                    }
+                }
+    } 
+}
+//extend para el footer
+%footer-m {
+    div{
+        display: flex;
+        justify-content: center;
+        a{
+            text-decoration: none;
+            border-bottom: 1px solid #9D9090;
+            img{
+                width: 3rem;
+                height: 3rem;
+                margin: 0.5rem;
+            }
+        }
+    }
+    .copy-right{
+        margin: .3rem;
+        display: flex;
+        flex-direction: column;
+        span{
+            font-weight: bold;
+            text-align: center;
+        }
+    }
+}

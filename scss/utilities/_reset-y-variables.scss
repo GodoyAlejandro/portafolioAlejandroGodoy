@@ -4,78 +4,18 @@
     box-sizing: border-box;
     font-family: 'roboto slab' , serif;
 }
-@import "../utilities/animaciones.scss";
 
 //colores del layout
 $color-principal-1: #5454C5;
 $color-pricipal-2: #ADA9BB;
 $color-secundario-1: #FC605E;
 $color-secundario-2: #484554;
+$color-header: #5A5ACB;;
 //colores de los botones y callouts
 $color-btn-1: #BD2330;
 $color-btn-2: #4ABEA1;
 
-//mixin para los contenedores
-@mixin conteiner ($grid-t-areas){
-    background-color: $color-principal-1;
-    display: grid;
-    height: 100%;
-    grid-template-areas: $grid-t-areas;
-};
-//mixin para la media querie de nav
-@mixin nav-d{
-    display: flex;
-    flex-direction: row;
-    height: auto;
-    label{
-        img{
-            display: none;
-            }
-        }
-    ul{
-        background-color: #5A5ACB;
-        height: auto;
-        clip-path: none;
-        display: inherit;
-        align-items: center;
-        border-radius: 1.2rem;
-        li{
-            a{
-                position: relative;
-                z-index: 1;
-                &:active{
-                    transform: scale(.9);
-                    background-color: #b91724;
-                    border-radius: 2rem;
-                        }
-                &::before{
-                    border-radius: 2rem;
-                    content: "";
-                    position: absolute;
-                            inset: 0;
-                            z-index: -1;
-                            background: $color-btn-1;
-                            transition: clip-path .3s ease-in-out;
-                            clip-path: circle(0% at 50% 50%);
-                            }
 
-                            &:hover::before{
-                                clip-path: circle(100% at 50% 50%)
-                            }
-                            img{
-                                display: none;
-                            }
-                            p{
-                                background-color: transparent;
-                                font-size: 1.4rem;
-                                margin: .2rem;
-                                padding: .2rem;
-                                
-                            }
-                        }
-                    }
-                } 
-}
 
 //map para los tamaños de fuente
 $font-size-mobile: (
@@ -83,116 +23,4 @@ $font-size-mobile: (
     h2:2rem,    
 );
 
-//extend para nav
-%nav-m{
-    label{
-        display: flex;
-        justify-content: center;
-        img{
-            width: 3rem;
-            height: 3rem;
-            background-color: #5A5ACB;
-            border-radius: 50%;
-            &:active{
-                transform: scale(.9);
-            }
-        }
-    }
-    input{
-        display: none;
-        &:checked{
-                + ul{
-                    clip-path: circle(60% at 50% 0);
-                    > li{
-                        &:nth-child(1){
-                            a{
-                              @include animacion-nav( 0s);
-                            }
-                        }
-                        &:nth-child(2){
-                            a{
-                                @include animacion-nav (.2s);
-                            }
-                        }
-                        &:nth-child(3){
-                            a{
-                                @include animacion-nav (.4s);
-                            }
-                        }
-                        &:nth-child(4){
-                            a{
-                                @include animacion-nav (.6s);
-                            }
-                        }
-                        &:nth-child(5){
-                            a{
-                                @include animacion-nav (.8s);
-                            }
-                        }
-                    }   
-                }
-            
-        }
-    }
-    ul{
-        display: flex;
-        justify-content: space-around;
-        clip-path: circle(0% at 50% 0);
-        transition: clip-path .3s ease-in-out;
-        height: 60vh;  
-        margin-bottom: 0rem;
-        padding-left: 0rem;     
-        li{
-            list-style: none;
-            a{
-                display: flex;
-                flex-direction: column;
-                text-decoration: none;
-                align-items: center;
-                img{
-                    width: 3rem;
-                    height: 3rem;
-                    background-color: $color-btn-1;
-                    margin-top: .3rem;
-                    border-radius: 2rem;
-                    padding: .6rem;
-                }
-                p{
-                    color: white;
-                    background-color: $color-btn-1;
-                    padding: .1rem;
-                    border-radius: .3rem;
-                }
-                &:active{
-                    transform: scale(.9);
-                }
-            }
-        }
-    }
-}
-
-
-//extend para el footer
-%footer-m {
-    div{
-        display: flex;
-        justify-content: center;
-        a{
-            text-decoration: none;
-            border-bottom: 1px solid #9D9090;
-            img{
-                width: 3rem;
-                height: 3rem;
-                margin: 0.5rem;
-            }
-        }
-    }
-    .copy-right{
-        margin: .3rem;
-        p{
-            font-weight: bold;
-            text-align: center;
-        }
-    }
-}
-
+@import "../utilities/animaciones.scss";

@@ -1,22 +1,12 @@
 //layout mobile first
-.contenedorContacto{
+.contenedor-contacto{
     @include conteiner ("header-contacto"
     "main-contacto"
     "section-contacto"
     "footer-contacto");
     header{
         grid-area: header-contacto;
-        position: sticky;
-        height: 3rem;
-        top: 0%;
-        z-index: 10;
-        div{
-            display: none;
-        }
-        nav{
-            @extend %nav-m;
-            
-        }
+        @extend %header;
     }
     main{
         grid-area: main-contacto ;
@@ -24,7 +14,7 @@
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
-        margin: 0rem 1rem 0rem 1rem ;
+        margin: 1rem 1rem 0rem 1rem ;
         border-radius: 2rem;
         color: white;
         padding: .4rem;
@@ -74,7 +64,7 @@
                         padding-left: .3rem;
                         &:focus{
                             outline: 1;
-                            outline-color: $color-btn-1;
+                            outline-color: $color-btn-2;
                         }
                     }
                     &:nth-child(5){

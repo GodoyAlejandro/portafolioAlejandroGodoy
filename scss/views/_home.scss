@@ -1,22 +1,12 @@
-@import "../utilities/animaciones.scss";
 //estilos mobile-first
-.contenedorHome{
+.contenedor-home{
     @include conteiner ("header-home"
     "main-home"
     "section-home"
     "footer-home");
     header{
         grid-area: header-home;
-        height: 3rem;
-        position: sticky;
-        top: 0%;
-        z-index: 15;
-        div{
-            display: none;
-        }
-        nav{
-            @extend %nav-m;
-        }
+        @extend %header;
     }
     main{
         grid-area: main-home ;
@@ -24,7 +14,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 0rem 1rem 0rem 1rem ;
+        margin: 1rem 1rem 0rem 1rem ;
         border-radius: 2rem;
         img{
             display: none;
@@ -45,7 +35,6 @@
             div{
                 display: flex;
                 justify-content: center;
-                
                 a{
                     background-color: $color-btn-1;
                     margin: 1rem;
@@ -54,11 +43,13 @@
                     color: white;
                     padding:.6rem;
                     font-size: 1.4rem; 
+                    &:hover{
                     /*animacion*/
                     animation-name: shake;
-                    animation-duration: 4s;
+                    animation-duration: .7s;
                     animation-iteration-count: infinite;
                     animation-timing-function: ease-in-out;
+                    }
                 }
             }
             
@@ -106,12 +97,13 @@
             color: white;
             padding:.6rem;
             font-size: 1.4rem;
+            &:hover{
             /*animacion*/
             animation-name: shake;
-            animation-duration: 4s;
+            animation-duration: .7s;
             animation-iteration-count: infinite;
             animation-timing-function: ease-in-out;
-            animation-delay: .3s;
+            }
             }
     }
         

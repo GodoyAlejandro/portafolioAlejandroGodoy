@@ -1,20 +1,23 @@
 //estilos mobile-first
-.contenedorConocimientos{
+.contenedor-conocimientos{
     @include conteiner ("header-conocimientos"
     "main-conocimientos"
     "section-conocimientos"
     "footer-conocimientos");
     header{
         grid-area: header-conocimientos;
-        position: sticky;
-        height: 3rem;
-        top: 0%;
-        z-index: 15;
-        div{
-            display: none;
-        }
+        @extend %header;
         nav{
-            @extend %nav-m;
+            ul{
+                li{
+                    a{
+                        p{
+                            /*resets de estilos de BootsTrap*/
+                            margin-bottom: 0rem;
+                        }
+                    }
+                }
+            }
         }
     }
     main{
@@ -23,25 +26,25 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin: 0rem 1rem 0rem 1rem ;
+        margin: 1rem 1rem 0rem 1rem ;
         border-radius: 2rem;
         h1{
             font-size: map-get($map: $font-size-mobile, $key: h1 );
             color: white;
             text-align: center;
-            
+            font-weight: bold;
         }
         div{
             display: flex;
-            justify-content: center;
+            justify-content: space-evenly;
             flex-wrap: wrap;            
             img{
-                width: 10rem;
-                height: 10rem;
+                width: 12rem;
+                height: 12rem;
                 padding: .6rem;
                 /*animacion*/
                 animation-name: palpitar;
-                animation-duration: 2s;
+                animation-duration: 1s;
                 animation-iteration-count: infinite;
                 animation-direction: alternate;
                 animation-timing-function: ease-in-out;
@@ -60,6 +63,9 @@
                 }
                 &:nth-child(6){
                 animation-delay: 2.5s ;
+                }
+                &:nth-child(7){
+                    animation-delay: 3s ;
                 }
             }            
         }        
