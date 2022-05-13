@@ -1,5 +1,5 @@
 //estilos mobile-first
-.contenedorConocimientos{
+.contenedor-conocimientos{
     @include conteiner ("header-conocimientos"
     "main-conocimientos"
     "section-conocimientos"
@@ -36,15 +36,15 @@
         }
         div{
             display: flex;
-            justify-content: center;
+            justify-content: space-evenly;
             flex-wrap: wrap;            
             img{
-                width: 10rem;
-                height: 10rem;
+                width: 12rem;
+                height: 12rem;
                 padding: .6rem;
                 /*animacion*/
                 animation-name: palpitar;
-                animation-duration: 2s;
+                animation-duration: 1s;
                 animation-iteration-count: infinite;
                 animation-direction: alternate;
                 animation-timing-function: ease-in-out;
@@ -63,6 +63,9 @@
                 }
                 &:nth-child(6){
                 animation-delay: 2.5s ;
+                }
+                &:nth-child(7){
+                    animation-delay: 3s ;
                 }
             }            
         }        

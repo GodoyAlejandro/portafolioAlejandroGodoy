@@ -1,7 +1,7 @@
 //media querie tablet
 @media only screen and (min-width:768px){
     /*home*/
-    .contenedorHome{
+    .contenedor-home{
         @include conteiner ("header-home header-home header-home"
                             "main-home main-home main-home"
                             "section-home section-home section-home"
@@ -21,7 +21,7 @@
     }
 
     /*Sobre Mi*/
-    .contenedorSobreMi{
+    .contenedor-sobre-mi{
         @include conteiner ("header-sobre-mi header-sobre-mi header-sobre-mi"
         "main-sobre-mi main-sobre-mi main-sobre-mi"
         "section-sobre-mi section-sobre-mi section-sobre-mi"
@@ -40,7 +40,7 @@
     }
 
     /*Conocimientos*/
-    .contenedorConocimientos{
+    .contenedor-conocimientos{
         @include conteiner ("header-conocimientos header-conocimientos header-conocimientos"
         "main-conocimientos main-conocimientos main-conocimientos"
         "section-conocimientos section-conocimientos section-conocimientos"
@@ -59,7 +59,7 @@
     }
 
     /*portafolio*/
-    .contenedorPortafolio{
+    .contenedor-portafolio{
         @include conteiner (" header-portafolio header-portafolio header-portafolio"
         "main-portafolio main-portafolio main-portafolio"
         "section-portafolio section-portafolio section-portafolio"
@@ -75,7 +75,7 @@
     }
 
     /*Contacto*/
-    .contenedorContacto{
+    .contenedor-contacto{
         @include conteiner ("header-contacto header-contacto header-contacto"
         "main-contacto main-contacto main-contacto"
         "section-contacto section-contacto section-contacto"
@@ -97,7 +97,7 @@
 //media querie desktop
 @media only screen and (min-width:1024px){
     /*Home*/
-    .contenedorHome{
+    .contenedor-home{
         @include conteiner ("header-home header-home header-home header-home"
                             "main-home main-home main-home main-home"
                             "section-home section-home section-home section-home"
@@ -154,7 +154,7 @@
         }                 
     }
     /*sobreMi.html*/
-    .contenedorSobreMi{
+    .contenedor-sobre-mi{
         @include conteiner ("header-sobre-mi header-sobre-mi header-sobre-mi header-sobre-mi"
         "main-sobre-mi main-sobre-mi main-sobre-mi main-sobre-mi"
         "section-sobre-mi section-sobre-mi section-sobre-mi section-sobre-mi"
@@ -191,7 +191,7 @@
         }
     }
     /*Conocimientos.html*/
-    .contenedorConocimientos{
+    .contenedor-conocimientos{
         @include conteiner ("header-conocimientos header-conocimientos header-conocimientos header-conocimientos"
         "main-conocimientos main-conocimientos main-conocimientos main-conocimientos"
         "section-conocimientos section-conocimientos section-conocimientos section-conocimientos"
@@ -223,7 +223,7 @@
         }
     }
     /*portafolio.html*/
-    .contenedorPortafolio{
+    .contenedor-portafolio{
         @include conteiner ("header{ortafolio header{ortafolio header{ortafolio header{ortafolio"
         "main{ortafolio main{ortafolio main{ortafolio main{ortafolio"
         "section{ortafolio section{ortafolio section{ortafolio section{ortafolio"
@@ -247,7 +247,7 @@
         }
     }
     /*contacto.html*/
-    .contenedorContacto{
+    .contenedor-contacto{
         @include conteiner ("header-contacto header-contacto header-contacto header-contacto"
         "main-contacto main-contacto main-contacto main-contacto"
         "section-contacto section-contacto section-contacto section-contacto"

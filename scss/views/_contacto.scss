@@ -1,5 +1,5 @@
 //layout mobile first
-.contenedorContacto{
+.contenedor-contacto{
     @include conteiner ("header-contacto"
     "main-contacto"
     "section-contacto"
@@ -64,7 +64,7 @@
                         padding-left: .3rem;
                         &:focus{
                             outline: 1;
-                            outline-color: $color-btn-1;
+                            outline-color: $color-btn-2;
                         }
                     }
                     &:nth-child(5){

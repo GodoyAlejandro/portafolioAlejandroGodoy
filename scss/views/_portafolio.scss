@@ -1,5 +1,5 @@
 //estilos mobile-first
-.contenedorPortafolio{
+.contenedor-portafolio{
     @include conteiner ("header-portafolio"
     "main-portafolio"
     "footer-portafolio");
@@ -11,7 +11,7 @@
         grid-area: main-portafolio ;
         background-color: $color-secundario-1;
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
         flex-wrap: wrap;
         align-items: center;
         margin: 1rem 1rem 1rem 1rem ;
@@ -21,6 +21,7 @@
             padding: .5rem;
             margin: .6rem;
             border-radius: 2rem;
+
             /*animacion*/
             animation-name: palpitar;
             animation-duration: 2s;
