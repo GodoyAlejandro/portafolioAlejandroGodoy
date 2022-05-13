@@ -36,12 +36,6 @@
   100% {
     transform: scale(1); } }
 
-/*
- animation-name: menu-mobile-img;
-                                            animation-duration:.5s;
-                                            animation-iteration-count: 1;
-                                            animation-timing-function: ease-in-out;
-*/
 .contenedorHome header nav label, .contenedorSobreMi header nav label, .contenedorConocimientos header nav label, .contenedorPortafolio header nav label, .contenedorContacto header nav label {
   display: flex;
   justify-content: center; }
@@ -167,12 +161,6 @@
   100% {
     transform: scale(1); } }
 
-/*
- animation-name: menu-mobile-img;
-                                            animation-duration:.5s;
-                                            animation-iteration-count: 1;
-                                            animation-timing-function: ease-in-out;
-*/
 .contenedorHome {
   background-color: #5454C5;
   display: grid;
@@ -1088,10 +1076,3 @@
     transform: scale(1.2); }
   100% {
     transform: scale(1); } }
-
-/*
- animation-name: menu-mobile-img;
-                                            animation-duration:.5s;
-                                            animation-iteration-count: 1;
-                                            animation-timing-function: ease-in-out;
-*/
