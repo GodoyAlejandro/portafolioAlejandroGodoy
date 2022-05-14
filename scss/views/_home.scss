@@ -10,12 +10,11 @@
     }
     main{
         grid-area: main-home ;
+        justify-self: center;
         background-color: $color-secundario-1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         margin: 1rem 1rem 0rem 1rem ;
         border-radius: 2rem;
+        width: fit-content;
         img{
             display: none;
         }
@@ -23,7 +22,7 @@
             p{
                 color: white;
                 text-align: center;
-                font-size: 2.3rem;
+                font-size: map-get($map: $font-size-mobile , $key: p);
             }
             h1{
                 color: white;
@@ -42,7 +41,7 @@
                     text-decoration: none;
                     color: white;
                     padding:.6rem;
-                    font-size: 1.4rem; 
+                    font-size: map-get($map: $font-size-mobile , $key: a ) - .5; 
                     &:hover{
                     /*animacion*/
                     animation-name: shake;
@@ -58,12 +57,9 @@
     section{
         grid-area: section-home ;
         background-color: $color-secundario-2;
-        display: flex;
-        flex-direction: column;
         margin: 1rem;
         border-radius: 2rem;
-        align-items: center;
-        justify-content: center;
+        justify-self: center;
         h2{
             color: white;
             text-align: center;
@@ -96,7 +92,7 @@
             text-decoration: none;
             color: white;
             padding:.6rem;
-            font-size: 1.4rem;
+            font-size: map-get($map: $font-size-mobile , $key: a) - .5;
             &:hover{
             /*animacion*/
             animation-name: shake;

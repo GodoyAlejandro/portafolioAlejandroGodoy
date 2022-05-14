@@ -2,7 +2,6 @@
 @mixin conteiner ($grid-t-areas){
     background-color: $color-principal-1;
     display: grid;
-    height: 100%;
     grid-template-areas: $grid-t-areas;
 };
 //extend del header mobile

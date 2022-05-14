@@ -11,10 +11,6 @@
     main{
         grid-area: main-sobre-mi ;
         background-color: $color-secundario-1;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
         margin:1rem ;
         border-radius: 2rem;
         div{
@@ -26,11 +22,10 @@
                 text-align: center;
                 
             }        
-            h2{
+            p{
                 color: white;            
-                font-size: 2rem;
+                font-size: map-get($map: $font-size-mobile , $key: p );
                 text-align: center;
-                
             }
         } 
         img{
@@ -57,7 +52,7 @@
         p{
             color: white;
             text-align: center;
-            font-size: 1.6rem;
+            font-size: map-get($map: $font-size-mobile , $key: p);
         }
         
         

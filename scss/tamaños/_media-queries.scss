@@ -12,7 +12,6 @@
         main{
             margin-top: 1rem;
             width: 80vh;
-            justify-self: center;
         }
         section{
             width: 80vh;
@@ -106,36 +105,39 @@
             @include header-d;
         }
         main{
+            width: fit-content;
             cursor:default;
-            width: auto;
+            justify-self: center;
+            display: flex;
+            align-items: center;
             img{
                 display: block;
-                padding: 1rem;
+                padding: .3rem;
             }
             div{
                 p{
-                    font-size: 4rem;
+                    font-size: map-get($map: $font-size-mobile, $key: p) + 1.5;
                 }
                 h1{
-                    font-size: 6rem;
+                    font-size: map-get($map: $font-size-mobile, $key: h1) + 2 ;
                 }
                 div{
                     a{
-                       font-size: 2rem; 
+                        font-size: map-get($map: $font-size-mobile, $key: a); 
                     }
                 }
             }
         }
         section{
-            width: auto;
-            cursor: default;
+            width: fit-content;
             display: grid;
+            align-items: center;
             grid-template-columns: 1fr 1fr;
             h2{
-                font-size: 5rem;
+                font-size: map-get($map: $font-size-mobile, $key: h2) + 3 ;
             }
             div{
-                padding-top: 4rem;
+                padding-top: 2rem;
                 img{
                     width: 14rem;
                     height: 14rem;
@@ -143,9 +145,9 @@
                 }
             }
             .btn{
-                height: 13vh;
+                margin-top: 2rem;
                 a{
-                    font-size: 2rem;
+                    font-size: map-get($map: $font-size-mobile, $key: a);
                     margin: 0rem;
                     position: relative;
                     bottom: 4rem;
@@ -163,30 +165,31 @@
             @include header-d;
         }
         main{
+            display: flex;
             flex-wrap: nowrap;
-            width: auto;
+            width: fit-content;
             div{
                 padding: .3rem;
                 h1{
-                    font-size: 6rem;
+                    font-size: map-get($map: $font-size-mobile, $key: h1) + 2;
                 }
-                h2{
-                    font-size: 2.4rem;
+                p{
+                    font-size: map-get($map: $font-size-mobile, $key: p) + .8;
                 }
             }
             img{
                 display: block;
-                height: 32rem;
-                width: 32rem;
+                height: 34rem;
+                width: 34rem;
             }
         }
         section{
-            width: auto;
+            width: fit-content;
             h2{
-                font-size: 2.2rem;
+                font-size: map-get($map: $font-size-mobile, $key: h2) + 1;
             }
             p{
-                font-size: 2.2rem;
+                font-size: map-get($map: $font-size-mobile, $key: p) 
             }
         }
     }
@@ -200,7 +203,7 @@
             @include header-d;
         }
         main{
-            width: auto;
+            width: fit-content;
             h1{
                 font-size: map-get($map: $font-size-mobile , $key: h1);
                 
@@ -256,21 +259,21 @@
             @include header-d;
         }
         main{
-            width: auto;
+            width: fit-content;
             h1{
-                font-size: 6rem;
+                font-size: map-get($map: $font-size-mobile, $key: h1) + 2;
             }
             h2{
-                font-size: 3rem;
+                font-size: map-get($map: $font-size-mobile, $key: h2) + 1;
             }
             p{
-                font-size: 2.5rem;
+                font-size: map-get($map: $font-size-mobile, $key: p) + 1;
             }
         }
         section{
-            width: 97.8%;
-            h1{
-                font-size: 4rem;
+            width: max-content;
+            h2{
+                font-size: map-get($map: $font-size-mobile, $key: h2) + 1.3;
             }
             form{
                 fieldset{

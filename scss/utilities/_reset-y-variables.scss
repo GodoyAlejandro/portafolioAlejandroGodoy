@@ -20,7 +20,9 @@ $color-btn-2: #4ABEA1;
 //map para los tamaños de fuente
 $font-size-mobile: (
     h1:4rem,
-    h2:2rem,    
+    h2:2rem,
+    p: 2rem,   
+    a: 2rem, 
 );
 
 @import "../utilities/animaciones.scss";
