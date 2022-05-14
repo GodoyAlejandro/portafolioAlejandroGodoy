@@ -271,9 +271,9 @@
             }
         }
         section{
-            width: max-content;
+            width: 97.7%;
             h2{
-                font-size: map-get($map: $font-size-mobile, $key: h2) + 1.3;
+                font-size: map-get($map: $font-size-mobile, $key: h2) + 1;
             }
             form{
                 fieldset{

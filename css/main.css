@@ -974,9 +974,9 @@
       .contenedor-contacto main p {
         font-size: 3rem; }
     .contenedor-contacto section {
-      width: max-content; }
+      width: 97.7%; }
       .contenedor-contacto section h2 {
-        font-size: 3.3rem; }
+        font-size: 3rem; }
       .contenedor-contacto section form fieldset {
         display: grid;
         grid-template-columns: 1fr 1fr; }
