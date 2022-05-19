@@ -46,7 +46,8 @@
     display: none; }
   .contenedor-home header nav label, .contenedor-sobre-mi header nav label, .contenedor-conocimientos header nav label, .contenedor-portafolio header nav label, .contenedor-contacto header nav label {
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    align-self: center; }
     .contenedor-home header nav label img, .contenedor-sobre-mi header nav label img, .contenedor-conocimientos header nav label img, .contenedor-portafolio header nav label img, .contenedor-contacto header nav label img {
       margin-top: .2rem;
       width: 2.5rem;
@@ -144,7 +145,8 @@
 .contenedor-home {
   background-color: #5454C5;
   display: grid;
-  grid-template-areas: "header-home" "main-home" "section-home" "footer-home"; }
+  grid-template-areas: "header-home" "main-home" "section-home" "footer-home";
+  grid-template-columns: 1fr; }
   .contenedor-home header {
     grid-area: header-home; }
   .contenedor-home main {
@@ -159,13 +161,13 @@
     .contenedor-home main div p {
       color: white;
       text-align: center;
-      font-size: 2rem; }
+      font-size: 1.5rem; }
     .contenedor-home main div h1 {
       color: white;
       text-transform: uppercase;
-      font-size: 4rem;
+      font-size: 2.5rem;
       text-align: center;
-      padding: .5rem; }
+      padding: .5rem 0rem; }
     .contenedor-home main div div {
       display: flex;
       justify-content: center; }
@@ -193,8 +195,8 @@
       color: white;
       text-align: center;
       flex-wrap: wrap;
-      font-size: 2rem;
-      margin: .6rem; }
+      font-size: 1.5rem;
+      margin: .6rem 0rem; }
     .contenedor-home section div {
       display: flex;
       justify-content: center;
@@ -230,7 +232,8 @@
 .contenedor-sobre-mi {
   background-color: #5454C5;
   display: grid;
-  grid-template-areas: "header-sobre-mi" "main-sobre-mi" "section-sobre-mi" "footer-sobre-mi"; }
+  grid-template-areas: "header-sobre-mi" "main-sobre-mi" "section-sobre-mi" "footer-sobre-mi";
+  grid-template-columns: 1fr; }
   .contenedor-sobre-mi header {
     grid-area: header-sobre-mi; }
   .contenedor-sobre-mi main {
@@ -243,11 +246,11 @@
       .contenedor-sobre-mi main div h1 {
         color: white;
         text-transform: uppercase;
-        font-size: 4rem;
+        font-size: 2.5rem;
         text-align: center; }
       .contenedor-sobre-mi main div p {
         color: white;
-        font-size: 2rem;
+        font-size: 1.5rem;
         text-align: center; }
     .contenedor-sobre-mi main img {
       display: none; }
@@ -264,12 +267,12 @@
       color: white;
       text-align: center;
       flex-wrap: wrap;
-      font-size: 2rem;
+      font-size: 1.5rem;
       margin: .6rem; }
     .contenedor-sobre-mi section p {
       color: white;
       text-align: center;
-      font-size: 2rem; }
+      font-size: 1.5rem; }
   .contenedor-sobre-mi footer {
     grid-area: footer-sobre-mi;
     background-color: #ADA9BB; }
@@ -292,7 +295,7 @@
     margin: 1rem 1rem 0rem 1rem;
     border-radius: 2rem; }
     .contenedor-conocimientos main h1 {
-      font-size: 4rem;
+      font-size: 2.5rem;
       color: white;
       text-align: center;
       font-weight: bold; }
@@ -411,15 +414,15 @@
     color: white;
     padding: .4rem; }
     .contenedor-contacto main h1 {
-      font-size: 4rem;
+      font-size: 2.5rem;
       text-align: center;
       text-transform: uppercase; }
     .contenedor-contacto main h2 {
       text-align: center;
-      font-size: 2rem; }
+      font-size: 1.5rem; }
     .contenedor-contacto main p {
       text-align: center;
-      font-size: 1.7rem; }
+      font-size: 1.2rem; }
   .contenedor-contacto section {
     grid-area: section-contacto;
     background-color: #484554;
@@ -429,7 +432,7 @@
     margin: 1rem;
     border-radius: 2rem; }
     .contenedor-contacto section h2 {
-      font-size: 2rem;
+      font-size: 1.5rem;
       text-align: center;
       color: white;
       padding: .5rem; }
@@ -462,12 +465,39 @@
     grid-area: footer-contacto;
     background-color: #ADA9BB; }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 480px) {
+  .contenedor-home {
+    background-color: #5454C5;
+    display: grid;
+    grid-template-areas: "header-home header-home" "main-home main-home" "section-home section-home" "footer-home footer-home";
+    grid-template-columns: 1fr 1fr; }
+    .contenedor-home header {
+      height: 9vh; }
+      .contenedor-home header nav ul {
+        height: 55vh; }
+    .contenedor-home main div p {
+      font-size: 2rem; }
+    .contenedor-home main div h1 {
+      font-size: 4rem; }
+    .contenedor-home main div div a {
+      font-size: 2rem; }
+    .contenedor-home section h2 {
+      font-size: 2rem; }
+    .contenedor-home section .btn a {
+      font-size: 2rem; }
+  .contenedor-sobre-mi {
+    background-color: #5454C5;
+    display: grid;
+    grid-template-areas: "header-sobre-mi header-sobre-mi" "main-sobre-mi main-sobre-mi" "section-sobre-mi section-sobre-mi" "footer-sobre-mi footer-sobre-mi";
+    grid-template-columns: 1fr 1fr; } }
+
+@media only screen and (min-width: 600px) {
   /*home*/
   .contenedor-home {
     background-color: #5454C5;
     display: grid;
-    grid-template-areas: "header-home header-home header-home" "main-home main-home main-home" "section-home section-home section-home" "footer-home footer-home footer-home"; }
+    grid-template-areas: "header-home header-home header-home" "main-home main-home main-home" "section-home section-home section-home" "footer-home footer-home footer-home";
+    grid-template-columns: 1fr 1fr 1fr; }
     .contenedor-home header {
       display: flex;
       justify-content: space-between;
@@ -487,7 +517,7 @@
         width: 60vh; }
         .contenedor-home header nav label {
           display: inherit;
-          justify-content: end; }
+          align-self: end; }
         .contenedor-home header nav input:checked + ul {
           clip-path: circle(150% at 100 0%); }
         .contenedor-home header nav ul {
@@ -523,7 +553,7 @@
         width: 60vh; }
         .contenedor-sobre-mi header nav label {
           display: inherit;
-          justify-content: end; }
+          align-self: end; }
         .contenedor-sobre-mi header nav input:checked + ul {
           clip-path: circle(150% at 100 0%); }
         .contenedor-sobre-mi header nav ul {
@@ -559,7 +589,7 @@
         width: 60vh; }
         .contenedor-conocimientos header nav label {
           display: inherit;
-          justify-content: end; }
+          align-self: end; }
         .contenedor-conocimientos header nav input:checked + ul {
           clip-path: circle(150% at 100 0%); }
         .contenedor-conocimientos header nav ul {
@@ -595,7 +625,7 @@
         width: 60vh; }
         .contenedor-portafolio header nav label {
           display: inherit;
-          justify-content: end; }
+          align-self: end; }
         .contenedor-portafolio header nav input:checked + ul {
           clip-path: circle(150% at 100 0%); }
         .contenedor-portafolio header nav ul {
@@ -628,7 +658,7 @@
         width: 60vh; }
         .contenedor-contacto header nav label {
           display: inherit;
-          justify-content: end; }
+          align-self: end; }
         .contenedor-contacto header nav input:checked + ul {
           clip-path: circle(150% at 100 0%); }
         .contenedor-contacto header nav ul {
@@ -646,7 +676,8 @@
   .contenedor-home {
     background-color: #5454C5;
     display: grid;
-    grid-template-areas: "header-home header-home header-home header-home" "main-home main-home main-home main-home" "section-home section-home section-home section-home" "footer-home footer-home footer-home footer-home"; }
+    grid-template-areas: "header-home header-home header-home header-home" "main-home main-home main-home main-home" "section-home section-home section-home section-home" "footer-home footer-home footer-home footer-home";
+    grid-template-columns: repeat(4, 1fr); }
     .contenedor-home header {
       padding: .3rem;
       height: 9vh;
@@ -692,7 +723,7 @@
               .contenedor-home header nav ul li a p:active {
                 color: white; }
     .contenedor-home main {
-      width: fit-content;
+      width: auto;
       cursor: default;
       justify-self: center;
       display: flex;
@@ -701,18 +732,19 @@
         display: block;
         padding: .3rem; }
       .contenedor-home main div p {
-        font-size: 3.5rem; }
+        font-size: 3rem; }
       .contenedor-home main div h1 {
-        font-size: 6rem; }
+        display: inline-block;
+        font-size: 5.5rem; }
       .contenedor-home main div div a {
-        font-size: 2rem; }
+        font-size: 2.5rem; }
     .contenedor-home section {
       width: fit-content;
       display: grid;
       align-items: center;
       grid-template-columns: 1fr 1fr; }
       .contenedor-home section h2 {
-        font-size: 5rem; }
+        font-size: 4.5rem; }
       .contenedor-home section div {
         padding-top: 2rem; }
         .contenedor-home section div img {
@@ -722,7 +754,7 @@
       .contenedor-home section .btn {
         margin-top: 2rem; }
         .contenedor-home section .btn a {
-          font-size: 2rem;
+          font-size: 2.5rem;
           margin: 0rem;
           position: relative;
           bottom: 4rem; }
@@ -782,9 +814,9 @@
       .contenedor-sobre-mi main div {
         padding: .3rem; }
         .contenedor-sobre-mi main div h1 {
-          font-size: 6rem; }
+          font-size: 4.5rem; }
         .contenedor-sobre-mi main div p {
-          font-size: 2.8rem; }
+          font-size: 2.3rem; }
       .contenedor-sobre-mi main img {
         display: block;
         height: 34rem;
@@ -792,9 +824,9 @@
     .contenedor-sobre-mi section {
       width: fit-content; }
       .contenedor-sobre-mi section h2 {
-        font-size: 3rem; }
+        font-size: 2.5rem; }
       .contenedor-sobre-mi section p {
-        font-size: 2rem; }
+        font-size: 1.5rem; }
   /*Conocimientos.html*/
   .contenedor-conocimientos {
     background-color: #5454C5;
@@ -847,7 +879,7 @@
     .contenedor-conocimientos main {
       width: fit-content; }
       .contenedor-conocimientos main h1 {
-        font-size: 4rem; }
+        font-size: 2.5rem; }
       .contenedor-conocimientos main div img {
         width: 17rem;
         height: 17rem; }
@@ -968,15 +1000,15 @@
     .contenedor-contacto main {
       width: fit-content; }
       .contenedor-contacto main h1 {
-        font-size: 6rem; }
+        font-size: 4.5rem; }
       .contenedor-contacto main h2 {
-        font-size: 3rem; }
+        font-size: 2.5rem; }
       .contenedor-contacto main p {
-        font-size: 3rem; }
+        font-size: 2.5rem; }
     .contenedor-contacto section {
       width: 97.7%; }
       .contenedor-contacto section h2 {
-        font-size: 3rem; }
+        font-size: 2.5rem; }
       .contenedor-contacto section form fieldset {
         display: grid;
         grid-template-columns: 1fr 1fr; }

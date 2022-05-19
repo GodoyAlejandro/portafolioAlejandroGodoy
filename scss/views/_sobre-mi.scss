@@ -4,6 +4,7 @@
     "main-sobre-mi"
     "section-sobre-mi"
     "footer-sobre-mi");
+    grid-template-columns: 1fr;
     header{
         grid-area: header-sobre-mi;
         @extend %header;

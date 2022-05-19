@@ -18,6 +18,7 @@
             label{
                 display: flex;
                 justify-content: center;
+                align-self: center;
                 img{
                     margin-top: .2rem;
                     width: 2.5rem;
@@ -130,7 +131,7 @@
             width: 60vh;
             label{
                 display: inherit;
-                justify-content: end;
+                align-self: end;
             }
             input{
                 &:checked{
