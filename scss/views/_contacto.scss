@@ -14,7 +14,7 @@
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
-        margin: 1rem 1rem 0rem 1rem ;
+        margin: 1rem;
         border-radius: 2rem;
         color: white;
         padding: .4rem;
@@ -57,7 +57,7 @@
                     display: flex;
                     justify-content: center;               
                     input{
-                        width: 20rem;
+                        width: 16rem;
                         height: 3rem;
                         border-radius: 1.3rem;
                         border: none;
@@ -75,10 +75,10 @@
                     }
                     &:nth-child(6){
                         input{
-                            width: 11rem;
+                            width: 13rem;
                             background-color: $color-btn-2;
                             color: white;
-                            font-size: 1.3rem;
+                            font-size: map-get($map: $font-size-mobile, $key: a);
                         }
                     }    
                 }

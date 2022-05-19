@@ -3,6 +3,7 @@
     @include conteiner ("header-portafolio"
     "main-portafolio"
     "footer-portafolio");
+    grid-template-columns: 1fr;
     header{
         grid-area: header-portafolio;
         @extend %header;
@@ -14,7 +15,7 @@
         justify-content: space-evenly;
         flex-wrap: wrap;
         align-items: center;
-        margin: 1rem 1rem 1rem 1rem ;
+        margin: 1rem;
         border-radius: 2rem;
         div{
             background-color: $color-secundario-2;
@@ -52,7 +53,7 @@
             p{
                 color: white;
                 text-align: center;
-                font-size: 1.4rem;
+                font-size: map-get($map:$font-size-mobile, $key: p);
             }
             }            
         }

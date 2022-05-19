@@ -1,5 +1,6 @@
 //media querie telefonos de pantalla mediana
 @media only screen and (min-width:480px){
+    /*home*/
     .contenedor-home{
         @include conteiner ("header-home header-home"
                             "main-home main-home"
@@ -40,14 +41,94 @@
             }
         }
     }
+    /*sobre mi*/
     .contenedor-sobre-mi{
         @include conteiner ("header-sobre-mi header-sobre-mi"
     "main-sobre-mi main-sobre-mi"
     "section-sobre-mi section-sobre-mi"
     "footer-sobre-mi footer-sobre-mi");
     grid-template-columns: 1fr 1fr;
+    header{
+        height: 9vh;
     }
-    
+    main{
+        div{
+            h1{
+                font-size: map-get($map: $font-size-mobile, $key: h1) + 1.5;
+            }
+            p{
+                font-size: map-get($map: $font-size-mobile , $key: p)+ .5;
+            }
+        }
+    }
+    section{
+        h2{
+            font-size: map-get($map: $font-size-mobile , $key: h2) + .5; 
+        }
+        p{
+            font-size: map-get($map: $font-size-mobile , $key: p)+ .5;
+        }
+    }
+    }
+    /*conocimientos*/
+    .contenedor-conocimientos{
+        header{
+            height: 9vh;
+        }
+        main{
+            h1{
+                font-size: map-get($map: $font-size-mobile, $key: h1 ) + 1; 
+            }
+        }
+        section{
+            .lista1{
+                width: 25rem;
+            }
+        }
+    }
+    /*portafolio*/
+    .contenedor-portafolio{
+        header{
+            height: 9vh;
+        }
+    }
+    /*contacto*/
+    .contenedor-contacto{
+        header{
+            height: 9vh;
+        }
+        main{
+            h1{
+                font-size: map-get($map: $font-size-mobile, $key: h1) + 1.5;
+            }
+            h2{
+                font-size: map-get($map: $font-size-mobile, $key: h2) + 1;
+            }
+            p{
+                font-size: map-get($map: $font-size-mobile, $key: p) + .5;
+            }
+        }
+        section{
+            h2{
+                font-size: map-get($map: $font-size-mobile, $key: h2) + 1;
+            }
+            form{
+                fieldset{
+                    div{
+                        input{
+                            width: 25rem;
+                        }
+                        &:nth-child(6){
+                            input{
+                                width: 16rem;
+                                font-size: map-get($map: $font-size-mobile , $key: a ) + .5;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 //media querie tablet
@@ -71,13 +152,13 @@
             justify-self: center;
         }
     }
-
     /*Sobre Mi*/
     .contenedor-sobre-mi{
         @include conteiner ("header-sobre-mi header-sobre-mi header-sobre-mi"
         "main-sobre-mi main-sobre-mi main-sobre-mi"
         "section-sobre-mi section-sobre-mi section-sobre-mi"
         "footer-sobre-mi footer-sobre-mi footer-sobre-mi");
+        grid-template-columns: 1fr 1fr 1fr;
         header{
             @include header-t;
         }
@@ -90,13 +171,13 @@
             justify-self: center;
         }
     }
-
     /*Conocimientos*/
     .contenedor-conocimientos{
         @include conteiner ("header-conocimientos header-conocimientos header-conocimientos"
         "main-conocimientos main-conocimientos main-conocimientos"
         "section-conocimientos section-conocimientos section-conocimientos"
         "footer-conocimientos footer-conocimientos footer-conocimientos");
+        grid-template-columns: 1fr 1fr 1fr;
         header{
             @include header-t;
         }
@@ -109,7 +190,6 @@
             justify-self: center;
         }
     }
-
     /*portafolio*/
     .contenedor-portafolio{
         @include conteiner (" header-portafolio header-portafolio header-portafolio"
@@ -125,13 +205,13 @@
         }
 
     }
-
     /*Contacto*/
     .contenedor-contacto{
         @include conteiner ("header-contacto header-contacto header-contacto"
         "main-contacto main-contacto main-contacto"
         "section-contacto section-contacto section-contacto"
         "footer-contacto footer-contacto footer-contacto");
+        grid-template-columns: repeat(3, 1fr);
         header{
             @include header-t;
         }
@@ -146,7 +226,7 @@
     }
 }
 
-//media querie desktop
+//media querie desktop-1
 @media only screen and (min-width:1024px){
     /*Home*/
     .contenedor-home{
@@ -166,19 +246,22 @@
             align-items: center;
             img{
                 display: block;
-                padding: .3rem;
+                padding: .5rem;
+                width: 25rem;
+                height: 25rem;
             }
             div{
                 p{
-                    font-size: map-get($map: $font-size-mobile, $key: p) + 1.5;
+                    font-size: map-get($map: $font-size-mobile, $key: p) + 1;
                 }
                 h1{
                     display: inline-block;
-                    font-size: map-get($map: $font-size-mobile, $key: h1) + 3 ;
+                    font-size: map-get($map: $font-size-mobile, $key: h1) + 2 ;
+                    padding: .5rem;
                 }
                 div{
                     a{
-                        font-size: map-get($map: $font-size-mobile, $key: a) + 1; 
+                        font-size: map-get($map: $font-size-mobile, $key: a) + .5; 
                     }
                 }
             }
@@ -189,20 +272,21 @@
             align-items: center;
             grid-template-columns: 1fr 1fr;
             h2{
-                font-size: map-get($map: $font-size-mobile, $key: h2) + 3 ;
+                font-size: map-get($map: $font-size-mobile, $key: h2) + 1.5 ;
+                padding: .5rem;
             }
             div{
                 padding-top: 2rem;
                 img{
-                    width: 14rem;
-                    height: 14rem;
+                    width: 12rem;
+                    height: 12rem;
                     padding: .6rem;
                 }
             }
             .btn{
                 margin-top: 2rem;
                 a{
-                    font-size: map-get($map: $font-size-mobile, $key: a) + 1;
+                    font-size: map-get($map: $font-size-mobile, $key: a) + .5;
                     margin: 0rem;
                     position: relative;
                     bottom: 4rem;
@@ -224,27 +308,27 @@
             flex-wrap: nowrap;
             width: fit-content;
             div{
-                padding: .3rem;
+                padding: .5rem;
                 h1{
                     font-size: map-get($map: $font-size-mobile, $key: h1) + 2;
                 }
                 p{
-                    font-size: map-get($map: $font-size-mobile, $key: p) + .8;
+                    font-size: map-get($map: $font-size-mobile, $key: p) + 1;
                 }
             }
             img{
                 display: block;
-                height: 34rem;
-                width: 34rem;
+                height: 32rem;
+                width: 32rem;
             }
         }
         section{
             width: fit-content;
             h2{
-                font-size: map-get($map: $font-size-mobile, $key: h2) + 1;
+                font-size: map-get($map: $font-size-mobile, $key: h2) + 1.5;
             }
             p{
-                font-size: map-get($map: $font-size-mobile, $key: p) 
+                font-size: map-get($map: $font-size-mobile, $key: p) + 1; 
             }
         }
     }
@@ -253,14 +337,14 @@
         @include conteiner ("header-conocimientos header-conocimientos header-conocimientos header-conocimientos"
         "main-conocimientos main-conocimientos main-conocimientos main-conocimientos"
         "section-conocimientos section-conocimientos section-conocimientos section-conocimientos"
-        "footer-conocimientos footer-conocimientos footer-conocimientos footer-conocimientos");
+        "footer-conocimientos footer-conocimientos footer-conocimientos footer-conocimientos");grid-template-columns: repeat(4, 1fr);
         header{
             @include header-d;
         }
         main{
             width: fit-content;
             h1{
-                font-size: map-get($map: $font-size-mobile , $key: h1);
+                font-size: map-get($map: $font-size-mobile , $key: h1) + 1.5;
                 
             }
             div{
@@ -274,18 +358,16 @@
             width: auto;
             flex-direction: row;
             flex-wrap: wrap;
-            justify-content: center;
-            .lista1{
-                height: 7rem;               
-            }
+            justify-content: space-evenly;
         }
     }
     /*portafolio.html*/
     .contenedor-portafolio{
-        @include conteiner ("header{ortafolio header{ortafolio header{ortafolio header{ortafolio"
-        "main{ortafolio main{ortafolio main{ortafolio main{ortafolio"
-        "section{ortafolio section{ortafolio section{ortafolio section{ortafolio"
-        "footer{ortafolio footer{ortafolio footer{ortafolio footer{ortafolio");
+        @include conteiner ("header-portafolio header-portafolio header-portafolio header-portafolio"
+        "main-portafolio main-portafolio main-portafolio main-portafolio"
+        "section-portafolio section-portafolio section-portafolio section-portafolio"
+        "footer-portafolio footer-portafolio footer-portafolio footer-portafolio");
+        grid-template-columns: repeat(4, 1fr);
         header{
             @include header-d;
         }
@@ -294,12 +376,12 @@
             width: auto;
             div{
                 img{
-                    width: 19rem;
-                    height: 19rem;
+                    width: 16rem;
+                    height: 16rem;
                     padding: .6rem;
                 }
                 p{
-                    font-size: 2rem;
+                    font-size: map-get($map:$font-size-mobile, $key: p) + .5;
                 }
             }
         }
@@ -310,6 +392,7 @@
         "main-contacto main-contacto main-contacto main-contacto"
         "section-contacto section-contacto section-contacto section-contacto"
         "footer-contacto footer-contacto footer-contacto footer-contacto");
+        grid-template-columns: repeat(4, 1fr);
         header{
             @include header-d;
         }
@@ -319,7 +402,7 @@
                 font-size: map-get($map: $font-size-mobile, $key: h1) + 2;
             }
             h2{
-                font-size: map-get($map: $font-size-mobile, $key: h2) + 1;
+                font-size: map-get($map: $font-size-mobile, $key: h2) + 2;
             }
             p{
                 font-size: map-get($map: $font-size-mobile, $key: p) + 1;
@@ -328,7 +411,7 @@
         section{
             width: 97.7%;
             h2{
-                font-size: map-get($map: $font-size-mobile, $key: h2) + 1;
+                font-size: map-get($map: $font-size-mobile, $key: h2) + 2;
             }
             form{
                 fieldset{
@@ -336,7 +419,8 @@
                     grid-template-columns: 1fr 1fr;                   
                     div{
                         input{
-                            width: 26rem;
+                            width: 28rem;
+                            height: 3.5rem;
                         }
                         &:nth-child(1){
                             order:1;
@@ -366,7 +450,7 @@
                             order:6;
                             justify-self: start;
                             position: relative;
-                            left: 7rem;
+                            left: 6rem;
                             input{
                                 transition: .3s ease-in-out;
                                 &:hover{
@@ -376,6 +460,111 @@
                         }
                     }
                 }
+            }
+        }
+    }
+}
+
+//media querie desktop-2
+@media only screen and (min-width:1200px){
+    /*home*/
+    .contenedor-home{
+        main{
+            img{
+                height: auto;
+                width: auto;
+            }
+            div{
+                p{
+                    font-size: map-get($map: $font-size-mobile, $key: p) + 2;
+                }
+                h1{
+                    display: inline-block;
+                    font-size: map-get($map: $font-size-mobile, $key: h1) + 3 ;
+                    padding: .5rem;
+                }
+                div{
+                    a{
+                        font-size: map-get($map: $font-size-mobile, $key: a) + 1; 
+                    }
+                }
+            }
+        }
+        section{
+            h2{
+                font-size: map-get($map: $font-size-mobile, $key: h2) + 2 ;
+            }
+            div{
+                img{
+                    width: 14rem;
+                    height: 14rem;
+                }
+            }
+            .btn{
+                a{
+                    font-size: map-get($map: $font-size-mobile, $key: a) + 1;
+                }
+            }
+        }
+    }
+    /*sobre mi*/
+    .contenedor-sobre-mi{
+        main{
+            div{
+                h1{
+                    font-size: map-get($map: $font-size-mobile, $key: h1) + 3;
+                }
+                p{
+                    font-size: map-get($map: $font-size-mobile, $key: p) + 1.5;
+                }
+            }
+            img{
+                height: 34rem;
+                width: 34rem;
+            }
+        }
+    }
+    /*conocimientos*/
+    .contenedor-conocimientos{
+        main{
+            h1{
+                font-size: map-get($map: $font-size-mobile, $key: h1) + 3 ; 
+            }
+        }
+        section{
+            .lista1{
+                width: 35rem;
+                height: 6rem;
+            }
+        }
+    }
+    /*portafolio*/
+    .contenedor-portafolio{
+        main{
+            div{
+                img{
+                    height: 19rem;
+                    width: 19rem;
+                }
+            }
+        }
+    }
+    /*contacto*/
+    .contenedor-contacto{
+        main{
+            h1{
+                font-size: map-get($map: $font-size-mobile, $key: h1) + 3.5 ;
+            }
+            h2{
+                font-size: map-get($map: $font-size-mobile, $key: h2) + 2 ;
+            }
+            p{
+                font-size: map-get($map: $font-size-mobile, $key: p) + 2;
+            }
+        }
+        section{
+            h2{
+                font-size: map-get($map: $font-size-mobile, $key: h2) + 2 ;
             }
         }
     }

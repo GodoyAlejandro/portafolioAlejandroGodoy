@@ -149,12 +149,12 @@
 //mixin del header desktop
 @mixin header-d{
     padding: .3rem;
-    height: 9vh;
+    height: 10vh;
     margin-bottom: 0rem;
     nav{
         display: flex;
-    height: auto;
-    width: auto;
+        height: auto;
+        width: auto;
     label{
         img{
             display: none;

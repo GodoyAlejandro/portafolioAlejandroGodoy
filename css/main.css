@@ -280,7 +280,8 @@
 .contenedor-conocimientos {
   background-color: #5454C5;
   display: grid;
-  grid-template-areas: "header-conocimientos" "main-conocimientos" "section-conocimientos" "footer-conocimientos"; }
+  grid-template-areas: "header-conocimientos" "main-conocimientos" "section-conocimientos" "footer-conocimientos";
+  grid-template-columns: 1fr; }
   .contenedor-conocimientos header {
     grid-area: header-conocimientos; }
     .contenedor-conocimientos header nav ul li a p {
@@ -298,7 +299,8 @@
       font-size: 2.5rem;
       color: white;
       text-align: center;
-      font-weight: bold; }
+      font-weight: bold;
+      padding: .5rem; }
     .contenedor-conocimientos main div {
       display: flex;
       justify-content: space-evenly;
@@ -339,7 +341,7 @@
       margin: 1rem;
       padding: .5rem;
       border-radius: 1rem;
-      width: 25rem; }
+      width: 15rem; }
       .contenedor-conocimientos section .lista1 label, .contenedor-conocimientos section .lista2 label, .contenedor-conocimientos section .lista3 label, .contenedor-conocimientos section .lista4 label, .contenedor-conocimientos section .lista5 label {
         color: white;
         text-transform: uppercase;
@@ -351,7 +353,8 @@
 .contenedor-portafolio {
   background-color: #5454C5;
   display: grid;
-  grid-template-areas: "header-portafolio" "main-portafolio" "footer-portafolio"; }
+  grid-template-areas: "header-portafolio" "main-portafolio" "footer-portafolio";
+  grid-template-columns: 1fr; }
   .contenedor-portafolio header {
     grid-area: header-portafolio; }
   .contenedor-portafolio main {
@@ -361,7 +364,7 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
     align-items: center;
-    margin: 1rem 1rem 1rem 1rem;
+    margin: 1rem;
     border-radius: 2rem; }
     .contenedor-portafolio main div {
       background-color: #484554;
@@ -392,7 +395,7 @@
       .contenedor-portafolio main div p {
         color: white;
         text-align: center;
-        font-size: 1.4rem; }
+        font-size: 1.5rem; }
   .contenedor-portafolio footer {
     grid-area: footer-portafolio;
     background-color: #ADA9BB; }
@@ -409,7 +412,7 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    margin: 1rem 1rem 0rem 1rem;
+    margin: 1rem;
     border-radius: 2rem;
     color: white;
     padding: .4rem; }
@@ -446,7 +449,7 @@
         display: flex;
         justify-content: center; }
         .contenedor-contacto section form fieldset div input {
-          width: 20rem;
+          width: 16rem;
           height: 3rem;
           border-radius: 1.3rem;
           border: none;
@@ -457,15 +460,16 @@
         .contenedor-contacto section form fieldset div:nth-child(5) input {
           padding: 1.4rem 0rem 9rem .5rem; }
         .contenedor-contacto section form fieldset div:nth-child(6) input {
-          width: 11rem;
+          width: 13rem;
           background-color: #4ABEA1;
           color: white;
-          font-size: 1.3rem; }
+          font-size: 1.5rem; }
   .contenedor-contacto footer {
     grid-area: footer-contacto;
     background-color: #ADA9BB; }
 
 @media only screen and (min-width: 480px) {
+  /*home*/
   .contenedor-home {
     background-color: #5454C5;
     display: grid;
@@ -485,11 +489,48 @@
       font-size: 2rem; }
     .contenedor-home section .btn a {
       font-size: 2rem; }
+  /*sobre mi*/
   .contenedor-sobre-mi {
     background-color: #5454C5;
     display: grid;
     grid-template-areas: "header-sobre-mi header-sobre-mi" "main-sobre-mi main-sobre-mi" "section-sobre-mi section-sobre-mi" "footer-sobre-mi footer-sobre-mi";
-    grid-template-columns: 1fr 1fr; } }
+    grid-template-columns: 1fr 1fr; }
+    .contenedor-sobre-mi header {
+      height: 9vh; }
+    .contenedor-sobre-mi main div h1 {
+      font-size: 4rem; }
+    .contenedor-sobre-mi main div p {
+      font-size: 2rem; }
+    .contenedor-sobre-mi section h2 {
+      font-size: 2rem; }
+    .contenedor-sobre-mi section p {
+      font-size: 2rem; }
+  /*conocimientos*/
+  .contenedor-conocimientos header {
+    height: 9vh; }
+  .contenedor-conocimientos main h1 {
+    font-size: 3.5rem; }
+  .contenedor-conocimientos section .lista1, .contenedor-conocimientos section .lista2, .contenedor-conocimientos section .lista3, .contenedor-conocimientos section .lista4, .contenedor-conocimientos section .lista5 {
+    width: 25rem; }
+  /*portafolio*/
+  .contenedor-portafolio header {
+    height: 9vh; }
+  /*contacto*/
+  .contenedor-contacto header {
+    height: 9vh; }
+  .contenedor-contacto main h1 {
+    font-size: 4rem; }
+  .contenedor-contacto main h2 {
+    font-size: 2.5rem; }
+  .contenedor-contacto main p {
+    font-size: 2rem; }
+  .contenedor-contacto section h2 {
+    font-size: 2.5rem; }
+  .contenedor-contacto section form fieldset div input {
+    width: 25rem; }
+  .contenedor-contacto section form fieldset div:nth-child(6) input {
+    width: 16rem;
+    font-size: 2rem; } }
 
 @media only screen and (min-width: 600px) {
   /*home*/
@@ -533,7 +574,8 @@
   .contenedor-sobre-mi {
     background-color: #5454C5;
     display: grid;
-    grid-template-areas: "header-sobre-mi header-sobre-mi header-sobre-mi" "main-sobre-mi main-sobre-mi main-sobre-mi" "section-sobre-mi section-sobre-mi section-sobre-mi" "footer-sobre-mi footer-sobre-mi footer-sobre-mi"; }
+    grid-template-areas: "header-sobre-mi header-sobre-mi header-sobre-mi" "main-sobre-mi main-sobre-mi main-sobre-mi" "section-sobre-mi section-sobre-mi section-sobre-mi" "footer-sobre-mi footer-sobre-mi footer-sobre-mi";
+    grid-template-columns: 1fr 1fr 1fr; }
     .contenedor-sobre-mi header {
       display: flex;
       justify-content: space-between;
@@ -569,7 +611,8 @@
   .contenedor-conocimientos {
     background-color: #5454C5;
     display: grid;
-    grid-template-areas: "header-conocimientos header-conocimientos header-conocimientos" "main-conocimientos main-conocimientos main-conocimientos" "section-conocimientos section-conocimientos section-conocimientos" "footer-conocimientos footer-conocimientos footer-conocimientos"; }
+    grid-template-areas: "header-conocimientos header-conocimientos header-conocimientos" "main-conocimientos main-conocimientos main-conocimientos" "section-conocimientos section-conocimientos section-conocimientos" "footer-conocimientos footer-conocimientos footer-conocimientos";
+    grid-template-columns: 1fr 1fr 1fr; }
     .contenedor-conocimientos header {
       display: flex;
       justify-content: space-between;
@@ -638,7 +681,8 @@
   .contenedor-contacto {
     background-color: #5454C5;
     display: grid;
-    grid-template-areas: "header-contacto header-contacto header-contacto" "main-contacto main-contacto main-contacto" "section-contacto section-contacto section-contacto" "footer-contacto footer-contacto footer-contacto"; }
+    grid-template-areas: "header-contacto header-contacto header-contacto" "main-contacto main-contacto main-contacto" "section-contacto section-contacto section-contacto" "footer-contacto footer-contacto footer-contacto";
+    grid-template-columns: repeat(3, 1fr); }
     .contenedor-contacto header {
       display: flex;
       justify-content: space-between;
@@ -680,7 +724,7 @@
     grid-template-columns: repeat(4, 1fr); }
     .contenedor-home header {
       padding: .3rem;
-      height: 9vh;
+      height: 10vh;
       margin-bottom: 0rem; }
       .contenedor-home header nav {
         display: flex;
@@ -730,31 +774,35 @@
       align-items: center; }
       .contenedor-home main img {
         display: block;
-        padding: .3rem; }
+        padding: .5rem;
+        width: 25rem;
+        height: 25rem; }
       .contenedor-home main div p {
-        font-size: 3rem; }
+        font-size: 2.5rem; }
       .contenedor-home main div h1 {
         display: inline-block;
-        font-size: 5.5rem; }
+        font-size: 4.5rem;
+        padding: .5rem; }
       .contenedor-home main div div a {
-        font-size: 2.5rem; }
+        font-size: 2rem; }
     .contenedor-home section {
       width: fit-content;
       display: grid;
       align-items: center;
       grid-template-columns: 1fr 1fr; }
       .contenedor-home section h2 {
-        font-size: 4.5rem; }
+        font-size: 3rem;
+        padding: .5rem; }
       .contenedor-home section div {
         padding-top: 2rem; }
         .contenedor-home section div img {
-          width: 14rem;
-          height: 14rem;
+          width: 12rem;
+          height: 12rem;
           padding: .6rem; }
       .contenedor-home section .btn {
         margin-top: 2rem; }
         .contenedor-home section .btn a {
-          font-size: 2.5rem;
+          font-size: 2rem;
           margin: 0rem;
           position: relative;
           bottom: 4rem; }
@@ -765,7 +813,7 @@
     grid-template-areas: "header-sobre-mi header-sobre-mi header-sobre-mi header-sobre-mi" "main-sobre-mi main-sobre-mi main-sobre-mi main-sobre-mi" "section-sobre-mi section-sobre-mi section-sobre-mi section-sobre-mi" "footer-sobre-mi footer-sobre-mi footer-sobre-mi footer-sobre-mi"; }
     .contenedor-sobre-mi header {
       padding: .3rem;
-      height: 9vh;
+      height: 10vh;
       margin-bottom: 0rem; }
       .contenedor-sobre-mi header nav {
         display: flex;
@@ -812,29 +860,30 @@
       flex-wrap: nowrap;
       width: fit-content; }
       .contenedor-sobre-mi main div {
-        padding: .3rem; }
+        padding: .5rem; }
         .contenedor-sobre-mi main div h1 {
           font-size: 4.5rem; }
         .contenedor-sobre-mi main div p {
-          font-size: 2.3rem; }
+          font-size: 2.5rem; }
       .contenedor-sobre-mi main img {
         display: block;
-        height: 34rem;
-        width: 34rem; }
+        height: 32rem;
+        width: 32rem; }
     .contenedor-sobre-mi section {
       width: fit-content; }
       .contenedor-sobre-mi section h2 {
-        font-size: 2.5rem; }
+        font-size: 3rem; }
       .contenedor-sobre-mi section p {
-        font-size: 1.5rem; }
+        font-size: 2.5rem; }
   /*Conocimientos.html*/
   .contenedor-conocimientos {
     background-color: #5454C5;
     display: grid;
-    grid-template-areas: "header-conocimientos header-conocimientos header-conocimientos header-conocimientos" "main-conocimientos main-conocimientos main-conocimientos main-conocimientos" "section-conocimientos section-conocimientos section-conocimientos section-conocimientos" "footer-conocimientos footer-conocimientos footer-conocimientos footer-conocimientos"; }
+    grid-template-areas: "header-conocimientos header-conocimientos header-conocimientos header-conocimientos" "main-conocimientos main-conocimientos main-conocimientos main-conocimientos" "section-conocimientos section-conocimientos section-conocimientos section-conocimientos" "footer-conocimientos footer-conocimientos footer-conocimientos footer-conocimientos";
+    grid-template-columns: repeat(4, 1fr); }
     .contenedor-conocimientos header {
       padding: .3rem;
-      height: 9vh;
+      height: 10vh;
       margin-bottom: 0rem; }
       .contenedor-conocimientos header nav {
         display: flex;
@@ -879,7 +928,7 @@
     .contenedor-conocimientos main {
       width: fit-content; }
       .contenedor-conocimientos main h1 {
-        font-size: 2.5rem; }
+        font-size: 4rem; }
       .contenedor-conocimientos main div img {
         width: 17rem;
         height: 17rem; }
@@ -887,17 +936,16 @@
       width: auto;
       flex-direction: row;
       flex-wrap: wrap;
-      justify-content: center; }
-      .contenedor-conocimientos section .lista1, .contenedor-conocimientos section .lista2, .contenedor-conocimientos section .lista3, .contenedor-conocimientos section .lista4, .contenedor-conocimientos section .lista5 {
-        height: 7rem; }
+      justify-content: space-evenly; }
   /*portafolio.html*/
   .contenedor-portafolio {
     background-color: #5454C5;
     display: grid;
-    grid-template-areas: "header{ortafolio header{ortafolio header{ortafolio header{ortafolio" "main{ortafolio main{ortafolio main{ortafolio main{ortafolio" "section{ortafolio section{ortafolio section{ortafolio section{ortafolio" "footer{ortafolio footer{ortafolio footer{ortafolio footer{ortafolio"; }
+    grid-template-areas: "header-portafolio header-portafolio header-portafolio header-portafolio" "main-portafolio main-portafolio main-portafolio main-portafolio" "section-portafolio section-portafolio section-portafolio section-portafolio" "footer-portafolio footer-portafolio footer-portafolio footer-portafolio";
+    grid-template-columns: repeat(4, 1fr); }
     .contenedor-portafolio header {
       padding: .3rem;
-      height: 9vh;
+      height: 10vh;
       margin-bottom: 0rem; }
       .contenedor-portafolio header nav {
         display: flex;
@@ -943,8 +991,8 @@
       padding: 1rem;
       width: auto; }
       .contenedor-portafolio main div img {
-        width: 19rem;
-        height: 19rem;
+        width: 16rem;
+        height: 16rem;
         padding: .6rem; }
       .contenedor-portafolio main div p {
         font-size: 2rem; }
@@ -952,10 +1000,11 @@
   .contenedor-contacto {
     background-color: #5454C5;
     display: grid;
-    grid-template-areas: "header-contacto header-contacto header-contacto header-contacto" "main-contacto main-contacto main-contacto main-contacto" "section-contacto section-contacto section-contacto section-contacto" "footer-contacto footer-contacto footer-contacto footer-contacto"; }
+    grid-template-areas: "header-contacto header-contacto header-contacto header-contacto" "main-contacto main-contacto main-contacto main-contacto" "section-contacto section-contacto section-contacto section-contacto" "footer-contacto footer-contacto footer-contacto footer-contacto";
+    grid-template-columns: repeat(4, 1fr); }
     .contenedor-contacto header {
       padding: .3rem;
-      height: 9vh;
+      height: 10vh;
       margin-bottom: 0rem; }
       .contenedor-contacto header nav {
         display: flex;
@@ -1002,18 +1051,19 @@
       .contenedor-contacto main h1 {
         font-size: 4.5rem; }
       .contenedor-contacto main h2 {
-        font-size: 2.5rem; }
+        font-size: 3.5rem; }
       .contenedor-contacto main p {
         font-size: 2.5rem; }
     .contenedor-contacto section {
       width: 97.7%; }
       .contenedor-contacto section h2 {
-        font-size: 2.5rem; }
+        font-size: 3.5rem; }
       .contenedor-contacto section form fieldset {
         display: grid;
         grid-template-columns: 1fr 1fr; }
         .contenedor-contacto section form fieldset div input {
-          width: 26rem; }
+          width: 28rem;
+          height: 3.5rem; }
         .contenedor-contacto section form fieldset div:nth-child(1) {
           order: 1;
           justify-self: end; }
@@ -1037,11 +1087,59 @@
           order: 6;
           justify-self: start;
           position: relative;
-          left: 7rem; }
+          left: 6rem; }
           .contenedor-contacto section form fieldset div:nth-child(6) input {
             transition: .3s ease-in-out; }
             .contenedor-contacto section form fieldset div:nth-child(6) input:hover {
               transform: scale(1.1); } }
+
+@media only screen and (min-width: 1200px) {
+  /*home*/
+  .contenedor-home main img {
+    height: auto;
+    width: auto; }
+  .contenedor-home main div p {
+    font-size: 3.5rem; }
+  .contenedor-home main div h1 {
+    display: inline-block;
+    font-size: 5.5rem;
+    padding: .5rem; }
+  .contenedor-home main div div a {
+    font-size: 2.5rem; }
+  .contenedor-home section h2 {
+    font-size: 3.5rem; }
+  .contenedor-home section div img {
+    width: 14rem;
+    height: 14rem; }
+  .contenedor-home section .btn a {
+    font-size: 2.5rem; }
+  /*sobre mi*/
+  .contenedor-sobre-mi main div h1 {
+    font-size: 5.5rem; }
+  .contenedor-sobre-mi main div p {
+    font-size: 3rem; }
+  .contenedor-sobre-mi main img {
+    height: 34rem;
+    width: 34rem; }
+  /*conocimientos*/
+  .contenedor-conocimientos main h1 {
+    font-size: 5.5rem; }
+  .contenedor-conocimientos section .lista1, .contenedor-conocimientos section .lista2, .contenedor-conocimientos section .lista3, .contenedor-conocimientos section .lista4, .contenedor-conocimientos section .lista5 {
+    width: 35rem;
+    height: 6rem; }
+  /*portafolio*/
+  .contenedor-portafolio main div img {
+    height: 19rem;
+    width: 19rem; }
+  /*contacto*/
+  .contenedor-contacto main h1 {
+    font-size: 6rem; }
+  .contenedor-contacto main h2 {
+    font-size: 3.5rem; }
+  .contenedor-contacto main p {
+    font-size: 3.5rem; }
+  .contenedor-contacto section h2 {
+    font-size: 3.5rem; } }
 
 @keyframes shake {
   0% {
